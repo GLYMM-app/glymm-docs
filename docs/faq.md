@@ -2,97 +2,121 @@
 
 ## Generales
 
-### ¿Qué es Glymm?
-Glymm es una plataforma integral de gestión para negocios de servicios personales. Te permite gestionar clientes, turnos, servicios y más desde un solo lugar.
+### ¿Qué es GLYMM?
+GLYMM es un sistema de gestión completo para salones de extensiones. Te permite gestionar clientas, turnos, servicios, insumos, facturación y más desde un solo lugar.
 
-### ¿Necesito capacitación para usar Glymm?
-¡No! Glymm está diseñado para ser intuitivo y fácil de usar. Puedes comenzar inmediatamente después de crear tu cuenta.
+### ¿Necesito capacitación para usar GLYMM?
+¡No! GLYMM está diseñado para ser intuitivo y fácil de usar. Puedes comenzar inmediatamente después de crear tu cuenta. Esta documentación te ayudará a aprovechar todas las funciones.
 
 ### ¿Cuáles son los requisitos del sistema?
-Glymm funciona en cualquier navegador moderno en dispositivos de escritorio, tablet y móvil. Solo necesitas una conexión a internet.
+GLYMM funciona en cualquier navegador moderno (Chrome, Firefox, Safari, Edge) en dispositivos de escritorio, tablet y móvil. Solo necesitas una conexión a internet.
 
 ---
 
 ## Clientes
 
-### ¿Cómo creo un nuevo cliente?
+### ¿Cómo creo una nueva clienta?
 1. Ve a la sección **Clientes**
 2. Haz clic en **+ Nuevo Cliente**
-3. Completa el formulario con la información del cliente
+3. Completa el formulario con la información (nombre es obligatorio)
 4. Haz clic en **Guardar**
 
-### ¿Puedo importar clientes desde otro sistema?
-Sí, contáctanos en support@glymm.com para obtener instrucciones sobre importación masiva de datos.
+### ¿Qué información puedo registrar de una clienta?
+- **Nombre** (obligatorio)
+- **Teléfono** (opcional, pero recomendado)
+- **Fecha de última visita** (opcional)
+- **Observaciones** (opcional, para notas importantes)
 
-### ¿Cómo elimino un cliente?
-Puedes desactivar un cliente en lugar de eliminarlo. Esto mantiene el historial de datos. Para eliminar permanentemente, contacta a soporte.
+### ¿Cómo elimino una clienta?
+Haz clic en el botón **🗑 Eliminar** en la tarjeta de la clienta y confirma la eliminación. La eliminación es permanente.
 
 ---
 
 ## Turnos
 
 ### ¿Cuántas horas antes debo crear un turno?
-Puedes crear turnos con la antelación que necesites. Te recomendamos hacerlo al menos 24 horas antes.
+Puedes crear turnos con la antelación que necesites. No hay límite de tiempo para programar turnos futuros.
 
-### ¿Qué ocurre si dos profesionales tienen un turno al mismo tiempo?
-Glymm te advertirá sobre conflictos de horario cuando intentes crear un turno.
+### ¿Puedo agregar múltiples servicios a un turno?
+Sí, puedes agregar servicios extras a un turno. Selecciona el servicio principal y luego, en "Servicios extras", mantén presionado Ctrl (o Cmd en Mac) para seleccionar múltiples servicios adicionales.
 
-### ¿Puedo overbooking (más turnos que capacidad)?
-No. Glymm está diseñado para prevenir overbooking automáticamente.
+### ¿Cómo funcionan los adelantos?
+Puedes registrar adelantos ingresando el monto o el porcentaje. El sistema calculará automáticamente el otro valor. El adelanto se resta del precio total del turno.
+
+### ¿Puedo aplicar descuentos?
+Sí, puedes aplicar descuentos por monto fijo o porcentaje. El sistema calculará automáticamente el precio final con el descuento aplicado.
+
+### ¿Qué es un subservicio?
+Un subservicio es una variante de un servicio principal que aplica un descuento automático. Debe estar configurado en la sección de Servicios y activado en la configuración de tu empresa.
+
+### ¿Puedo ver los turnos en calendario?
+Sí, GLYMM tiene dos vistas de calendario: mensual y semanal. Haz clic en el botón "📅 Calendario" para activar la vista y usa los botones "Mes" y "Semana" para alternar.
 
 ---
 
-## Notificaciones
+## Servicios
 
-### ¿Cómo activo notificaciones para mis clientes?
-En Configuración → Notificaciones, puedes habilitar recordatorios automáticos via SMS o email.
+### ¿Cómo creo un nuevo servicio?
+1. Ve a la sección **Servicios**
+2. Haz clic en **+ Nuevo Servicio**
+3. Completa el formulario con nombre, precio y duración
+4. Haz clic en **Guardar**
 
-### ¿Cuándo se envían las notificaciones?
-Las notificaciones se envían por defecto 24 horas antes del turno. Puedes ajustar estos tiempos en configuración.
+### ¿Puedo crear subservicios?
+Sí, si tu empresa tiene activada la opción de subservicios en la configuración, puedes crear subservicios que aplican descuentos automáticos a los servicios principales.
 
 ---
 
 ## Seguridad y Privacidad
 
 ### ¿Mi información está segura?
-Sí. Utilizamos encriptación de nivel empresarial (SSL/TLS) y cumplimos con GDPR y otras normativas de privacidad.
+Sí. GLYMM utiliza encriptación de nivel empresarial (SSL/TLS) para proteger tus datos.
 
 ### ¿Quién puede acceder a mi información?
-Solo tú y los usuarios que autorifiques en tu cuenta. Nunca compartimos datos con terceros.
+Solo tú y los usuarios que autorices en tu cuenta. Puedes gestionar los permisos en la sección de Usuarios y Permisos.
 
 ### ¿Cómo recupero mi contraseña?
-Haz clic en "¿Olvidaste tu contraseña?" en la pantalla de inicio de sesión y sigue las instrucciones.
+Haz clic en "¿Olvidaste tu contraseña?" en la pantalla de inicio de sesión y sigue las instrucciones para restablecerla.
 
 ---
 
-## Facturaciónción y Planes
+## Facturación
 
-### ¿Hay período de prueba?
-Sí, ofrecemos un período de prueba gratuito de 14 días sin requerir tarjeta de crédito.
+### ¿Cómo veo mis ingresos?
+Ve a la sección **Facturación** para ver ingresos, estadísticas y reportes financieros de tu negocio.
 
-### ¿Puedo cambiar de plan en cualquier momento?
-Sí, puedes actualizar o degradar tu plan en cualquier momento desde la sección Suscripción.
-
-### ¿Qué métodos de pago aceptan?
-Aceptamos todas las tarjetas de crédito principales, transferencia bancaria y otros métodos según tu región.
+### ¿Qué información muestra la facturación?
+La sección de facturación muestra ingresos por turnos, estadísticas de servicios más vendidos, y reportes detallados de tu negocio.
 
 ---
+
+## Usuarios y Permisos
+
+### ¿Cómo agrego un nuevo usuario?
+1. Ve a la sección **Usuarios**
+2. Haz clic en **+ Nuevo Usuario**
+3. Completa el formulario con la información del profesional
+4. Asigna los permisos correspondientes
+
+### ¿Qué son los permisos?
+Los permisos controlan qué secciones y funciones puede ver y usar cada usuario. Puedes gestionarlos en la sección **Permisos**.
+
+## Insumos y Stock
+
+### ¿Cómo gestiono mi inventario?
+Ve a la sección **Insumos** para registrar productos, controlar stock y gestionar costos de materiales.
+
+### ¿Puedo ver el stock disponible?
+Sí, la sección **Stock** te muestra el inventario actual de todos tus productos.
 
 ## Soporte Técnico
 
 ### ¿Cómo obtengo ayuda?
 Puedes:
 - Consultar esta documentación
-- Enviar un email a support@glymm.com
-- Usar el chat de soporte en la plataforma
-- Llamar a nuestro número de soporte
-
-### ¿Cuál es el horario de soporte?
-Nuestro equipo de soporte está disponible de lunes a viernes, 9:00 AM - 6:00 PM (horario local).
-
-### ¿Hay un período de respuesta garantizado?
-Los tickets de soporte se responden dentro de 24 horas hábiles.
+- Revisar la sección de [Solución de Problemas](solucion-de-problemas.md)
+- Contactar a soporte técnico
 
 ---
 
-¿No encontraste la respuesta que buscas? [Contacta con nosotros](mailto:support@glymm.com)
+¿No encontraste la respuesta que buscas? Consulta nuestra [Guía de Solución de Problemas](solucion-de-problemas.md) o contacta a soporte técnico.

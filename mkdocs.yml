@@ -1,13 +1,13 @@
-site_name: Ayuda Glymm
-site_description: Documentación y guías de ayuda para Glymm
-site_author: Glymm Team
+site_name: GLYMM - Centro de Ayuda
+site_description: Documentación y guías de ayuda para GLYMM - Sistema de gestión para salón de extensiones
+site_author: GLYMM Team
 site_url: https://docs.glymm.com/
 
 theme:
   name: material
   language: es
-  logo: https://cdn-icons-png.flaticon.com/128/3143/3143615.png
-  favicon: https://cdn-icons-png.flaticon.com/128/3143/3143615.png
+  logo: assets/glymm.svg
+  favicon: assets/favicon.svg
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default

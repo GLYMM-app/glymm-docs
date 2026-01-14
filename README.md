@@ -1,6 +1,6 @@
-# 📚 Centro de Ayuda Glymm
+# 📚 Centro de Ayuda GLYMM
 
-Documentación oficial y completa para Glymm - Plataforma integral de gestión para negocios de servicios personales.
+Documentación oficial y completa para GLYMM - Sistema de gestión para salón de extensiones.
 
 ## 🌐 Acceso
 
@@ -10,32 +10,41 @@ Visita la documentación en línea: [https://docs.glymm.com](https://docs.glymm.
 
 ### Guías Principales
 
-- **[Clientes](docs/clientes.md)** - Gestión completa de tu base de clientes
-- **[Turnos](docs/turnos.md)** - Creación y administración de turnos
+- **[Clientes](docs/clientes.md)** - Gestión completa de tu base de clientas
+- **[Turnos](docs/turnos.md)** - Creación y administración de turnos con calendario, servicios extras, adelantos y descuentos
 - **[FAQ](docs/faq.md)** - Preguntas frecuentes y respuestas rápidas
 - **[Solución de Problemas](docs/solucion-de-problemas.md)** - Diagnóstico y resolución de problemas comunes
 
-## 🚀 Características
+## 🚀 Características de GLYMM
 
 ✨ **Intuitivo y fácil de usar**
-- Interfaz limpia y moderna
+- Interfaz limpia y moderna con modo oscuro
 - Navegación intuitiva
-- Disponible en dispositivos móviles
+- Diseño responsive para móviles, tablets y escritorio
 
-📊 **Gestión eficiente**
-- Gestión integral de clientes
-- Programación flexible de turnos
-- Reportes y análisis en tiempo real
+📅 **Calendario Inteligente**
+- Vista mensual y semanal
+- Cambio rápido de estados
+- Visualización clara de turnos por estado
+
+💰 **Gestión Financiera Avanzada**
+- Servicios extras en un mismo turno
+- Adelantos (monto o porcentaje)
+- Descuentos (monto o porcentaje)
+- Cálculo automático de precios y duraciones
+
+📊 **Módulos Completos**
+- Gestión de clientas
+- Turnos con calendario interactivo
+- Servicios y subservicios
+- Insumos e inventario
+- Facturación y reportes
+- Usuarios y permisos
 
 🔒 **Seguro y confiable**
 - Encriptación de nivel empresarial
-- Cumplimiento de GDPR y estándares internacionales
-- Backups automáticos
-
-💼 **Profesional**
-- Adaptado a cualquier tipo de negocio de servicios
-- Escalable según tus necesidades
-- Soporte técnico dedicado
+- Gestión de permisos por usuario
+- Sincronización con Google Calendar
 
 ## 🛠️ Construcción
 
@@ -95,10 +104,11 @@ glymm-docs/
 
 ## 🎨 Estilos
 
-La documentación utiliza estilos personalizados basados en los diseños profesionales de:
+La documentación utiliza estilos personalizados basados en el diseño de GLYMM:
 
-- **Landingproyecto** - Paleta de colores moderna (Tema Rosa #ec4899)
-- **billingGlymm** - Componentes y espaciado mejorado
+- **Paleta de colores:** Rosa (#ec4899, #f8b2d3) - Tema principal de GLYMM
+- **Tipografía:** Inter (texto) y JetBrains Mono (código)
+- **Logo:** Logos oficiales de GLYMM (glymm.svg, glymm-icon.svg)
 
 ### Características de diseño
 
@@ -106,6 +116,7 @@ La documentación utiliza estilos personalizados basados en los diseños profesi
 - Tipografía profesional (Inter, JetBrains Mono)
 - Componentes mejorados (botones, tarjetas, admoniciones)
 - Responsive design para todos los dispositivos
+- Iconos y estética consistentes con la aplicación GLYMM
 
 ## 🔄 Workflow de Contribución
 
@@ -152,10 +163,9 @@ Consulta [.github/workflows/publish-docs.yml](.github/workflows/publish-docs.yml
 
 ## 💬 Soporte y Contacto
 
-- **Email**: support@glymm.com
 - **Documentación en vivo**: https://docs.glymm.com
 - **Issues**: Reporta problemas en GitHub Issues
-- **Chat**: Disponible en la plataforma Glymm
+- Consulta la sección de [Solución de Problemas](docs/solucion-de-problemas.md) para ayuda técnica
 
 ## 📄 Licencia
 
@@ -168,5 +178,6 @@ Gracias a todo el equipo de Glymm por contribuir al contenido y mejoras de esta 
 ---
 
 **Última actualización**: Enero 2026  
-**Versión de documentación**: 1.0  
-**Estado**: ✅ Activo y en desarrollo
+**Versión de documentación**: 2.0  
+**Estado**: ✅ Activo y actualizado con funciones reales de GLYMM  
+**Proyecto**: Sistema de gestión para salón de extensiones
