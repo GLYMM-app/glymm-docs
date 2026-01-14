@@ -9,7 +9,7 @@
 
 Explora nuestras guías para aprovechar al máximo todas las funciones de GLYMM:
 
-<div class="grid">
+<div class="grid" markdown="1">
 
 ### 👥 [Clientes](clientes.md)
 Gestiona tu base de clientas: crear perfiles, registrar información de contacto, fechas de última visita y observaciones importantes.
