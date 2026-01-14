@@ -1,16 +1,77 @@
-site_name: Ayuda
+site_name: Ayuda Glymm
+site_description: Documentación y guías de ayuda para Glymm
+site_author: Glymm Team
+site_url: https://docs.glymm.com/
+
 theme:
   name: material
   language: es
+  logo: https://cdn-icons-png.flaticon.com/128/3143/3143615.png
+  favicon: https://cdn-icons-png.flaticon.com/128/3143/3143615.png
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/lightbulb-outline
+        name: Modo oscuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/lightbulb
+        name: Modo claro
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.tracking
+    - navigation.expand
+    - toc.integrate
+    - content.code.copy
+    - content.code.select
+    - content.tooltips
+    - search.suggest
+    - search.highlight
+  font:
+    text: Inter
+    code: JetBrains Mono
+  custom_dir: docs/overrides
 
 plugins:
-  - search
+  - search:
+      lang: es
+  - social
+  - offline
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.highlight:
+      use_pygments: true
+      pygments_style: material
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+      toc_depth: 3
 
 nav:
   - Inicio: index.md
   - Guías:
-      - Clientes: Clientes.md
-      - Turnos: Turnos.md
+      - Clientes: clientes.md
+      - Turnos: turnos.md
   - Soporte:
-      - Solución de problemas: Solucion-de-problemas.md
-      - FAQ: FAQ.md
+      - Preguntas Frecuentes: faq.md
+      - Solución de problemas: solucion-de-problemas.md
+  - Desarrollo:
+      - Guía de Estilo: GUIA-ESTILO.md
