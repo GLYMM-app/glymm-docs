@@ -1,0 +1,16 @@
+site_name: Ayuda
+theme:
+  name: material
+  language: es
+
+plugins:
+  - search
+
+nav:
+  - Inicio: index.md
+  - Guías:
+      - Clientes: Clientes.md
+      - Turnos: Turnos.md
+  - Soporte:
+      - Solución de problemas: Solucion-de-problemas.md
+      - FAQ: FAQ.md
