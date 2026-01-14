@@ -9,36 +9,45 @@
 
 Explora nuestras guías para aprovechar al máximo todas las funciones de GLYMM:
 
-<div class="grid">
-
-### 👥 [Clientes](clientes.md)
-Gestiona tu base de clientas: crear perfiles, registrar información de contacto, fechas de última visita y observaciones importantes.
-
-### 📅 [Turnos](turnos.md)
-Programa y gestiona turnos con vista de calendario (mensual/semanal), servicios extras, adelantos, descuentos y asignación de profesionales.
-
-### ❓ [Preguntas Frecuentes](faq.md)
-Encuentra respuestas rápidas a las preguntas más comunes sobre GLYMM.
-
-### 🔧 [Solución de Problemas](solucion-de-problemas.md)
-Resuelve problemas comunes y obtén ayuda técnica.
-
-</div>
-
-## 🚀 Módulos Principales de GLYMM
-
 ### Gestión de Negocio
-- **👥 Clientes**: Base de datos completa de tus clientas
-- **📅 Turnos**: Calendario interactivo con gestión avanzada de citas
-- **💇 Servicios**: Catálogo de servicios con precios, duración y subservicios
-- **📦 Insumos**: Control de inventario y costos de materiales
-- **📊 Facturación**: Ingresos, estadísticas y reportes financieros
+
+- **👥 [Clientes](clientes.md)**  
+  Gestiona tu base de clientas: crear perfiles, registrar información de contacto, fechas de última visita y observaciones importantes.
+
+- **📅 [Turnos](turnos.md)**  
+  Programa y gestiona turnos con vista de calendario (mensual/semanal), servicios extras, adelantos, descuentos y asignación de profesionales.
+
+- **💇 [Servicios](servicios.md)**  
+  Administra tu catálogo de servicios: precios, duraciones, descripciones y subservicios con descuentos automáticos.
+
+- **📦 [Insumos](insumos.md)**  
+  Registra y gestiona los materiales que utilizas: códigos, nombres, unidades de medida y costos unitarios.
+
+- **📦 [Stock](stock.md)**  
+  Controla el inventario de extensiones: cantidades, puntos de reposición, alertas de stock bajo y proveedores.
+
+- **💰 [Facturación](facturacion.md)**  
+  Visualiza ingresos, estadísticas y reportes financieros: gráficos, períodos personalizados y análisis de rentabilidad.
 
 ### Administración
-- **👤 Usuarios**: Gestión de profesionales y permisos del sistema
-- **⚙️ Configuración**: Personalización de tu cuenta y preferencias
-- **🔐 Permisos**: Control de acceso y roles de usuario
-- **📦 Stock**: Control de inventario de productos
+
+- **👤 [Usuarios](usuarios.md)**  
+  Gestiona el personal de tu salón: crear usuarios, asignar roles, configurar permisos y administradores.
+
+- **⚙️ [Configuración](configuracion.md)**  
+  Personaliza GLYMM: nombre de empresa, logo, colores personalizados y activación de subservicios.
+
+- **🔐 [Permisos](permisos.md)**  
+  Controla el acceso al sistema: asignar y quitar permisos por módulo, gestionar roles y seguridad.
+
+### Soporte
+
+- **❓ [Preguntas Frecuentes](faq.md)**  
+  Encuentra respuestas rápidas a las preguntas más comunes sobre GLYMM.
+
+- **🔧 [Solución de Problemas](solucion-de-problemas.md)**  
+  Resuelve problemas comunes y obtén ayuda técnica.
+
 
 ## ✨ Características Destacadas
 
