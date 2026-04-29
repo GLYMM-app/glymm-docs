@@ -1,7 +1,7 @@
 # Relevamiento Técnico y Plan de Acción — Glymm Workspace
 
 **Fecha:** 29 de abril de 2026  
-**Última actualización:** 29 de abril de 2026 — Fase 1 aplicada  
+**Última actualización:** 29 de abril de 2026 — Fase 3 aplicada  
 **Alcance:** Análisis de seguridad, performance, calidad de código y vulnerabilidades de los 4 proyectos del workspace.  
 **Proyectos analizados:**
 - `proyecto/SalonFlow.API` — Backend .NET 8 (ASP.NET Core)
@@ -723,21 +723,23 @@ Estas tareas deben completarse antes de cualquier otro commit al repositorio:
 
 ### Fase 3 — Próximas 2 Semanas
 
-- [ ] **[API]** Migrar logging a Serilog, eliminar `File.AppendAllText`
+- [ ] **[API]** Migrar logging a Serilog (reemplazar `File.AppendAllText` ya eliminado, ahora implementar destino estructurado)
 - [ ] **[API]** Implementar refresh tokens y token blacklist
 - [ ] **[API]** Agregar `[Required]`, `[MaxLength]` a todos los DTOs y reactivar `ModelState` validation
-- [ ] **[API]** Refactorizar métodos duplicados de claims a `BaseApiController`
-- [ ] **[API]** Agregar HSTS y HTTPS redirect en `Startup.cs`
+- [x] **[API]** Refactorizar métodos duplicados de claims → `Helpers/ClaimsHelper.cs`
+- [x] **[API]** Agregar HSTS y HTTPS redirect en `Startup.cs`
+- [x] **[API]** Eliminar debug logging `File.AppendAllText` (9 bloques en `Startup.cs`)
+- [x] **[API]** Resolver vulnerabilidades NuGet: MailKit y MimeKit → 4.16.0
 - [ ] **[Frontend principal]** Migrar JWT de `localStorage` a `httpOnly` cookies (coordinado con backend)
-- [ ] **[Frontend principal]** Implementar caching de API con TTL
-- [ ] **[Frontend principal]** Corregir `setInterval` sin cleanup en `usePWA.ts`
+- [x] **[Frontend principal]** Implementar caching de API con TTL (`useClientes`, `useTurnos`)
+- [x] **[Frontend principal]** Corregir `setInterval` sin cleanup en `usePWA.ts`
 - [ ] **[Frontend principal]** Agregar validación de respuesta API con schema
 - [ ] **[Billing]** Migrar JWT de `localStorage` a `httpOnly` cookies
-- [ ] **[Billing]** Reemplazar `alert()` por sistema de toast consistente
+- [x] **[Billing]** Reemplazar `alert()` por sistema de toast consistente (`useToast` + `AppToast`)
 - [ ] **[Billing]** Extraer helpers duplicados a composables compartidos
-- [ ] **[Billing]** Definir enums para estados de cuenta (1=Activo, 2=Moroso, etc.)
-- [ ] **[Landing]** Crear `tsconfig.json` con `strict: true`
-- [ ] **[Landing]** Simplificar `vite.config.ts` (eliminar 39 aliases innecesarios)
+- [x] **[Billing]** Definir enums para estados de cuenta → `utils/constants.ts`
+- [x] **[Landing]** Crear `tsconfig.json` con `strict: true`
+- [x] **[Landing]** Simplificar `vite.config.ts` (39 aliases innecesarios eliminados)
 - [ ] **[Landing]** Centralizar URLs en `src/config/constants.ts`
 
 ### Fase 4 — Próximo Mes
@@ -922,3 +924,64 @@ Todos los cambios críticos e inmediatos fueron aplicados en los 4 proyectos en 
 | `pages/index.vue` | Loop secuencial de facturas por empresa → `Promise.all` con `.catch` por empresa. | Con 10 empresas: latencia de carga de ~10x a ~1x |
 | `pages/index.vue` | Caché del dashboard con TTL 2 min (`_dashboardCache` ref). Navegar al dashboard dentro de 2 min no hace requests. `forceRefresh` disponible para forzar recarga. | Elimina recarga innecesaria al volver |
 | `pages/index.vue` | Chart.js tree-shaking: `registerables` completo → solo `DoughnutController`, `BarController`, `LineController` + elementos y scales usados. | Reduce chunk dinámico de Chart.js |
+
+---
+
+### Fase 3 — 29 de abril de 2026
+
+---
+
+#### SalonFlow.API — Seguridad y hardening
+
+| Archivo | Cambio | Impacto |
+|---|---|---|
+| `Startup.cs` | HSTS habilitado: `MaxAge = 365d`, `IncludeSubDomains = true`. `UseHttpsRedirection()` agregado antes de `UseRouting()`. | Elimina downgrade attacks, fuerza HTTPS en todos los browsers que visitaron el sitio. |
+| `Startup.cs` | 9 bloques `System.IO.File.AppendAllText` de debug logging eliminados. | Elimina escritura de datos sensibles a disco en producción (requests, responses, errores completos). |
+| `Helpers/ClaimsHelper.cs` | **Nuevo:** extensiones de `ClaimsPrincipal`: `GetUsuarioId()` (`ClaimTypes.NameIdentifier`), `GetEmpresaId()` (`"EmpresasId"`), `IsAdmin()` (`"IsAdmin"` con `bool.TryParse`). Claim strings adaptados desde `BillingSaaSController`. | Centraliza acceso a claims, elimina strings duplicados dispersos en controllers. |
+| `Helpers/README.md` | **Nuevo:** documentación de uso y nota de migración. | — |
+| `SalonFlow.API.csproj` | MailKit `4.8.0` → `4.16.0` (GHSA-9j88-vvj5-vhgr). MimeKit `4.8.0` → `4.16.0` (GHSA-g7hc-96xr-gvvx). | **0 vulnerabilidades NuGet** en el proyecto. |
+| `TestProject/UnitTests/Controllers/ClientesControllerTests.cs` | Tests actualizados para respuesta paginada `{ total, page, pageSize, data }` del `ClientesController`. | Build del test project vuelve a compilar sin errores. |
+| `TestProject/UnitTests/Controllers/ClientesControllerAdvancedTests.cs` | Mismo ajuste; test de performance verifica `response.total >= 500` en lugar de lista completa. | — |
+
+---
+
+#### salonflow-frontend — Vulnerabilidades npm
+
+| Archivo | Cambio | Impacto |
+|---|---|---|
+| `package.json` / `package-lock.json` | `@aws-amplify/backend`, `@aws-amplify/backend-cli`, `aws-cdk-lib` actualizados a latest disponible. | 132 → 129 vulnerabilidades. Las 129 restantes son únicamente en `devDependencies` de herramientas de infraestructura AWS (`@aws-sdk/client-sso-oidc`, `@aws-sdk/client-sts`) — **no afectan el bundle del browser**. Bloqueadas por AWS (sin parche upstream disponible). |
+| `SECURITY-AUDIT.md` | **Nuevo:** documenta el estado de las 129 vulnerabilidades restantes, su origen, su ausencia de impacto en runtime, y el plan de seguimiento cuando AWS libere parches. | — |
+
+---
+
+#### billingGlymm — UX y calidad
+
+| Archivo | Cambio | Impacto |
+|---|---|---|
+| `composables/useToast.ts` | **Nuevo:** composable singleton de toasts (`success`, `error`, `info`) con auto-dismiss configurable (default 4s). Sin dependencias externas. | Base para reemplazar todos los `alert()` bloqueantes. |
+| `components/AppToast.vue` | **Nuevo:** overlay global con `Teleport to="body"`, `TransitionGroup` slide-in desde la derecha, colores semánticos por tipo. | — |
+| `app.vue` | `<AppToast />` montado globalmente sobre todos los layouts. | Toasts visibles en todas las páginas. |
+| `components/CalcularFacturasModal.vue` | `alert(error)` → `toastError(error)`. | — |
+| `components/EmpresaDetailsModal.vue` | 3 `alert()` → `toastError()`/`toastSuccess()` según contexto. | — |
+| `pages/empresas/[id]/facturas.vue` | 2 `alert()` → `toastError()`. | — |
+| `pages/facturas.vue` | 1 `alert()` → `toastError()`. | — |
+
+> Total: **7 `alert()` eliminados**, ninguno queda en el codebase.
+
+---
+
+#### Estado del plan de acción (Fase 3)
+
+| Item | Estado |
+|---|---|
+| [API] Eliminar `File.AppendAllText` debug logging | **Completado** |
+| [API] Refactorizar claims duplicados → `ClaimsHelper` | **Completado** |
+| [API] Agregar HSTS y HTTPS redirect | **Completado** |
+| [API] Resolver vulnerabilidades NuGet (MailKit, MimeKit) | **Completado** |
+| [Billing] Reemplazar `alert()` por sistema de toast | **Completado** |
+| [API] Migrar logging a Serilog (reemplazar File.AppendAllText) | Pendiente Fase 4 |
+| [API] Implementar refresh tokens y token blacklist | Pendiente Fase 4 |
+| [API] Agregar `[Required]`, `[MaxLength]` a DTOs | Pendiente Fase 4 |
+| [Frontend] Migrar JWT de `localStorage` a `httpOnly` cookies | Pendiente Fase 4 |
+| [Billing] Migrar JWT de `localStorage` a `httpOnly` cookies | Pendiente Fase 4 |
+| [Landing] Centralizar URLs en `src/config/constants.ts` | Pendiente Fase 4 |
