@@ -70,6 +70,13 @@ nav:
   - Guías:
       - Clientes: clientes.md
       - Turnos: turnos.md
+      - Servicios: servicios.md
+      - Insumos: insumos.md
+      - Stock: stock.md
+      - Facturación: facturacion.md
+      - Usuarios: usuarios.md
+      - Configuración: configuracion.md
+      - Permisos: permisos.md
   - Soporte:
       - Preguntas Frecuentes: faq.md
       - Solución de problemas: solucion-de-problemas.md
