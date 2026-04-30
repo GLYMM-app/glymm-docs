@@ -1,7 +1,7 @@
 # Relevamiento Técnico y Plan de Acción — Glymm Workspace
 
 **Fecha:** 29 de abril de 2026  
-**Última actualización:** 29 de abril de 2026 — Fase 3 aplicada  
+**Última actualización:** 29 de abril de 2026 — Fase 3 completa + Fase 4 parcial aplicada  
 **Alcance:** Análisis de seguridad, performance, calidad de código y vulnerabilidades de los 4 proyectos del workspace.  
 **Proyectos analizados:**
 - `proyecto/SalonFlow.API` — Backend .NET 8 (ASP.NET Core)
@@ -723,9 +723,9 @@ Estas tareas deben completarse antes de cualquier otro commit al repositorio:
 
 ### Fase 3 — Próximas 2 Semanas
 
-- [ ] **[API]** Migrar logging a Serilog (reemplazar `File.AppendAllText` ya eliminado, ahora implementar destino estructurado)
+- [x] **[API]** Migrar logging a Serilog — Console + File sinks, nivel por entorno, reemplaza pipeline por defecto
 - [ ] **[API]** Implementar refresh tokens y token blacklist
-- [ ] **[API]** Agregar `[Required]`, `[MaxLength]` a todos los DTOs y reactivar `ModelState` validation
+- [x] **[API]** Agregar `[Required]`, `[MaxLength]` a todos los DTOs (109 propiedades en 20 clases)
 - [x] **[API]** Refactorizar métodos duplicados de claims → `Helpers/ClaimsHelper.cs`
 - [x] **[API]** Agregar HSTS y HTTPS redirect en `Startup.cs`
 - [x] **[API]** Eliminar debug logging `File.AppendAllText` (9 bloques en `Startup.cs`)
@@ -736,17 +736,17 @@ Estas tareas deben completarse antes de cualquier otro commit al repositorio:
 - [ ] **[Frontend principal]** Agregar validación de respuesta API con schema
 - [ ] **[Billing]** Migrar JWT de `localStorage` a `httpOnly` cookies
 - [x] **[Billing]** Reemplazar `alert()` por sistema de toast consistente (`useToast` + `AppToast`)
-- [ ] **[Billing]** Extraer helpers duplicados a composables compartidos
+- [x] **[Billing]** Extraer helpers duplicados a composables (`useFormatters`, `useEstados`)
 - [x] **[Billing]** Definir enums para estados de cuenta → `utils/constants.ts`
 - [x] **[Landing]** Crear `tsconfig.json` con `strict: true`
 - [x] **[Landing]** Simplificar `vite.config.ts` (39 aliases innecesarios eliminados)
-- [ ] **[Landing]** Centralizar URLs en `src/config/constants.ts`
+- [x] **[Landing]** Centralizar URLs en `src/config/constants.ts` (8 componentes actualizados)
 
 ### Fase 4 — Próximo Mes
 
-- [ ] **[API]** Implementar `IMemoryCache` o Redis para cachear configuraciones frecuentes
+- [x] **[API]** Implementar `IMemoryCache` — `ServiciosController` (TTL 2 min) + `EmpresasController` (TTL 5 min)
+- [x] **[API]** Documentar endpoints clave con XML comments y Swagger (10 acciones en 5 controllers)
 - [ ] **[API]** Pentest interno de los endpoints expuestos
-- [ ] **[API]** Auditar y documentar todos los endpoints con XML comments y Swagger
 - [ ] **[Frontend principal]** Optimizar PWA precaching
 - [ ] **[Frontend principal]** Migrar a TypeScript strict en composables
 - [ ] **[Billing]** Verificación de expiración de token en middleware de auth
@@ -979,9 +979,62 @@ Todos los cambios críticos e inmediatos fueron aplicados en los 4 proyectos en 
 | [API] Agregar HSTS y HTTPS redirect | **Completado** |
 | [API] Resolver vulnerabilidades NuGet (MailKit, MimeKit) | **Completado** |
 | [Billing] Reemplazar `alert()` por sistema de toast | **Completado** |
-| [API] Migrar logging a Serilog (reemplazar File.AppendAllText) | Pendiente Fase 4 |
-| [API] Implementar refresh tokens y token blacklist | Pendiente Fase 4 |
-| [API] Agregar `[Required]`, `[MaxLength]` a DTOs | Pendiente Fase 4 |
-| [Frontend] Migrar JWT de `localStorage` a `httpOnly` cookies | Pendiente Fase 4 |
-| [Billing] Migrar JWT de `localStorage` a `httpOnly` cookies | Pendiente Fase 4 |
-| [Landing] Centralizar URLs en `src/config/constants.ts` | Pendiente Fase 4 |
+| [API] Migrar logging a Serilog | **Completado** |
+| [API] Agregar `[Required]`, `[MaxLength]` a DTOs (109 propiedades) | **Completado** |
+| [API] IMemoryCache en ServiciosController + EmpresasController | **Completado** |
+| [API] Swagger XML docs en 5 controllers | **Completado** |
+| [Billing] Extraer helpers duplicados → `useFormatters`, `useEstados` | **Completado** |
+| [Landing] Centralizar URLs → `src/config/constants.ts` | **Completado** |
+| [API] Implementar refresh tokens y token blacklist | Pendiente |
+| [Frontend] Migrar JWT de `localStorage` a `httpOnly` cookies | Pendiente |
+| [Billing] Migrar JWT de `localStorage` a `httpOnly` cookies | Pendiente |
+
+---
+
+### Fase 3 completa + Fase 4 parcial — 29 de abril de 2026
+
+---
+
+#### SalonFlow.API — Logging, caché, validación, Swagger
+
+| Archivo | Cambio | Impacto |
+|---|---|---|
+| `SalonFlow.API.csproj` | `Serilog.AspNetCore` 8.0.3, `Serilog.Sinks.Console` 6.0.0, `Serilog.Sinks.File` 6.0.0 agregados | — |
+| `Program.cs` | Serilog configurado como host logger: Console + File (`logs/app-.log`, rolling diario, 30 días). Level `Information` en dev, `Warning` en Production/Staging. Microsoft/EF overrides a `Warning`. | Reemplaza pipeline de logging por defecto de ASP.NET |
+| `Controllers/ServiciosController.cs` | `IMemoryCache` inyectado. `GetServicios` cachea lista por `servicios:{empresaId}` con TTL 2 min. Invalidación en Post/Put/Delete. | Elimina queries redundantes en navegación frecuente |
+| `Controllers/EmpresasController.cs` | `IMemoryCache` inyectado. `GetEmpresa(id)` cachea por `empresaConfig:{id}` con TTL 5 min. Invalidación en Put/UploadLogo/DeleteLogo. | — |
+| `SalonFlow.API.csproj` | `<GenerateDocumentationFile>true</GenerateDocumentationFile>`, `<NoWarn>$(NoWarn);1591</NoWarn>` | Habilita XML docs para Swagger |
+| `Startup.cs` | `IncludeXmlComments` con `File.Exists` guard en SwaggerGen | — |
+| 5 controllers | `<summary>` XML en `AuthController` (Register, Login, ForgotPassword, ResetPassword), `EmpresasController` (GetEmpresas, GetEmpresa, PutEmpresa), `ServiciosController` (GetServicios, PostServicio), `ClientesController` (GetClientes), `TurnosController` (GetTurnos) | Documentación visible en Swagger UI |
+| 20 clases / DTOs | **109 propiedades** anotadas con `[Required]`, `[MaxLength]`, `[EmailAddress]`, `[Range]`. Clases: Cliente, Empresa, Usuario, Servicio, Turno, Insumo, Stock, SubServicio, BillingUsuario, EmpresaEnterpriseConfig, FacturaMensual, PermisoDeUsuario + DTOs de BillingSaaS, Facturación, Auth, Usuarios, Billing, Insumos, Turnos. `SuppressModelStateInvalidFilter` preservado (controllers usan validación manual). | Contratos API documentados, constraints en EF Core |
+
+---
+
+#### billingGlymm — Composables compartidos
+
+| Archivo | Cambio | Impacto |
+|---|---|---|
+| `composables/useFormatters.ts` | **Nuevo:** `formatFecha`, `formatFechaHora`, `formatMonto`, `getMesNombre` | Centraliza 9+ ocurrencias de formateo de fechas y montos |
+| `composables/useEstados.ts` | **Nuevo:** `getEstadoCuentaTexto`, `getEstadoCuentaBadgeClass`, `getEstadoFacturaBadgeClass`, `getEstadoFacturaSelectClass`, `getTipoFacturacionBadgeClass` | Centraliza lógica de badges/labels de estados |
+| `pages/empresas/index.vue` | Lógica inline reemplazada con imports de `useFormatters` + `useEstados` | — |
+| `pages/empresas/[id]/facturas.vue` | Ídem | — |
+| `pages/facturas.vue` | Ídem | — |
+| `pages/index.vue` | `formatMonto` reemplaza `toLocaleString` inline en chart ticks | — |
+| `components/EmpresaDetailsModal.vue` | Ídem | — |
+| `components/CalcularFacturasModal.vue` | `getMesNombre` importado desde `useFormatters` | — |
+
+---
+
+#### Landingproyecto — Centralización de configuración
+
+| Archivo | Cambio | Impacto |
+|---|---|---|
+| `src/config/constants.ts` | **Nuevo:** 7 grupos — `EMAILJS`, `CONTACT`, `APP_URLS`, `SOCIAL_LINKS`, `NAV_ANCHORS`, `ROUTES`, `UNSPLASH_IMAGES`, `SECTION_IDS` | Single source of truth para todas las URLs y strings de config |
+| `src/components/Contact.tsx` | Env vars de EmailJS + email/phone → `EMAILJS.*`, `CONTACT.*` | — |
+| `src/components/Footer.tsx` | Instagram/TikTok URLs + nav hrefs → `SOCIAL_LINKS.*`, `NAV_ANCHORS.*`, `ROUTES.*` | — |
+| `src/components/Navbar.tsx` | App URL + nav hrefs → `APP_URLS.*`, `NAV_ANCHORS.*` | — |
+| `src/components/Hero.tsx` | App URL, hrefs, DOM ID, imagen → constantes | — |
+| `src/components/Sobre.tsx` | App URL × 2, nav hrefs → constantes | — |
+| `src/components/Benefits.tsx` | 4 URLs de imágenes Unsplash → `UNSPLASH_IMAGES.*` | — |
+| `src/components/TerminosCondiciones.tsx` | `mailto:` × 7, email texto × 7, route privacidad → constantes | — |
+| `src/components/Privacidad.tsx` | `mailto:` × 4, email texto × 4, route términos → constantes | — |
