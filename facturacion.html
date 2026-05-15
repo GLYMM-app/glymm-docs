@@ -1,0 +1,1379 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentación y guías de ayuda para GLYMM - Sistema de gestión para salón de extensiones">
+      
+      
+        <meta name="author" content="GLYMM Team">
+      
+      
+        <link rel="canonical" href="https://docs.glymm.com/facturacion.html">
+      
+      
+        <link rel="prev" href="stock.html">
+      
+      
+        <link rel="next" href="usuarios.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Facturación - GLYMM - Centro de Ayuda</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="stylesheet" href="https://docs.glymm.com//css/custom.css">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#facturacion-y-reportes" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="GLYMM - Centro de Ayuda" class="md-header__button md-logo" aria-label="GLYMM - Centro de Ayuda" data-md-component="logo">
+      
+  <img src="assets/glymm.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GLYMM - Centro de Ayuda
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Facturación
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="GLYMM - Centro de Ayuda" class="md-nav__button md-logo" aria-label="GLYMM - Centro de Ayuda" data-md-component="logo">
+      
+  <img src="assets/glymm.svg" alt="logo">
+
+    </a>
+    GLYMM - Centro de Ayuda
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guías
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guías
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clientes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clientes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="turnos.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Turnos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="servicios.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Servicios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="insumos.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Insumos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stock.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stock
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Facturación
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="facturacion.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Facturación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acceso-a-facturacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acceso a Facturación
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Acceso a Facturación">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#requisitos-de-permisos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requisitos de Permisos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#selector-de-periodo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Selector de Período
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selector de Período">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#periodos-disponibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Períodos Disponibles
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usar-rango-personalizado" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usar Rango Personalizado
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tarjetas-de-resumen" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tarjetas de Resumen
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tarjetas de Resumen">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#total-ingresos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Total Ingresos 💰
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adelantos-recibidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adelantos Recibidos 💵
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#turnos-realizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Turnos Realizados ✅
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#turnos-pendientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Turnos Pendientes ⏳
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#turnos-cancelados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Turnos Cancelados ❌
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#graficos-y-visualizaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráficos y Visualizaciones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gráficos y Visualizaciones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-evolucion-de-ingresos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Evolución de Ingresos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#grafico-de-servicios-mas-vendidos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gráfico de Servicios Más Vendidos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analisis-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Análisis de Datos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Análisis de Datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#interpretacion-de-metricas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Interpretación de Métricas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exportacion-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exportación de Datos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mejores-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mejores Prácticas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mejores Prácticas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recomendaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Recomendaciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evita" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❌ Evita
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-frecuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas Frecuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analisis-de-rentabilidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Análisis de Rentabilidad
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Análisis de Rentabilidad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#servicios-mas-rentables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Servicios Más Rentables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tendencias-temporales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tendencias Temporales
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#planificacion-financiera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planificación Financiera
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Planificación Financiera">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usar-adelantos-para-planificacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usar Adelantos para Planificación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analisis-de-estados-de-turnos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Análisis de Estados de Turnos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="usuarios.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Usuarios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuracion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="permisos.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permisos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Soporte
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Soporte
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faq.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preguntas Frecuentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="solucion-de-problemas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Solución de problemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desarrollo
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Desarrollo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GUIA-ESTILO.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía de Estilo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="facturacion-y-reportes">Facturación y Reportes<a class="headerlink" href="#facturacion-y-reportes" title="Permanent link">&para;</a></h1>
+<h2 id="introduccion">Introducción<a class="headerlink" href="#introduccion" title="Permanent link">&para;</a></h2>
+<p>La sección de Facturación te permite visualizar ingresos, estadísticas y reportes financieros de tu negocio. En esta guía aprenderás a usar todas las herramientas de análisis disponibles.</p>
+<hr />
+<h2 id="acceso-a-facturacion">Acceso a Facturación<a class="headerlink" href="#acceso-a-facturacion" title="Permanent link">&para;</a></h2>
+<h3 id="requisitos-de-permisos">Requisitos de Permisos<a class="headerlink" href="#requisitos-de-permisos" title="Permanent link">&para;</a></h3>
+<p>Para acceder a la sección de Facturación, necesitas tener el permiso correspondiente asignado por un administrador.</p>
+<p>Si no tienes acceso, verás un mensaje indicando que debes contactar a un administrador.</p>
+<hr />
+<h2 id="selector-de-periodo">Selector de Período<a class="headerlink" href="#selector-de-periodo" title="Permanent link">&para;</a></h2>
+<p>GLYMM te permite analizar tus datos en diferentes períodos de tiempo:</p>
+<h3 id="periodos-disponibles">Períodos Disponibles<a class="headerlink" href="#periodos-disponibles" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Hoy:</strong> Datos del día actual</li>
+<li><strong>Esta semana:</strong> Datos de la semana actual (lunes a domingo)</li>
+<li><strong>Este mes:</strong> Datos del mes actual</li>
+<li><strong>Rango personalizado:</strong> Selecciona fechas específicas</li>
+</ul>
+<h3 id="usar-rango-personalizado">Usar Rango Personalizado<a class="headerlink" href="#usar-rango-personalizado" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Haz clic en el botón <strong>Rango personalizado</strong></li>
+<li>Selecciona la fecha de inicio en el primer campo</li>
+<li>Selecciona la fecha de fin en el segundo campo</li>
+<li>Los datos se actualizarán automáticamente</li>
+</ol>
+<hr />
+<h2 id="tarjetas-de-resumen">Tarjetas de Resumen<a class="headerlink" href="#tarjetas-de-resumen" title="Permanent link">&para;</a></h2>
+<p>La sección de facturación muestra tarjetas con información clave:</p>
+<h3 id="total-ingresos">Total Ingresos 💰<a class="headerlink" href="#total-ingresos" title="Permanent link">&para;</a></h3>
+<p>Muestra la suma total de ingresos en el período seleccionado, incluyendo:
+- Ingresos de turnos realizados
+- Servicios extras
+- Menos descuentos aplicados</p>
+<h3 id="adelantos-recibidos">Adelantos Recibidos 💵<a class="headerlink" href="#adelantos-recibidos" title="Permanent link">&para;</a></h3>
+<p>Muestra el total de adelantos recibidos en el período seleccionado.</p>
+<h3 id="turnos-realizados">Turnos Realizados ✅<a class="headerlink" href="#turnos-realizados" title="Permanent link">&para;</a></h3>
+<p>Cantidad total de turnos marcados como "Realizado" en el período.</p>
+<h3 id="turnos-pendientes">Turnos Pendientes ⏳<a class="headerlink" href="#turnos-pendientes" title="Permanent link">&para;</a></h3>
+<p>Cantidad de turnos que están en estado "Pendiente" en el período.</p>
+<h3 id="turnos-cancelados">Turnos Cancelados ❌<a class="headerlink" href="#turnos-cancelados" title="Permanent link">&para;</a></h3>
+<p>Cantidad de turnos que fueron cancelados en el período.</p>
+<hr />
+<h2 id="graficos-y-visualizaciones">Gráficos y Visualizaciones<a class="headerlink" href="#graficos-y-visualizaciones" title="Permanent link">&para;</a></h2>
+<p>GLYMM incluye gráficos interactivos para analizar tus datos:</p>
+<h3 id="grafico-de-evolucion-de-ingresos">Gráfico de Evolución de Ingresos<a class="headerlink" href="#grafico-de-evolucion-de-ingresos" title="Permanent link">&para;</a></h3>
+<p>Muestra la evolución de tus ingresos a lo largo del tiempo en el período seleccionado.</p>
+<p><strong>Características:</strong>
+- Visualización por día, semana o mes según el período
+- Línea de tendencia
+- Puntos de datos interactivos</p>
+<h3 id="grafico-de-servicios-mas-vendidos">Gráfico de Servicios Más Vendidos<a class="headerlink" href="#grafico-de-servicios-mas-vendidos" title="Permanent link">&para;</a></h3>
+<p>Muestra qué servicios son los más populares en el período seleccionado.</p>
+<p><strong>Características:</strong>
+- Ranking de servicios
+- Cantidad de veces vendidos
+- Visualización clara y comparativa</p>
+<hr />
+<h2 id="analisis-de-datos">Análisis de Datos<a class="headerlink" href="#analisis-de-datos" title="Permanent link">&para;</a></h2>
+<h3 id="interpretacion-de-metricas">Interpretación de Métricas<a class="headerlink" href="#interpretacion-de-metricas" title="Permanent link">&para;</a></h3>
+<p><strong>Total Ingresos:</strong>
+- Suma de todos los ingresos generados
+- Incluye servicios principales y extras
+- Excluye adelantos (se muestran por separado)
+- Aplica descuentos</p>
+<p><strong>Adelantos Recibidos:</strong>
+- Monto total de adelantos registrados
+- Útil para planificación de flujo de caja
+- No se incluye en el total de ingresos (ya están contabilizados en los turnos)</p>
+<p><strong>Turnos por Estado:</strong>
+- <strong>Realizados:</strong> Turnos completados exitosamente
+- <strong>Pendientes:</strong> Turnos programados pero aún no realizados
+- <strong>Cancelados:</strong> Turnos que fueron cancelados</p>
+<hr />
+<h2 id="exportacion-de-datos">Exportación de Datos<a class="headerlink" href="#exportacion-de-datos" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Funcionalidad Futura</p>
+<p>Las opciones de exportación a Excel o PDF pueden estar en desarrollo. Consulta las actualizaciones del sistema.</p>
+</div>
+<hr />
+<h2 id="mejores-practicas">Mejores Prácticas<a class="headerlink" href="#mejores-practicas" title="Permanent link">&para;</a></h2>
+<h3 id="recomendaciones">✅ Recomendaciones<a class="headerlink" href="#recomendaciones" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Revisa la facturación regularmente (diario, semanal, mensual)</li>
+<li>Compara períodos para identificar tendencias</li>
+<li>Analiza qué servicios son más rentables</li>
+<li>Monitorea los adelantos recibidos</li>
+<li>Usa rangos personalizados para análisis específicos</li>
+</ul>
+<h3 id="evita">❌ Evita<a class="headerlink" href="#evita" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Ignorar los reportes por períodos largos</li>
+<li>No revisar los servicios más vendidos</li>
+<li>Olvidar considerar los adelantos en la planificación</li>
+</ul>
+<hr />
+<h2 id="preguntas-frecuentes">Preguntas Frecuentes<a class="headerlink" href="#preguntas-frecuentes" title="Permanent link">&para;</a></h2>
+<p><strong>¿Los adelantos se incluyen en el total de ingresos?</strong>
+No, los adelantos se muestran por separado. El total de ingresos incluye los turnos completados, y los adelantos ya están contabilizados en esos turnos.</p>
+<p><strong>¿Puedo ver datos de períodos anteriores?</strong>
+Sí, usa el selector de "Rango personalizado" para seleccionar cualquier período de fechas.</p>
+<p><strong>¿Los turnos cancelados afectan los ingresos?</strong>
+No, los turnos cancelados no se incluyen en el cálculo de ingresos. Solo se muestran para estadísticas.</p>
+<p><strong>¿Cómo interpreto el gráfico de servicios más vendidos?</strong>
+El gráfico muestra qué servicios se vendieron más veces en el período seleccionado. Úsalo para identificar tus servicios estrella.</p>
+<p><strong>¿Puedo exportar los datos?</strong>
+Consulta las actualizaciones del sistema para funcionalidades de exportación.</p>
+<p><strong>¿Los descuentos se reflejan en los ingresos?</strong>
+Sí, el total de ingresos ya tiene aplicados los descuentos. Es el ingreso neto después de descuentos.</p>
+<hr />
+<h2 id="analisis-de-rentabilidad">Análisis de Rentabilidad<a class="headerlink" href="#analisis-de-rentabilidad" title="Permanent link">&para;</a></h2>
+<h3 id="servicios-mas-rentables">Servicios Más Rentables<a class="headerlink" href="#servicios-mas-rentables" title="Permanent link">&para;</a></h3>
+<p>Usa el gráfico de servicios más vendidos junto con los precios para identificar:
+- Servicios con mayor volumen de ventas
+- Servicios con mejor margen de ganancia
+- Oportunidades de promoción</p>
+<h3 id="tendencias-temporales">Tendencias Temporales<a class="headerlink" href="#tendencias-temporales" title="Permanent link">&para;</a></h3>
+<p>El gráfico de evolución te ayuda a identificar:
+- Días/semanas/meses con mayor facturación
+- Patrones estacionales
+- Tendencias de crecimiento o decrecimiento</p>
+<hr />
+<h2 id="planificacion-financiera">Planificación Financiera<a class="headerlink" href="#planificacion-financiera" title="Permanent link">&para;</a></h2>
+<h3 id="usar-adelantos-para-planificacion">Usar Adelantos para Planificación<a class="headerlink" href="#usar-adelantos-para-planificacion" title="Permanent link">&para;</a></h3>
+<p>Los adelantos recibidos te ayudan a:
+- Planificar el flujo de caja
+- Identificar ingresos futuros
+- Gestionar mejor las finanzas</p>
+<h3 id="analisis-de-estados-de-turnos">Análisis de Estados de Turnos<a class="headerlink" href="#analisis-de-estados-de-turnos" title="Permanent link">&para;</a></h3>
+<p>Monitorea los turnos pendientes para:
+- Estimar ingresos futuros
+- Planificar recursos necesarios
+- Identificar oportunidades de optimización</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.tracking", "navigation.expand", "toc.integrate", "content.code.copy", "content.code.select", "content.tooltips", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

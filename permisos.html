@@ -1,0 +1,1493 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentación y guías de ayuda para GLYMM - Sistema de gestión para salón de extensiones">
+      
+      
+        <meta name="author" content="GLYMM Team">
+      
+      
+        <link rel="canonical" href="https://docs.glymm.com/permisos.html">
+      
+      
+        <link rel="prev" href="configuracion.html">
+      
+      
+        <link rel="next" href="faq.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Permisos - GLYMM - Centro de Ayuda</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="stylesheet" href="https://docs.glymm.com//css/custom.css">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gestion-de-permisos" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="GLYMM - Centro de Ayuda" class="md-header__button md-logo" aria-label="GLYMM - Centro de Ayuda" data-md-component="logo">
+      
+  <img src="assets/glymm.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GLYMM - Centro de Ayuda
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Permisos
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="GLYMM - Centro de Ayuda" class="md-nav__button md-logo" aria-label="GLYMM - Centro de Ayuda" data-md-component="logo">
+      
+  <img src="assets/glymm.svg" alt="logo">
+
+    </a>
+    GLYMM - Centro de Ayuda
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guías
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guías
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clientes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clientes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="turnos.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Turnos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="servicios.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Servicios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="insumos.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Insumos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stock.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stock
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="facturacion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Facturación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="usuarios.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Usuarios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuracion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permisos
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="permisos.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permisos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#acceso-a-permisos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acceso a Permisos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vista-de-permisos-disponibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vista de Permisos Disponibles
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Vista de Permisos Disponibles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#modulos-de-permisos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Módulos de Permisos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#expandircontraer-modulos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Expandir/Contraer Módulos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asignar-permisos-a-un-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Asignar Permisos a un Usuario
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Asignar Permisos a un Usuario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#seleccionar-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seleccionar Usuario
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#asignar-un-permiso" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Asignar un Permiso
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ver-permisos-del-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ver Permisos del Usuario
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quitar-permisos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quitar Permisos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-permisos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipos de Permisos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de Permisos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#permisos-por-accion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permisos por Acción
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permisos-especiales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permisos Especiales
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#administradores-vs-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Administradores vs Usuarios
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Administradores vs Usuarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#administradores" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Administradores
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usuarios-regulares" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usuarios Regulares
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestion-de-permisos-desde-usuarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestión de Permisos desde Usuarios
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mejores-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mejores Prácticas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mejores Prácticas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recomendaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Recomendaciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evita" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❌ Evita
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#roles-comunes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Roles Comunes
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Roles Comunes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recepcionista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Recepcionista
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profesionalestilista" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Profesional/Estilista
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gerenteadministrador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gerente/Administrador
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-frecuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas Frecuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seguridad-y-permisos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seguridad y Permisos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Seguridad y Permisos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#principio-de-menor-privilegio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Principio de Menor Privilegio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revision-periodica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Revisión Periódica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#permisos-sensibles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permisos Sensibles
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucion-de-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solución de Problemas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solución de Problemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usuario-no-puede-acceder-a-una-seccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usuario no puede acceder a una sección
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usuario-tiene-demasiados-permisos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Usuario tiene demasiados permisos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integracion-con-otros-modulos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integración con Otros Módulos
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Soporte
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Soporte
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faq.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preguntas Frecuentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="solucion-de-problemas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Solución de problemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desarrollo
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Desarrollo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GUIA-ESTILO.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía de Estilo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="gestion-de-permisos">Gestión de Permisos<a class="headerlink" href="#gestion-de-permisos" title="Permanent link">&para;</a></h1>
+<h2 id="introduccion">Introducción<a class="headerlink" href="#introduccion" title="Permanent link">&para;</a></h2>
+<p>Los permisos controlan qué secciones y funciones puede ver y usar cada usuario en GLYMM. En esta guía aprenderás a gestionar permisos de forma detallada.</p>
+<hr />
+<h2 id="acceso-a-permisos">Acceso a Permisos<a class="headerlink" href="#acceso-a-permisos" title="Permanent link">&para;</a></h2>
+<p>La sección de Permisos está disponible desde el menú principal. Solo los administradores pueden gestionar permisos.</p>
+<hr />
+<h2 id="vista-de-permisos-disponibles">Vista de Permisos Disponibles<a class="headerlink" href="#vista-de-permisos-disponibles" title="Permanent link">&para;</a></h2>
+<p>La sección muestra todos los permisos disponibles en el sistema, organizados por módulos:</p>
+<h3 id="modulos-de-permisos">Módulos de Permisos<a class="headerlink" href="#modulos-de-permisos" title="Permanent link">&para;</a></h3>
+<p>Los permisos están agrupados por módulos del sistema:
+- <strong>Clientes:</strong> Gestión de clientas
+- <strong>Turnos:</strong> Gestión de turnos
+- <strong>Servicios:</strong> Gestión de servicios
+- <strong>Insumos:</strong> Gestión de insumos
+- <strong>Facturación:</strong> Acceso a reportes financieros
+- <strong>Usuarios:</strong> Gestión de usuarios
+- <strong>Configuración:</strong> Configuración del sistema
+- <strong>Stock:</strong> Gestión de inventario
+- Y más según las actualizaciones del sistema</p>
+<h3 id="expandircontraer-modulos">Expandir/Contraer Módulos<a class="headerlink" href="#expandircontraer-modulos" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Haz clic en el nombre del módulo para expandirlo</li>
+<li>Verás todas las acciones disponibles en ese módulo</li>
+<li>Haz clic nuevamente para contraerlo</li>
+</ol>
+<hr />
+<h2 id="asignar-permisos-a-un-usuario">Asignar Permisos a un Usuario<a class="headerlink" href="#asignar-permisos-a-un-usuario" title="Permanent link">&para;</a></h2>
+<h3 id="seleccionar-usuario">Seleccionar Usuario<a class="headerlink" href="#seleccionar-usuario" title="Permanent link">&para;</a></h3>
+<ol>
+<li>En la parte superior, selecciona el usuario de la lista desplegable</li>
+<li>Se mostrarán los permisos actuales del usuario</li>
+<li>Aparecerá el botón <strong>+ Asignar Permiso</strong></li>
+</ol>
+<h3 id="asignar-un-permiso">Asignar un Permiso<a class="headerlink" href="#asignar-un-permiso" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Haz clic en <strong>+ Asignar Permiso</strong></li>
+<li>Se abrirá un modal con todos los permisos disponibles</li>
+<li>Los permisos están organizados por módulos</li>
+<li>Selecciona el permiso que deseas asignar</li>
+<li>Haz clic en <strong>Asignar</strong></li>
+</ol>
+<h3 id="ver-permisos-del-usuario">Ver Permisos del Usuario<a class="headerlink" href="#ver-permisos-del-usuario" title="Permanent link">&para;</a></h3>
+<p>Una vez seleccionado un usuario, verás:
+- <strong>Permisos de [Nombre Usuario]:</strong> Lista de permisos asignados
+- Permisos organizados por módulos
+- Opción para quitar permisos individuales</p>
+<hr />
+<h2 id="quitar-permisos">Quitar Permisos<a class="headerlink" href="#quitar-permisos" title="Permanent link">&para;</a></h2>
+<p>Para quitar un permiso de un usuario:</p>
+<ol>
+<li>Selecciona el usuario de la lista desplegable</li>
+<li>Expande el módulo que contiene el permiso</li>
+<li>Haz clic en <strong>Quitar</strong> junto al permiso que deseas eliminar</li>
+<li>El permiso se quitará inmediatamente</li>
+</ol>
+<hr />
+<h2 id="tipos-de-permisos">Tipos de Permisos<a class="headerlink" href="#tipos-de-permisos" title="Permanent link">&para;</a></h2>
+<h3 id="permisos-por-accion">Permisos por Acción<a class="headerlink" href="#permisos-por-accion" title="Permanent link">&para;</a></h3>
+<p>Cada módulo puede tener diferentes tipos de acciones:</p>
+<ul>
+<li><strong>Ver/Leer:</strong> Permite ver información pero no modificarla</li>
+<li><strong>Crear:</strong> Permite crear nuevos registros</li>
+<li><strong>Editar:</strong> Permite modificar registros existentes</li>
+<li><strong>Eliminar:</strong> Permite eliminar registros</li>
+</ul>
+<h3 id="permisos-especiales">Permisos Especiales<a class="headerlink" href="#permisos-especiales" title="Permanent link">&para;</a></h3>
+<p>Algunos módulos pueden tener permisos especiales:
+- <strong>Facturación:</strong> Acceso a reportes financieros
+- <strong>Configuración:</strong> Modificar configuraciones del sistema
+- <strong>Usuarios:</strong> Gestionar otros usuarios</p>
+<hr />
+<h2 id="administradores-vs-usuarios">Administradores vs Usuarios<a class="headerlink" href="#administradores-vs-usuarios" title="Permanent link">&para;</a></h2>
+<h3 id="administradores">Administradores<a class="headerlink" href="#administradores" title="Permanent link">&para;</a></h3>
+<p>Los usuarios marcados como "Administrador" tienen:
+- Acceso completo a todas las secciones
+- Todos los permisos automáticamente
+- No necesitan permisos individuales asignados</p>
+<h3 id="usuarios-regulares">Usuarios Regulares<a class="headerlink" href="#usuarios-regulares" title="Permanent link">&para;</a></h3>
+<p>Los usuarios que NO son administradores:
+- Solo tienen acceso a secciones con permisos asignados
+- Deben tener permisos específicos para cada acción
+- No pueden acceder a secciones sin permisos</p>
+<hr />
+<h2 id="gestion-de-permisos-desde-usuarios">Gestión de Permisos desde Usuarios<a class="headerlink" href="#gestion-de-permisos-desde-usuarios" title="Permanent link">&para;</a></h2>
+<p>También puedes gestionar permisos desde la sección <strong>Usuarios</strong>:</p>
+<ol>
+<li>Ve a <strong>Usuarios</strong></li>
+<li>Crea o edita un usuario</li>
+<li>Si el usuario NO es administrador, verás la sección de Permisos</li>
+<li>Expande los módulos y marca los permisos deseados</li>
+<li>Los permisos se guardan al guardar el usuario</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Dos Formas de Gestionar</p>
+<p>Puedes gestionar permisos desde la sección de Permisos (vista detallada) o desde la sección de Usuarios (al crear/editar). Ambas formas son equivalentes.</p>
+</div>
+<hr />
+<h2 id="mejores-practicas">Mejores Prácticas<a class="headerlink" href="#mejores-practicas" title="Permanent link">&para;</a></h2>
+<h3 id="recomendaciones">✅ Recomendaciones<a class="headerlink" href="#recomendaciones" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Asigna solo los permisos necesarios (principio de menor privilegio)</li>
+<li>Revisa periódicamente los permisos de los usuarios</li>
+<li>Organiza los permisos por roles (ej: "Recepcionista", "Profesional", "Gerente")</li>
+<li>Documenta qué permisos tiene cada rol</li>
+<li>Actualiza permisos cuando cambian las responsabilidades</li>
+</ul>
+<h3 id="evita">❌ Evita<a class="headerlink" href="#evita" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Asignar permisos de administrador innecesariamente</li>
+<li>Dar acceso a facturación a usuarios que no lo necesitan</li>
+<li>Olvidar quitar permisos cuando un usuario cambia de rol</li>
+<li>Asignar todos los permisos "por si acaso"</li>
+</ul>
+<hr />
+<h2 id="roles-comunes">Roles Comunes<a class="headerlink" href="#roles-comunes" title="Permanent link">&para;</a></h2>
+<h3 id="recepcionista">Recepcionista<a class="headerlink" href="#recepcionista" title="Permanent link">&para;</a></h3>
+<p>Permisos típicos:
+- Ver, Crear, Editar Clientes
+- Ver, Crear, Editar Turnos
+- Ver Servicios
+- Ver Insumos</p>
+<h3 id="profesionalestilista">Profesional/Estilista<a class="headerlink" href="#profesionalestilista" title="Permanent link">&para;</a></h3>
+<p>Permisos típicos:
+- Ver Clientes
+- Ver, Editar Turnos (solo los asignados)
+- Ver Servicios
+- Marcar turnos como Realizados</p>
+<h3 id="gerenteadministrador">Gerente/Administrador<a class="headerlink" href="#gerenteadministrador" title="Permanent link">&para;</a></h3>
+<p>Permisos típicos:
+- Todos los permisos
+- Acceso a Facturación
+- Gestión de Usuarios
+- Configuración</p>
+<hr />
+<h2 id="preguntas-frecuentes">Preguntas Frecuentes<a class="headerlink" href="#preguntas-frecuentes" title="Permanent link">&para;</a></h2>
+<p><strong>¿Puedo asignar permisos a un administrador?</strong>
+No es necesario. Los administradores tienen todos los permisos automáticamente.</p>
+<p><strong>¿Qué pasa si quito todos los permisos de un usuario?</strong>
+El usuario no podrá acceder a ninguna sección del sistema (excepto su perfil básico).</p>
+<p><strong>¿Puedo asignar permisos a múltiples usuarios a la vez?</strong>
+Actualmente, debes asignar permisos usuario por usuario. Consulta las actualizaciones para funcionalidades de asignación masiva.</p>
+<p><strong>¿Los permisos se aplican inmediatamente?</strong>
+Sí, los cambios en permisos se aplican de inmediato. El usuario puede necesitar refrescar la página o cerrar sesión y volver a iniciar.</p>
+<p><strong>¿Puedo ver qué permisos tiene un usuario sin entrar a la sección de Permisos?</strong>
+Sí, en la sección de Usuarios puedes ver si un usuario es administrador o tiene permisos específicos.</p>
+<p><strong>¿Hay permisos que no puedo quitar?</strong>
+Los administradores siempre tienen todos los permisos. Para usuarios regulares, puedes quitar cualquier permiso.</p>
+<p><strong>¿Cómo sé qué permisos necesita un usuario?</strong>
+Depende del rol y responsabilidades del usuario. Consulta la sección "Roles Comunes" arriba para ejemplos.</p>
+<hr />
+<h2 id="seguridad-y-permisos">Seguridad y Permisos<a class="headerlink" href="#seguridad-y-permisos" title="Permanent link">&para;</a></h2>
+<h3 id="principio-de-menor-privilegio">Principio de Menor Privilegio<a class="headerlink" href="#principio-de-menor-privilegio" title="Permanent link">&para;</a></h3>
+<p>Asigna solo los permisos mínimos necesarios para que el usuario realice su trabajo. Esto mejora la seguridad del sistema.</p>
+<h3 id="revision-periodica">Revisión Periódica<a class="headerlink" href="#revision-periodica" title="Permanent link">&para;</a></h3>
+<p>Revisa regularmente los permisos de los usuarios para:
+- Asegurar que siguen siendo apropiados
+- Quitar permisos que ya no se necesitan
+- Agregar permisos cuando cambian las responsabilidades</p>
+<h3 id="permisos-sensibles">Permisos Sensibles<a class="headerlink" href="#permisos-sensibles" title="Permanent link">&para;</a></h3>
+<p>Algunos permisos son más sensibles que otros:
+- <strong>Facturación:</strong> Acceso a información financiera
+- <strong>Usuarios:</strong> Puede crear/modificar otros usuarios
+- <strong>Configuración:</strong> Puede cambiar configuraciones del sistema</p>
+<p>Asigna estos permisos con cuidado y solo a usuarios de confianza.</p>
+<hr />
+<h2 id="solucion-de-problemas">Solución de Problemas<a class="headerlink" href="#solucion-de-problemas" title="Permanent link">&para;</a></h2>
+<h3 id="usuario-no-puede-acceder-a-una-seccion">Usuario no puede acceder a una sección<a class="headerlink" href="#usuario-no-puede-acceder-a-una-seccion" title="Permanent link">&para;</a></h3>
+<p><strong>Verifica:</strong>
+1. Que el usuario tenga el permiso correspondiente asignado
+2. Que el usuario no haya sido eliminado
+3. Que el permiso esté activo</p>
+<p><strong>Solución:</strong>
+1. Ve a la sección de Permisos
+2. Selecciona el usuario
+3. Asigna el permiso necesario</p>
+<h3 id="usuario-tiene-demasiados-permisos">Usuario tiene demasiados permisos<a class="headerlink" href="#usuario-tiene-demasiados-permisos" title="Permanent link">&para;</a></h3>
+<p><strong>Solución:</strong>
+1. Ve a la sección de Permisos
+2. Selecciona el usuario
+3. Quita los permisos innecesarios</p>
+<hr />
+<h2 id="integracion-con-otros-modulos">Integración con Otros Módulos<a class="headerlink" href="#integracion-con-otros-modulos" title="Permanent link">&para;</a></h2>
+<p>Los permisos afectan el acceso a:
+- <strong>Clientes:</strong> Ver, crear, editar, eliminar clientas
+- <strong>Turnos:</strong> Ver, crear, editar, eliminar turnos
+- <strong>Servicios:</strong> Gestionar catálogo de servicios
+- <strong>Facturación:</strong> Ver reportes e ingresos
+- <strong>Usuarios:</strong> Gestionar otros usuarios
+- <strong>Configuración:</strong> Modificar configuraciones</p>
+<p>Asegúrate de asignar los permisos correctos según las necesidades de cada usuario.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.tracking", "navigation.expand", "toc.integrate", "content.code.copy", "content.code.select", "content.tooltips", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

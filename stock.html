@@ -1,0 +1,1581 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentación y guías de ayuda para GLYMM - Sistema de gestión para salón de extensiones">
+      
+      
+        <meta name="author" content="GLYMM Team">
+      
+      
+        <link rel="canonical" href="https://docs.glymm.com/stock.html">
+      
+      
+        <link rel="prev" href="insumos.html">
+      
+      
+        <link rel="next" href="facturacion.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Stock - GLYMM - Centro de Ayuda</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <link rel="stylesheet" href="https://docs.glymm.com//css/custom.css">
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#gestion-de-stock" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="index.html" title="GLYMM - Centro de Ayuda" class="md-header__button md-logo" aria-label="GLYMM - Centro de Ayuda" data-md-component="logo">
+      
+  <img src="assets/glymm.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            GLYMM - Centro de Ayuda
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Stock
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="Modo oscuro"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Modo oscuro" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="pink" data-md-color-accent="pink"  aria-label="Modo claro"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Modo claro" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="GLYMM - Centro de Ayuda" class="md-nav__button md-logo" aria-label="GLYMM - Centro de Ayuda" data-md-component="logo">
+      
+  <img src="assets/glymm.svg" alt="logo">
+
+    </a>
+    GLYMM - Centro de Ayuda
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guías
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Guías
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="clientes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Clientes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="turnos.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Turnos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="servicios.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Servicios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="insumos.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Insumos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stock
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="stock.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stock
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introducción
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-un-nuevo-item-de-stock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crear un Nuevo Item de Stock
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Crear un Nuevo Item de Stock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pasos-para-crear-un-item" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pasos para crear un item:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editar-un-item-de-stock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editar un Item de Stock
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eliminar-un-item-de-stock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Eliminar un Item de Stock
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#busqueda-de-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Búsqueda de Items
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vista-de-lista-de-stock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Vista de Lista de Stock
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alertas-de-stock-bajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Alertas de Stock Bajo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Alertas de Stock Bajo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indicadores-visuales" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Indicadores Visuales
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configurar-punto-de-reposicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configurar Punto de Reposición
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#campos-de-stock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Campos de Stock
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Campos de Stock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipo-de-extension" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tipo de Extensión
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cantidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cantidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proveedor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proveedor
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#punto-de-reposicion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Punto de Reposición
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestion-de-inventario" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gestión de Inventario
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestión de Inventario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actualizar-cantidad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actualizar Cantidad
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoreo-regular" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitoreo Regular
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mejores-practicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mejores Prácticas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mejores Prácticas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recomendaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ Recomendaciones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evita" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ❌ Evita
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#organizacion-del-stock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organización del Stock
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Organización del Stock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#por-tipo-de-producto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por Tipo de Producto
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#por-proveedor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Por Proveedor
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preguntas-frecuentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Preguntas Frecuentes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integracion-con-otros-modulos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integración con Otros Módulos
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reportes-de-stock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reportes de Stock
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reportes de Stock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analisis-manual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Análisis Manual
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#planificacion-de-compras" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Planificación de Compras
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solucion-de-problemas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solución de Problemas
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Solución de Problemas">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-veo-alertas-de-stock-bajo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        No veo alertas de stock bajo
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#la-cantidad-no-se-actualiza" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        La cantidad no se actualiza
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mantenimiento-del-stock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mantenimiento del Stock
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mantenimiento del Stock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inventario-fisico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inventario Físico
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actualizacion-continua" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Actualización Continua
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="facturacion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Facturación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="usuarios.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Usuarios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="configuracion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Configuración
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="permisos.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Permisos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Soporte
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Soporte
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faq.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Preguntas Frecuentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="solucion-de-problemas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Solución de problemas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Desarrollo
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Desarrollo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GUIA-ESTILO.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guía de Estilo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="gestion-de-stock">Gestión de Stock<a class="headerlink" href="#gestion-de-stock" title="Permanent link">&para;</a></h1>
+<h2 id="introduccion">Introducción<a class="headerlink" href="#introduccion" title="Permanent link">&para;</a></h2>
+<p>El módulo de Stock te permite gestionar el inventario de extensiones y productos de tu salón. En esta guía aprenderás a registrar, monitorear y gestionar tu stock con alertas de reposición.</p>
+<hr />
+<h2 id="crear-un-nuevo-item-de-stock">Crear un Nuevo Item de Stock<a class="headerlink" href="#crear-un-nuevo-item-de-stock" title="Permanent link">&para;</a></h2>
+<h3 id="pasos-para-crear-un-item">Pasos para crear un item:<a class="headerlink" href="#pasos-para-crear-un-item" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Dirígete a la sección <strong>Stock</strong> desde el menú principal</li>
+<li>Haz clic en el botón <strong>+ Nuevo Item</strong></li>
+<li>Completa los siguientes campos:</li>
+</ol>
+<h4 id="campos-obligatorios">Campos Obligatorios<a class="headerlink" href="#campos-obligatorios" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Tipo de Extensión:</strong> Nombre o tipo del producto (requerido)</li>
+<li><strong>Cantidad:</strong> Cantidad actual en stock (requerido)</li>
+<li><strong>Punto de Reposición:</strong> Cantidad mínima antes de necesitar reabastecer (requerido)</li>
+</ul>
+<h4 id="campos-opcionales">Campos Opcionales<a class="headerlink" href="#campos-opcionales" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p><strong>Proveedor:</strong> Nombre del proveedor del producto</p>
+</li>
+<li>
+<p>Haz clic en <strong>Guardar</strong></p>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Punto de Reposición</p>
+<p>El punto de reposición es la cantidad mínima que debes tener antes de necesitar hacer un nuevo pedido. Cuando la cantidad baja a este nivel, el item se marcará con alerta de stock bajo.</p>
+</div>
+<hr />
+<h2 id="editar-un-item-de-stock">Editar un Item de Stock<a class="headerlink" href="#editar-un-item-de-stock" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Busca el item en la lista</li>
+<li>Haz clic en el botón <strong>✎ Editar</strong></li>
+<li>Actualiza la información necesaria:</li>
+<li>Cantidad actual</li>
+<li>Punto de reposición</li>
+<li>Proveedor</li>
+<li>Tipo de extensión</li>
+<li>Haz clic en <strong>Guardar cambios</strong></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Actualización de Cantidad</p>
+<p>Actualiza la cantidad regularmente cuando recibas nuevos productos o uses materiales del stock.</p>
+</div>
+<hr />
+<h2 id="eliminar-un-item-de-stock">Eliminar un Item de Stock<a class="headerlink" href="#eliminar-un-item-de-stock" title="Permanent link">&para;</a></h2>
+<p>Para eliminar un item:</p>
+<ol>
+<li>Busca el item en la lista</li>
+<li>Haz clic en el botón <strong>🗑 Eliminar</strong></li>
+<li>Confirma la eliminación</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Atención</p>
+<p>La eliminación es permanente. Asegúrate de que realmente deseas eliminar el item antes de confirmar.</p>
+</div>
+<hr />
+<h2 id="busqueda-de-items">Búsqueda de Items<a class="headerlink" href="#busqueda-de-items" title="Permanent link">&para;</a></h2>
+<p>Escribe cualquier parte del tipo de extensión en la barra de búsqueda para <strong>filtrar la lista en tiempo real</strong>.</p>
+<p>La búsqueda se actualiza automáticamente mientras escribes.</p>
+<hr />
+<h2 id="vista-de-lista-de-stock">Vista de Lista de Stock<a class="headerlink" href="#vista-de-lista-de-stock" title="Permanent link">&para;</a></h2>
+<p>La vista de stock muestra cada item en formato de tarjetas con:</p>
+<table>
+<thead>
+<tr>
+<th>Información</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tipo de Extensión</strong></td>
+<td>Nombre o tipo del producto</td>
+</tr>
+<tr>
+<td><strong>Cantidad</strong></td>
+<td>Cantidad actual en stock (destacada en grande)</td>
+</tr>
+<tr>
+<td><strong>Proveedor</strong></td>
+<td>Nombre del proveedor (si está registrado)</td>
+</tr>
+<tr>
+<td><strong>Punto de Reposición</strong></td>
+<td>Cantidad mínima configurada</td>
+</tr>
+<tr>
+<td><strong>Alerta de Stock Bajo</strong></td>
+<td>Aparece cuando la cantidad es igual o menor al punto de reposición</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="alertas-de-stock-bajo">Alertas de Stock Bajo<a class="headerlink" href="#alertas-de-stock-bajo" title="Permanent link">&para;</a></h2>
+<h3 id="indicadores-visuales">Indicadores Visuales<a class="headerlink" href="#indicadores-visuales" title="Permanent link">&para;</a></h3>
+<p>Cuando un item tiene stock bajo (cantidad ≤ punto de reposición):</p>
+<ul>
+<li><strong>Borde rojo:</strong> La tarjeta tiene un borde rojo</li>
+<li><strong>Fondo destacado:</strong> Fondo rojo claro para mayor visibilidad</li>
+<li><strong>Cantidad en rojo:</strong> El número de cantidad aparece en color rojo</li>
+<li><strong>Icono de advertencia:</strong> Aparece el mensaje "⚠️ Stock bajo"</li>
+</ul>
+<h3 id="configurar-punto-de-reposicion">Configurar Punto de Reposición<a class="headerlink" href="#configurar-punto-de-reposicion" title="Permanent link">&para;</a></h3>
+<p>El punto de reposición debe ser:
+- Realista según tu consumo
+- Considerando el tiempo de entrega de proveedores
+- Basado en tu experiencia de ventas</p>
+<p><strong>Ejemplo:</strong>
+- Si vendes 10 unidades por semana
+- Y tu proveedor tarda 2 semanas en entregar
+- Tu punto de reposición debería ser al menos 20 unidades</p>
+<hr />
+<h2 id="campos-de-stock">Campos de Stock<a class="headerlink" href="#campos-de-stock" title="Permanent link">&para;</a></h2>
+<h3 id="tipo-de-extension">Tipo de Extensión<a class="headerlink" href="#tipo-de-extension" title="Permanent link">&para;</a></h3>
+<p>El nombre o tipo del producto. Ejemplos:
+- "Extensiones de cabello sintético 20cm"
+- "Extensiones de cabello natural 30cm"
+- "Extensiones de cabello premium 40cm"
+- "Adhesivo para extensiones"
+- "Herramientas de aplicación"</p>
+<h3 id="cantidad">Cantidad<a class="headerlink" href="#cantidad" title="Permanent link">&para;</a></h3>
+<p>La cantidad actual disponible en stock. Debe ser:
+- Un número entero (no decimales)
+- Actualizado regularmente
+- Reflejar la realidad del inventario físico</p>
+<h3 id="proveedor">Proveedor<a class="headerlink" href="#proveedor" title="Permanent link">&para;</a></h3>
+<p>El nombre del proveedor del producto. Útil para:
+- Contactar rápidamente cuando necesitas reabastecer
+- Organizar pedidos
+- Mantener registro de fuentes</p>
+<h3 id="punto-de-reposicion">Punto de Reposición<a class="headerlink" href="#punto-de-reposicion" title="Permanent link">&para;</a></h3>
+<p>La cantidad mínima antes de necesitar hacer un pedido. Debe ser:
+- Mayor a cero
+- Menor que tu stock máximo típico
+- Basado en tu consumo real</p>
+<hr />
+<h2 id="gestion-de-inventario">Gestión de Inventario<a class="headerlink" href="#gestion-de-inventario" title="Permanent link">&para;</a></h2>
+<h3 id="actualizar-cantidad">Actualizar Cantidad<a class="headerlink" href="#actualizar-cantidad" title="Permanent link">&para;</a></h3>
+<p>Actualiza la cantidad cuando:
+- Recibes nuevos productos
+- Usas materiales del stock
+- Realizas inventario físico
+- Detectas discrepancias</p>
+<h3 id="monitoreo-regular">Monitoreo Regular<a class="headerlink" href="#monitoreo-regular" title="Permanent link">&para;</a></h3>
+<p>Revisa el stock regularmente para:
+- Identificar items con stock bajo
+- Planificar pedidos a proveedores
+- Evitar quedarte sin productos
+- Mantener un inventario actualizado</p>
+<hr />
+<h2 id="mejores-practicas">Mejores Prácticas<a class="headerlink" href="#mejores-practicas" title="Permanent link">&para;</a></h2>
+<h3 id="recomendaciones">✅ Recomendaciones<a class="headerlink" href="#recomendaciones" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Actualiza las cantidades regularmente</li>
+<li>Configura puntos de reposición realistas</li>
+<li>Registra información del proveedor</li>
+<li>Usa nombres descriptivos para los tipos de extensión</li>
+<li>Revisa las alertas de stock bajo frecuentemente</li>
+<li>Mantén el stock sincronizado con el inventario físico</li>
+</ul>
+<h3 id="evita">❌ Evita<a class="headerlink" href="#evita" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Dejar cantidades desactualizadas</li>
+<li>Puntos de reposición muy altos o muy bajos</li>
+<li>Olvidar actualizar después de usar materiales</li>
+<li>No revisar las alertas de stock bajo</li>
+<li>Nombres genéricos o confusos</li>
+</ul>
+<hr />
+<h2 id="organizacion-del-stock">Organización del Stock<a class="headerlink" href="#organizacion-del-stock" title="Permanent link">&para;</a></h2>
+<h3 id="por-tipo-de-producto">Por Tipo de Producto<a class="headerlink" href="#por-tipo-de-producto" title="Permanent link">&para;</a></h3>
+<p>Organiza tus items por categorías usando nombres descriptivos:
+- Extensiones por longitud
+- Extensiones por calidad
+- Materiales de aplicación
+- Herramientas</p>
+<h3 id="por-proveedor">Por Proveedor<a class="headerlink" href="#por-proveedor" title="Permanent link">&para;</a></h3>
+<p>Usa el campo de proveedor para:
+- Agrupar items del mismo proveedor
+- Facilitar pedidos
+- Mantener relaciones con proveedores</p>
+<hr />
+<h2 id="preguntas-frecuentes">Preguntas Frecuentes<a class="headerlink" href="#preguntas-frecuentes" title="Permanent link">&para;</a></h2>
+<p><strong>¿Cómo sé cuándo hacer un pedido?</strong>
+Cuando la cantidad de un item es igual o menor al punto de reposición, verás la alerta de "Stock bajo". Ese es el momento de hacer un pedido.</p>
+<p><strong>¿Puedo tener cantidad negativa?</strong>
+No, la cantidad debe ser un número positivo o cero.</p>
+<p><strong>¿Qué pasa si actualizo mal la cantidad?</strong>
+Puedes editar el item en cualquier momento y corregir la cantidad.</p>
+<p><strong>¿El punto de reposición es obligatorio?</strong>
+Sí, es un campo requerido. Debes establecer una cantidad mínima para cada item.</p>
+<p><strong>¿Puedo cambiar el punto de reposición?</strong>
+Sí, puedes editarlo en cualquier momento según cambien tus necesidades.</p>
+<p><strong>¿Cómo calculo el punto de reposición adecuado?</strong>
+Considera: consumo promedio por período × tiempo de entrega del proveedor + margen de seguridad.</p>
+<p><strong>¿Los items con stock bajo se eliminan automáticamente?</strong>
+No, solo se marcan visualmente. Debes actualizar la cantidad o hacer un pedido.</p>
+<p><strong>¿Puedo tener múltiples items del mismo tipo?</strong>
+Sí, puedes crear múltiples items con el mismo tipo si provienen de diferentes proveedores o tienen características diferentes.</p>
+<hr />
+<h2 id="integracion-con-otros-modulos">Integración con Otros Módulos<a class="headerlink" href="#integracion-con-otros-modulos" title="Permanent link">&para;</a></h2>
+<p>El stock se relaciona con:
+- <strong>Servicios:</strong> Para calcular costos de materiales
+- <strong>Insumos:</strong> Para registrar materiales utilizados
+- <strong>Facturación:</strong> Para análisis de costos vs ingresos</p>
+<div class="admonition note">
+<p class="admonition-title">Funcionalidad Futura</p>
+<p>Las integraciones automáticas con otros módulos pueden estar en desarrollo. Consulta las actualizaciones del sistema.</p>
+</div>
+<hr />
+<h2 id="reportes-de-stock">Reportes de Stock<a class="headerlink" href="#reportes-de-stock" title="Permanent link">&para;</a></h2>
+<h3 id="analisis-manual">Análisis Manual<a class="headerlink" href="#analisis-manual" title="Permanent link">&para;</a></h3>
+<p>Puedes analizar tu stock:
+- Revisando items con alertas de stock bajo
+- Comparando cantidades con puntos de reposición
+- Identificando items que necesitan atención</p>
+<h3 id="planificacion-de-compras">Planificación de Compras<a class="headerlink" href="#planificacion-de-compras" title="Permanent link">&para;</a></h3>
+<p>Usa la información de stock para:
+- Planificar pedidos a proveedores
+- Evitar quedarte sin productos
+- Optimizar niveles de inventario
+- Gestionar mejor los costos</p>
+<hr />
+<h2 id="solucion-de-problemas">Solución de Problemas<a class="headerlink" href="#solucion-de-problemas" title="Permanent link">&para;</a></h2>
+<h3 id="no-veo-alertas-de-stock-bajo">No veo alertas de stock bajo<a class="headerlink" href="#no-veo-alertas-de-stock-bajo" title="Permanent link">&para;</a></h3>
+<p><strong>Verifica:</strong>
+1. Que la cantidad sea menor o igual al punto de reposición
+2. Que el item esté guardado correctamente
+3. Refresca la página si es necesario</p>
+<h3 id="la-cantidad-no-se-actualiza">La cantidad no se actualiza<a class="headerlink" href="#la-cantidad-no-se-actualiza" title="Permanent link">&para;</a></h3>
+<p><strong>Solución:</strong>
+1. Edita el item
+2. Verifica que estés ingresando un número válido
+3. Guarda los cambios
+4. Refresca la página</p>
+<hr />
+<h2 id="mantenimiento-del-stock">Mantenimiento del Stock<a class="headerlink" href="#mantenimiento-del-stock" title="Permanent link">&para;</a></h2>
+<h3 id="inventario-fisico">Inventario Físico<a class="headerlink" href="#inventario-fisico" title="Permanent link">&para;</a></h3>
+<p>Realiza inventarios físicos periódicamente para:
+- Verificar que las cantidades en el sistema coincidan con la realidad
+- Detectar pérdidas o discrepancias
+- Mantener datos precisos</p>
+<h3 id="actualizacion-continua">Actualización Continua<a class="headerlink" href="#actualizacion-continua" title="Permanent link">&para;</a></h3>
+<p>Actualiza el stock:
+- Cuando recibas nuevos productos
+- Cuando uses materiales
+- Después de cada inventario físico
+- Cuando detectes discrepancias</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.tracking", "navigation.expand", "toc.integrate", "content.code.copy", "content.code.select", "content.tooltips", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
