@@ -23,6 +23,9 @@ export default defineConfig({
       editLink: {
         baseUrl: 'https://github.com/GLYMM-app/glymm-docs/edit/main/',
       },
+      components: {
+        Footer: './src/components/Footer.astro',
+      },
       sidebar: [
         { label: 'Inicio', link: '/' },
         {

@@ -1,0 +1,242 @@
+---
+const year = new Date().getFullYear()
+---
+
+<footer class="glymm-footer">
+  <div class="glymm-footer__inner">
+    <div class="glymm-footer__grid">
+
+      <!-- Brand -->
+      <div class="glymm-footer__brand">
+        <div class="glymm-footer__logo-row">
+          <img src="/favicon.svg" alt="GLYMM" width="32" height="32" />
+          <span class="glymm-footer__logo-name">GLYMM</span>
+        </div>
+        <p class="glymm-footer__tagline">
+          Plataforma de gestión para centros de estética. Turnos, clientes, stock y facturación en un solo lugar.
+        </p>
+        <a href="mailto:info@glymm.com.ar" class="glymm-footer__email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="glymm-footer__email-icon" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          info@glymm.com.ar
+        </a>
+        <div class="glymm-footer__socials">
+          <a href="https://www.instagram.com/glymm.app/" target="_blank" rel="noopener noreferrer" class="glymm-footer__social-btn" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@glymm.app" target="_blank" rel="noopener noreferrer" class="glymm-footer__social-btn" aria-label="TikTok">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.3 6.3 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.75a4.85 4.85 0 0 1-1.01-.06z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Producto -->
+      <div>
+        <h4 class="glymm-footer__heading">Producto</h4>
+        <ul class="glymm-footer__nav">
+          <li><a href="https://glymm.com.ar/#features">Características</a></li>
+          <li><a href="https://glymm.com.ar/#benefits">Beneficios</a></li>
+          <li><a href="https://glymm.com.ar/#contact">Solicitar demo</a></li>
+          <li><a href="https://glymm.com.ar/sobre">Sobre GLYMM</a></li>
+        </ul>
+      </div>
+
+      <!-- Ayuda -->
+      <div>
+        <h4 class="glymm-footer__heading">Centro de ayuda</h4>
+        <ul class="glymm-footer__nav">
+          <li><a href="/clientes/">Gestión de Clientes</a></li>
+          <li><a href="/turnos/">Turnos</a></li>
+          <li><a href="/servicios/">Servicios</a></li>
+          <li><a href="/faq/">Preguntas Frecuentes</a></li>
+          <li><a href="/solucion-de-problemas/">Solución de Problemas</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h4 class="glymm-footer__heading">Legal</h4>
+        <ul class="glymm-footer__nav">
+          <li><a href="https://glymm.com.ar/terminos">Términos de uso</a></li>
+          <li><a href="https://glymm.com.ar/privacidad">Privacidad</a></li>
+          <li><a href="https://glymm.com.ar/cookies">Cookies</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="glymm-footer__bottom">
+      <p>&copy; {year} GLYMM · Gimenez Agustin - CUIT 20-40955140-9</p>
+      <div class="glymm-footer__bottom-links">
+        <a href="https://glymm.com.ar/privacidad">Privacidad</a>
+        <a href="https://glymm.com.ar/terminos">Términos</a>
+        <a href="https://glymm.com.ar/cookies">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .glymm-footer {
+    background: #030213;
+    color: #9ca3af;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 2rem;
+    font-family: var(--sl-font, system-ui, sans-serif);
+    font-size: 0.875rem;
+  }
+
+  .glymm-footer__inner {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 1.5rem;
+  }
+
+  .glymm-footer__grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 900px) {
+    .glymm-footer__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .glymm-footer__grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .glymm-footer__brand {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .glymm-footer__logo-row {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  .glymm-footer__logo-name {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.01em;
+  }
+
+  .glymm-footer__tagline {
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    max-width: 20rem;
+    margin: 0;
+  }
+
+  .glymm-footer__email {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .glymm-footer__email:hover {
+    color: #fff;
+  }
+
+  .glymm-footer__email-icon {
+    color: #ec4899;
+    flex-shrink: 0;
+  }
+
+  .glymm-footer__socials {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .glymm-footer__social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.15s, border-color 0.15s;
+  }
+
+  .glymm-footer__social-btn:hover {
+    background: #ec4899;
+    border-color: #ec4899;
+  }
+
+  .glymm-footer__heading {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.6875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 1rem 0;
+    border: none;
+    padding: 0;
+  }
+
+  .glymm-footer__nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .glymm-footer__nav a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.15s;
+    font-size: 0.8125rem;
+  }
+
+  .glymm-footer__nav a:hover {
+    color: #fff;
+  }
+
+  .glymm-footer__bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    font-size: 0.75rem;
+  }
+
+  .glymm-footer__bottom p {
+    margin: 0;
+  }
+
+  .glymm-footer__bottom-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .glymm-footer__bottom-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .glymm-footer__bottom-links a:hover {
+    color: #fff;
+  }
+</style>
