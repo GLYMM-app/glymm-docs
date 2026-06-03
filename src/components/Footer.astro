@@ -84,6 +84,9 @@ const year = new Date().getFullYear()
     margin-top: 2rem;
     font-family: var(--sl-font, system-ui, sans-serif);
     font-size: 0.875rem;
+    /* Break out of Starlight's content-panel padding */
+    margin-inline: calc(-1 * var(--sl-content-pad-x, 1.5rem));
+    width: calc(100% + 2 * var(--sl-content-pad-x, 1.5rem));
   }
 
   .glymm-footer__inner {
