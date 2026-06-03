@@ -1,0 +1,70 @@
+---
+title: Centro de Ayuda GLYMM
+description: Sistema de gestion completo para tu salon de extensiones de cabello
+template: splash
+hero:
+  title: Centro de Ayuda GLYMM
+  tagline: Sistema de gestion completo para tu salon de extensiones de cabello
+  image:
+    file: ../../assets/glymm.svg
+  actions:
+    - text: Ver guias de modulos
+      link: /clientes/
+      icon: right-arrow
+      variant: primary
+    - text: Preguntas frecuentes
+      link: /faq/
+      icon: open-book
+---
+
+import { CardGrid, LinkCard } from '@astrojs/starlight/components'
+
+## Modulos principales
+
+<CardGrid stagger>
+  <LinkCard
+    title="Clientes"
+    href="/clientes/"
+    description="Gestion de perfiles, contactos e historial de visitas."
+  />
+  <LinkCard
+    title="Turnos"
+    href="/turnos/"
+    description="Calendario mensual y semanal, servicios extras, adelantos y descuentos."
+  />
+  <LinkCard
+    title="Servicios"
+    href="/servicios/"
+    description="Catalogo de servicios, precios, duraciones y subservicios."
+  />
+  <LinkCard
+    title="Stock"
+    href="/stock/"
+    description="Control de inventario, alertas de stock bajo y proveedores."
+  />
+  <LinkCard
+    title="Facturacion"
+    href="/facturacion/"
+    description="Ingresos, estadisticas y reportes financieros de tu negocio."
+  />
+  <LinkCard
+    title="Usuarios"
+    href="/usuarios/"
+    description="Personal, roles y permisos de acceso al sistema."
+  />
+</CardGrid>
+
+## Soporte
+
+<CardGrid>
+  <LinkCard
+    title="Preguntas Frecuentes"
+    href="/faq/"
+    description="Respuestas rapidas a las dudas mas comunes."
+  />
+  <LinkCard
+    title="Solucion de Problemas"
+    href="/solucion-de-problemas/"
+    description="Diagnostico y resolucion de problemas tecnicos."
+  />
+</CardGrid>
