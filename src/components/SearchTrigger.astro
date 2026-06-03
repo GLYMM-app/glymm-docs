@@ -1,0 +1,9 @@
+---
+---
+<script>
+  document.getElementById('hc-search-trigger')?.addEventListener('click', () => {
+    document.dispatchEvent(
+      new KeyboardEvent('keydown', { key: 'k', ctrlKey: true, bubbles: true })
+    )
+  })
+</script>

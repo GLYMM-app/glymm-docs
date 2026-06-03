@@ -54,3 +54,201 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--sl-color-accent);
 }
+
+/* ── Homepage Help Center ──────────────────────────────────────────────────── */
+
+/* Ocultar breadcrumb y título H1 de Starlight en la homepage */
+[data-has-hero] .sl-markdown-content h1:first-child {
+  display: none;
+}
+
+/* Hero */
+.hc-hero {
+  text-align: center;
+  padding: 3rem 1rem 2.5rem;
+  max-width: 680px;
+  margin: 0 auto 3rem;
+}
+
+.hc-hero__logo {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 1.25rem;
+  display: block;
+}
+
+.hc-hero__title {
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--sl-color-white);
+  margin: 0 0 0.75rem;
+  line-height: 1.15;
+}
+
+.hc-hero__sub {
+  font-size: 1rem;
+  color: var(--sl-color-gray-2);
+  margin: 0 0 1.75rem;
+  line-height: 1.6;
+}
+
+/* Barra de búsqueda falsa */
+.hc-search {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto 1.25rem;
+  padding: 0.75rem 1rem;
+  background: var(--sl-color-bg-nav);
+  border: 1.5px solid var(--sl-color-gray-5);
+  border-radius: 0.625rem;
+  color: var(--sl-color-gray-3);
+  font-size: 0.9375rem;
+  font-family: var(--sl-font);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.hc-search:hover,
+.hc-search:focus-visible {
+  border-color: var(--sl-color-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--sl-color-accent) 20%, transparent);
+  outline: none;
+}
+
+.hc-search span {
+  flex: 1;
+}
+
+.hc-search kbd {
+  font-size: 0.6875rem;
+  padding: 0.1em 0.45em;
+  border-radius: 0.25rem;
+  border: 1px solid var(--sl-color-gray-5);
+  background: var(--sl-color-bg);
+  color: var(--sl-color-gray-3);
+  font-family: var(--sl-font-mono, monospace);
+  white-space: nowrap;
+}
+
+/* Quick tags */
+.hc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.hc-tag {
+  padding: 0.3rem 0.75rem;
+  border-radius: 2rem;
+  background: var(--sl-color-accent-low);
+  color: var(--sl-color-accent-high);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.hc-tag:hover {
+  background: var(--sl-color-accent);
+  color: #fff;
+}
+
+/* Sections grid */
+.hc-sections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+@media (max-width: 620px) {
+  .hc-sections {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hc-section {
+  background: var(--sl-color-bg-nav);
+  border: 1px solid var(--sl-color-hairline-light);
+  border-radius: 0.875rem;
+  padding: 1.5rem;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.hc-section:hover {
+  border-color: var(--sl-color-accent);
+  box-shadow: 0 4px 20px color-mix(in srgb, var(--sl-color-accent) 12%, transparent);
+}
+
+.hc-section__icon {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.hc-section__title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--sl-color-white);
+  margin: 0 0 0.375rem;
+  letter-spacing: -0.01em;
+  border: none;
+  padding: 0;
+}
+
+.hc-section__desc {
+  font-size: 0.8125rem;
+  color: var(--sl-color-gray-3);
+  margin: 0 0 1rem;
+  line-height: 1.5;
+}
+
+.hc-section__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.hc-section__links a {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.875rem;
+  color: var(--sl-color-accent);
+  text-decoration: none;
+  padding: 0.25rem 0;
+  transition: color 0.15s;
+}
+
+.hc-section__links a::before {
+  content: '→';
+  font-size: 0.75rem;
+  opacity: 0.7;
+  flex-shrink: 0;
+}
+
+.hc-section__links a:hover {
+  color: var(--sl-color-accent-high);
+}
+
+/* ── Artículos sin sidebar — centrar contenido ─────────────────────────────── */
+
+/* Cuando no hay sidebar, dar más respiro al contenido */
+:root:not([data-has-sidebar]) .content-panel {
+  max-width: 50rem;
+}
+
+/* Ocultar paginación lateral innecesaria en homepage */
+[data-has-hero] .pagination-links {
+  display: none;
+}
