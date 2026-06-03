@@ -188,7 +188,14 @@
 }
 
 .hc-section__icon {
-  font-size: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--sl-color-accent-low);
+  border-radius: 0.625rem;
+  font-size: 1.25rem;
   margin-bottom: 0.75rem;
   line-height: 1;
 }
@@ -251,4 +258,100 @@
 /* Ocultar paginación lateral innecesaria en homepage */
 [data-has-hero] .pagination-links {
   display: none;
+}
+
+/* ── Sidebar ───────────────────────────────────────────────────────────────── */
+
+nav.sidebar {
+  border-right: 1px solid var(--sl-color-hairline-light);
+}
+
+.sidebar-content a[aria-current='page'] {
+  background: var(--sl-color-accent-low);
+  color: var(--sl-color-accent-high);
+  font-weight: 600;
+  border-radius: 0.375rem;
+}
+
+/* ── Header ────────────────────────────────────────────────────────────────── */
+
+header.header {
+  border-bottom: 1px solid var(--sl-color-hairline-light);
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+/* ── Table of contents (right sidebar) ────────────────────────────────────── */
+
+.right-sidebar {
+  border-left: 1px solid var(--sl-color-hairline-light);
+}
+
+.right-sidebar a[aria-current='true'] {
+  color: var(--sl-color-accent);
+  font-weight: 500;
+}
+
+/* ── Interior page content ─────────────────────────────────────────────────── */
+
+.sl-markdown-content {
+  max-width: 720px;
+}
+
+.sl-markdown-content pre {
+  border-radius: 0.625rem;
+  border: 1px solid var(--sl-color-hairline-light);
+}
+
+.sl-markdown-content a {
+  color: var(--sl-color-accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.sl-markdown-content a:hover {
+  color: var(--sl-color-accent-high);
+}
+
+.sl-markdown-content .starlight-aside {
+  border-left: 3px solid var(--sl-color-accent);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/* ── Homepage — mobile refinements ────────────────────────────────────────── */
+
+@media (max-width: 480px) {
+  .hc-hero {
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  .hc-search {
+    padding: 0.625rem 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .hc-search kbd {
+    display: none;
+  }
+
+  .hc-tags {
+    gap: 0.375rem;
+  }
+
+  .hc-tag {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.625rem;
+  }
+}
+
+/* ── Homepage sections — tablet breakpoint ─────────────────────────────────── */
+
+@media (min-width: 621px) and (max-width: 900px) {
+  .hc-sections {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
 }

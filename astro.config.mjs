@@ -25,7 +25,6 @@ export default defineConfig({
       },
       components: {
         Footer: './src/components/Footer.astro',
-        Sidebar: './src/components/Sidebar.astro',
       },
       sidebar: [
         { label: 'Inicio', link: '/' },
