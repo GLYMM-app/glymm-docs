@@ -1,11 +1,11 @@
-﻿---
-title: Gestión de Usuarios
-description: Personal del salon, roles y administracion de accesos.
+---
+title: "Gestión de Usuarios"
+description: "Personal del salón, roles y administración de accesos."
 ---
 
-## IntroducciÃ³n
+## Introducción
 
-Los usuarios son los profesionales y personal que tienen acceso a GLYMM. En esta guÃ­a aprenderÃ¡s cÃ³mo crear, editar y gestionar usuarios, incluyendo la asignaciÃ³n de permisos y roles.
+Los usuarios son los profesionales y personal que tienen acceso a GLYMM. En esta guía aprenderás cómo crear, editar y gestionar usuarios, incluyendo la asignación de permisos y roles.
 
 ---
 
@@ -13,51 +13,49 @@ Los usuarios son los profesionales y personal que tienen acceso a GLYMM. En esta
 
 ### Pasos para crear un usuario:
 
-1. DirÃ­gete a la secciÃ³n **Usuarios** desde el menÃº principal
-2. Haz clic en el botÃ³n **+ Nuevo Usuario**
+1. Dirígete a la sección **Usuarios** desde el menú principal
+2. Haz clic en el botón **+ Nuevo Usuario**
 3. Completa los siguientes campos:
 
 #### Campos Obligatorios
 
 - **Nombre:** Nombre del usuario (requerido)
 - **Apellido:** Apellido del usuario (requerido)
-- **Email:** DirecciÃ³n de correo electrÃ³nico (requerido, debe ser Ãºnico)
-- **ContraseÃ±a:** ContraseÃ±a segura (requerido para nuevos usuarios)
+- **Email:** Dirección de correo electrónico (requerido, debe ser único)
+- **Contraseña:** Contraseña segura (requerido para nuevos usuarios)
 
 #### Campos Opcionales
 
 - **Es Administrador:** Marca esta casilla si el usuario debe tener acceso completo
-- **Permisos:** Asigna permisos especÃ­ficos si no es administrador
+- **Permisos:** Asigna permisos específicos si no es administrador
 
 4. Haz clic en **Guardar**
 
-### Requisitos de ContraseÃ±a
+### Requisitos de Contraseña
 
-La contraseÃ±a debe cumplir con los siguientes requisitos:
-- MÃ­nimo 8 caracteres
-- Al menos 1 letra mayÃºscula
-- Al menos 1 letra minÃºscula
-- Al menos 1 nÃºmero
-- Al menos 1 carÃ¡cter especial (@$!%*?&)
+La contraseña debe cumplir con los siguientes requisitos:
+- Mínimo 8 caracteres
+- Al menos 1 letra mayúscula
+- Al menos 1 letra minúscula
+- Al menos 1 número
+- Al menos 1 carácter especial (@$!%*?&)
 
-:::tip[Seguridad]
-Usa contraseÃ±as fuertes y Ãºnicas. Puedes usar el botÃ³n de mostrar/ocultar contraseÃ±a para verificar que la ingresaste correctamente.
+!!! tip "Seguridad"
+    Usa contraseñas fuertes y únicas. Puedes usar el botón de mostrar/ocultar contraseña para verificar que la ingresaste correctamente.
 
-:::
 ---
 
 ## Editar un Usuario
 
 1. Busca el usuario en la lista
-2. Haz clic en el botÃ³n **âœŽ Editar**
+2. Haz clic en el botón **✎ Editar**
 3. Realiza los cambios necesarios
-4. Para cambiar la contraseÃ±a, ingresa una nueva (dejar vacÃ­o si no quieres cambiarla)
+4. Para cambiar la contraseña, ingresa una nueva (dejar vacío si no quieres cambiarla)
 5. Haz clic en **Guardar cambios**
 
-:::note[ContraseÃ±a en EdiciÃ³n]
-Al editar un usuario, puedes dejar el campo de contraseÃ±a vacÃ­o si no deseas cambiarla. Solo ingresa una nueva contraseÃ±a si quieres actualizarla.
+!!! note "Contraseña en Edición"
+    Al editar un usuario, puedes dejar el campo de contraseña vacío si no deseas cambiarla. Solo ingresa una nueva contraseña si quieres actualizarla.
 
-:::
 ---
 
 ## Eliminar un Usuario
@@ -65,13 +63,12 @@ Al editar un usuario, puedes dejar el campo de contraseÃ±a vacÃ­o si no dese
 Para eliminar un usuario:
 
 1. Busca el usuario en la lista
-2. Haz clic en el botÃ³n **ðŸ—‘ Eliminar**
-3. Confirma la eliminaciÃ³n
+2. Haz clic en el botón **🗑 Eliminar**
+3. Confirma la eliminación
 
-:::danger[AtenciÃ³n]
-La eliminaciÃ³n es permanente. AsegÃºrate de que el usuario no tenga turnos asignados o informaciÃ³n importante asociada antes de eliminarlo.
+!!! danger "Atención"
+    La eliminación es permanente. Asegúrate de que el usuario no tenga turnos asignados o información importante asociada antes de eliminarlo.
 
-:::
 ---
 
 ## Roles de Usuario
@@ -83,45 +80,45 @@ GLYMM maneja dos tipos de roles:
 Los administradores tienen:
 - Acceso completo a todas las secciones
 - Capacidad de gestionar usuarios y permisos
-- Acceso a configuraciÃ³n de empresa
+- Acceso a configuración de empresa
 - Todos los permisos del sistema
 
 ### Usuario Regular
 
 Los usuarios regulares tienen:
 - Acceso solo a las secciones con permisos asignados
-- Permisos especÃ­ficos configurados por el administrador
-- Acceso limitado segÃºn su rol
+- Permisos específicos configurados por el administrador
+- Acceso limitado según su rol
 
 ---
 
-## AsignaciÃ³n de Permisos
+## Asignación de Permisos
 
-Para usuarios que NO son administradores, puedes asignar permisos especÃ­ficos:
+Para usuarios que NO son administradores, puedes asignar permisos específicos:
 
-### Durante la CreaciÃ³n
+### Durante la Creación
 
-1. Al crear el usuario, asegÃºrate de que "Es Administrador" estÃ© desmarcado
-2. Se mostrarÃ¡ la secciÃ³n de **Permisos**
-3. Expande los mÃ³dulos haciendo clic en ellos
+1. Al crear el usuario, asegúrate de que "Es Administrador" esté desmarcado
+2. Se mostrará la sección de **Permisos**
+3. Expande los módulos haciendo clic en ellos
 4. Marca las casillas de los permisos que deseas asignar
-5. Los permisos se guardan automÃ¡ticamente
+5. Los permisos se guardan automáticamente
 
-### MÃ³dulos de Permisos
+### Módulos de Permisos
 
-Los permisos estÃ¡n organizados por mÃ³dulos:
-- **Clientes:** GestiÃ³n de clientas
-- **Turnos:** GestiÃ³n de turnos
-- **Servicios:** GestiÃ³n de servicios
-- **Insumos:** GestiÃ³n de insumos
-- **FacturaciÃ³n:** Acceso a reportes financieros
-- **Usuarios:** GestiÃ³n de usuarios
-- **ConfiguraciÃ³n:** ConfiguraciÃ³n del sistema
-- Y mÃ¡s...
+Los permisos están organizados por módulos:
+- **Clientes:** Gestión de clientas
+- **Turnos:** Gestión de turnos
+- **Servicios:** Gestión de servicios
+- **Insumos:** Gestión de insumos
+- **Facturación:** Acceso a reportes financieros
+- **Usuarios:** Gestión de usuarios
+- **Configuración:** Configuración del sistema
+- Y más...
 
 ### Acciones de Permisos
 
-Cada mÃ³dulo puede tener diferentes acciones:
+Cada módulo puede tener diferentes acciones:
 - **Ver:** Acceso de solo lectura
 - **Crear:** Crear nuevos registros
 - **Editar:** Modificar registros existentes
@@ -133,69 +130,67 @@ Cada mÃ³dulo puede tener diferentes acciones:
 
 La vista de usuarios muestra cada usuario en formato de tarjetas con:
 
-| InformaciÃ³n | DescripciÃ³n |
+| Información | Descripción |
 |-----------|-------------|
 | **Nombre completo** | Nombre y apellido del usuario |
-| **Email** | DirecciÃ³n de correo electrÃ³nico |
-| **Rol** | Administrador o Usuario (con permisos especÃ­ficos) |
+| **Email** | Dirección de correo electrónico |
+| **Rol** | Administrador o Usuario (con permisos específicos) |
 
 ---
 
-## GestiÃ³n de Permisos Avanzada
+## Gestión de Permisos Avanzada
 
-Para una gestiÃ³n mÃ¡s detallada de permisos:
+Para una gestión más detallada de permisos:
 
-1. Ve a la secciÃ³n **Permisos**
+1. Ve a la sección **Permisos**
 2. Selecciona el usuario de la lista desplegable
 3. Visualiza y gestiona todos los permisos del usuario
-4. Asigna o quita permisos segÃºn sea necesario
+4. Asigna o quita permisos según sea necesario
 
-:::tip[Permisos Detallados]
-La secciÃ³n de Permisos ofrece una vista mÃ¡s completa para gestionar los permisos de cada usuario. Consulta la [GuÃ­a de Permisos](/permisos/) para mÃ¡s detalles.
+!!! tip "Permisos Detallados"
+    La sección de Permisos ofrece una vista más completa para gestionar los permisos de cada usuario. Consulta la [Guía de Permisos](permisos.md) para más detalles.
 
-:::
 ---
 
-## SincronizaciÃ³n con Google Calendar
+## Sincronización con Google Calendar
 
 Si un usuario tiene Google Calendar configurado:
 
-- Los turnos asignados a ese usuario se sincronizarÃ¡n automÃ¡ticamente
-- El usuario verÃ¡ sus turnos en su calendario de Google
-- Los cambios en los turnos se reflejarÃ¡n en el calendario
+- Los turnos asignados a ese usuario se sincronizarán automáticamente
+- El usuario verá sus turnos en su calendario de Google
+- Los cambios en los turnos se reflejarán en el calendario
 
-:::note[ConfiguraciÃ³n de Google Calendar]
-La configuraciÃ³n de Google Calendar debe realizarse en la secciÃ³n de ConfiguraciÃ³n del usuario o del sistema.
+!!! note "Configuración de Google Calendar"
+    La configuración de Google Calendar debe realizarse en la sección de Configuración del usuario o del sistema.
 
-:::
 ---
 
-## Mejores PrÃ¡cticas
+## Mejores Prácticas
 
-### âœ… Recomendaciones
+### ✅ Recomendaciones
 
-- Crea usuarios con emails Ãºnicos y vÃ¡lidos
+- Crea usuarios con emails únicos y válidos
 - Asigna solo los permisos necesarios (principio de menor privilegio)
-- Usa contraseÃ±as seguras y Ãºnicas
-- Revisa periÃ³dicamente los permisos de los usuarios
+- Usa contraseñas seguras y únicas
+- Revisa periódicamente los permisos de los usuarios
 - Marca como administrador solo a usuarios de confianza
-- MantÃ©n actualizada la informaciÃ³n de contacto
+- Mantén actualizada la información de contacto
 
-### âŒ Evita
+### ❌ Evita
 
 - Compartir cuentas de usuario
-- Usar contraseÃ±as dÃ©biles o comunes
+- Usar contraseñas débiles o comunes
 - Asignar permisos de administrador innecesariamente
 - Olvidar actualizar permisos cuando cambian las responsabilidades
-- Usar emails genÃ©ricos o compartidos
+- Usar emails genéricos o compartidos
 
 ---
 
 ## Seguridad
 
-### ContraseÃ±as
+### Contraseñas
 
-- Las contraseÃ±as se almacenan de forma segura (encriptadas)
+- Las contraseñas se almacenan de forma segura (encriptadas)
 - Nunca se muestran en texto plano
 - Se pueden cambiar en cualquier momento
 - Deben cumplir con los requisitos de seguridad
@@ -210,39 +205,36 @@ La configuraciÃ³n de Google Calendar debe realizarse en la secciÃ³n de Confi
 
 ## Preguntas Frecuentes
 
-**Â¿Puedo cambiar el email de un usuario?**
-SÃ­, puedes editar el usuario y cambiar el email. El email debe ser Ãºnico en el sistema.
+**¿Puedo cambiar el email de un usuario?**
+Sí, puedes editar el usuario y cambiar el email. El email debe ser único en el sistema.
 
-**Â¿QuÃ© pasa si olvido la contraseÃ±a de un usuario?**
-Como administrador, puedes editar el usuario y establecer una nueva contraseÃ±a.
+**¿Qué pasa si olvido la contraseña de un usuario?**
+Como administrador, puedes editar el usuario y establecer una nueva contraseña.
 
-**Â¿Puedo tener mÃºltiples administradores?**
-SÃ­, puedes tener tantos administradores como necesites.
+**¿Puedo tener múltiples administradores?**
+Sí, puedes tener tantos administradores como necesites.
 
-**Â¿Los usuarios pueden cambiar su propia contraseÃ±a?**
-Los usuarios pueden usar la opciÃ³n "Â¿Olvidaste tu contraseÃ±a?" en la pantalla de login para restablecerla.
+**¿Los usuarios pueden cambiar su propia contraseña?**
+Los usuarios pueden usar la opción "¿Olvidaste tu contraseña?" en la pantalla de login para restablecerla.
 
-**Â¿QuÃ© permisos necesita un usuario para ver facturaciÃ³n?**
-El usuario necesita el permiso especÃ­fico de "FacturaciÃ³n" asignado, o ser administrador.
+**¿Qué permisos necesita un usuario para ver facturación?**
+El usuario necesita el permiso específico de "Facturación" asignado, o ser administrador.
 
-**Â¿Puedo desactivar un usuario sin eliminarlo?**
-Actualmente, debes eliminar el usuario. Consulta las actualizaciones del sistema para funcionalidades de desactivaciÃ³n.
+**¿Puedo desactivar un usuario sin eliminarlo?**
+Actualmente, debes eliminar el usuario. Consulta las actualizaciones del sistema para funcionalidades de desactivación.
 
-**Â¿Los usuarios pueden ver sus propios turnos?**
-SÃ­, si tienen permisos de turnos, pueden ver los turnos asignados a ellos.
+**¿Los usuarios pueden ver sus propios turnos?**
+Sí, si tienen permisos de turnos, pueden ver los turnos asignados a ellos.
 
 ---
 
-## AsignaciÃ³n de Usuarios a Turnos
+## Asignación de Usuarios a Turnos
 
 Cuando creas un turno, puedes asignar un usuario/profesional:
 
 1. En el formulario de turno, selecciona **Usuario asignado**
 2. Elige el profesional de la lista desplegable
-3. El turno quedarÃ¡ asociado a ese usuario
+3. El turno quedará asociado a ese usuario
 
-:::tip[OrganizaciÃ³n]
-Asignar usuarios a los turnos ayuda a organizar el trabajo y permite que cada profesional vea sus turnos asignados.
-
-:::
-
+!!! tip "Organización"
+    Asignar usuarios a los turnos ayuda a organizar el trabajo y permite que cada profesional vea sus turnos asignados.

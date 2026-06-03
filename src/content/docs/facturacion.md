@@ -1,100 +1,100 @@
-﻿---
-title: Gestion Financiera
-description: Ingresos, estadisticas y reportes financieros de tu negocio.
+---
+title: "Gestión Financiera"
+description: "Ingresos, estadísticas y reportes financieros de tu negocio."
 ---
 
-## IntroducciÃ³n
+## Introducción
 
-La secciÃ³n de FacturaciÃ³n te permite visualizar ingresos, estadÃ­sticas y reportes financieros de tu negocio. En esta guÃ­a aprenderÃ¡s a usar todas las herramientas de anÃ¡lisis disponibles.
+La sección de Facturación te permite visualizar ingresos, estadísticas y reportes financieros de tu negocio. En esta guía aprenderás a usar todas las herramientas de análisis disponibles.
 
 ---
 
-## Acceso a FacturaciÃ³n
+## Acceso a Facturación
 
 ### Requisitos de Permisos
 
-Para acceder a la secciÃ³n de FacturaciÃ³n, necesitas tener el permiso correspondiente asignado por un administrador.
+Para acceder a la sección de Facturación, necesitas tener el permiso correspondiente asignado por un administrador.
 
-Si no tienes acceso, verÃ¡s un mensaje indicando que debes contactar a un administrador.
+Si no tienes acceso, verás un mensaje indicando que debes contactar a un administrador.
 
 ---
 
-## Selector de PerÃ­odo
+## Selector de Período
 
-GLYMM te permite analizar tus datos en diferentes perÃ­odos de tiempo:
+GLYMM te permite analizar tus datos en diferentes períodos de tiempo:
 
-### PerÃ­odos Disponibles
+### Períodos Disponibles
 
-- **Hoy:** Datos del dÃ­a actual
+- **Hoy:** Datos del día actual
 - **Esta semana:** Datos de la semana actual (lunes a domingo)
 - **Este mes:** Datos del mes actual
-- **Rango personalizado:** Selecciona fechas especÃ­ficas
+- **Rango personalizado:** Selecciona fechas específicas
 
 ### Usar Rango Personalizado
 
-1. Haz clic en el botÃ³n **Rango personalizado**
+1. Haz clic en el botón **Rango personalizado**
 2. Selecciona la fecha de inicio en el primer campo
 3. Selecciona la fecha de fin en el segundo campo
-4. Los datos se actualizarÃ¡n automÃ¡ticamente
+4. Los datos se actualizarán automáticamente
 
 ---
 
 ## Tarjetas de Resumen
 
-La secciÃ³n de facturaciÃ³n muestra tarjetas con informaciÃ³n clave:
+La sección de facturación muestra tarjetas con información clave:
 
-### Total Ingresos ðŸ’°
+### Total Ingresos 💰
 
-Muestra la suma total de ingresos en el perÃ­odo seleccionado, incluyendo:
+Muestra la suma total de ingresos en el período seleccionado, incluyendo:
 - Ingresos de turnos realizados
 - Servicios extras
 - Menos descuentos aplicados
 
-### Adelantos Recibidos ðŸ’µ
+### Adelantos Recibidos 💵
 
-Muestra el total de adelantos recibidos en el perÃ­odo seleccionado.
+Muestra el total de adelantos recibidos en el período seleccionado.
 
-### Turnos Realizados âœ…
+### Turnos Realizados ✅
 
-Cantidad total de turnos marcados como "Realizado" en el perÃ­odo.
+Cantidad total de turnos marcados como "Realizado" en el período.
 
-### Turnos Pendientes â³
+### Turnos Pendientes ⏳
 
-Cantidad de turnos que estÃ¡n en estado "Pendiente" en el perÃ­odo.
+Cantidad de turnos que están en estado "Pendiente" en el período.
 
-### Turnos Cancelados âŒ
+### Turnos Cancelados ❌
 
-Cantidad de turnos que fueron cancelados en el perÃ­odo.
+Cantidad de turnos que fueron cancelados en el período.
 
 ---
 
-## GrÃ¡ficos y Visualizaciones
+## Gráficos y Visualizaciones
 
-GLYMM incluye grÃ¡ficos interactivos para analizar tus datos:
+GLYMM incluye gráficos interactivos para analizar tus datos:
 
-### GrÃ¡fico de EvoluciÃ³n de Ingresos
+### Gráfico de Evolución de Ingresos
 
-Muestra la evoluciÃ³n de tus ingresos a lo largo del tiempo en el perÃ­odo seleccionado.
+Muestra la evolución de tus ingresos a lo largo del tiempo en el período seleccionado.
 
-**CaracterÃ­sticas:**
-- VisualizaciÃ³n por dÃ­a, semana o mes segÃºn el perÃ­odo
-- LÃ­nea de tendencia
+**Características:**
+- Visualización por día, semana o mes según el período
+- Línea de tendencia
 - Puntos de datos interactivos
 
-### GrÃ¡fico de Servicios MÃ¡s Vendidos
+### Gráfico de Servicios Más Vendidos
 
-Muestra quÃ© servicios son los mÃ¡s populares en el perÃ­odo seleccionado.
+Muestra qué servicios son los más populares en el período seleccionado.
 
-**CaracterÃ­sticas:**
+**Características:**
 - Ranking de servicios
 - Cantidad de veces vendidos
-- VisualizaciÃ³n clara y comparativa
+- Visualización clara y comparativa
 
 ---
 
-## AnÃ¡lisis de Datos
+## Análisis de Datos
 
-### InterpretaciÃ³n de MÃ©tricas
+### Interpretación de Métricas
 
 **Total Ingresos:**
 - Suma de todos los ingresos generados
@@ -104,96 +104,93 @@ Muestra quÃ© servicios son los mÃ¡s populares en el perÃ­odo seleccionado.
 
 **Adelantos Recibidos:**
 - Monto total de adelantos registrados
-- Ãštil para planificaciÃ³n de flujo de caja
-- No se incluye en el total de ingresos (ya estÃ¡n contabilizados en los turnos)
+- Útil para planificación de flujo de caja
+- No se incluye en el total de ingresos (ya están contabilizados en los turnos)
 
 **Turnos por Estado:**
 - **Realizados:** Turnos completados exitosamente
-- **Pendientes:** Turnos programados pero aÃºn no realizados
+- **Pendientes:** Turnos programados pero aún no realizados
 - **Cancelados:** Turnos que fueron cancelados
 
 ---
 
-## ExportaciÃ³n de Datos
+## Exportación de Datos
 
-:::note[Funcionalidad Futura]
-Las opciones de exportaciÃ³n a Excel o PDF pueden estar en desarrollo. Consulta las actualizaciones del sistema.
+!!! note "Funcionalidad Futura"
+    Las opciones de exportación a Excel o PDF pueden estar en desarrollo. Consulta las actualizaciones del sistema.
 
-:::
 ---
 
-## Mejores PrÃ¡cticas
+## Mejores Prácticas
 
-### âœ… Recomendaciones
+### ✅ Recomendaciones
 
-- Revisa la facturaciÃ³n regularmente (diario, semanal, mensual)
-- Compara perÃ­odos para identificar tendencias
-- Analiza quÃ© servicios son mÃ¡s rentables
+- Revisa la facturación regularmente (diario, semanal, mensual)
+- Compara períodos para identificar tendencias
+- Analiza qué servicios son más rentables
 - Monitorea los adelantos recibidos
-- Usa rangos personalizados para anÃ¡lisis especÃ­ficos
+- Usa rangos personalizados para análisis específicos
 
-### âŒ Evita
+### ❌ Evita
 
-- Ignorar los reportes por perÃ­odos largos
-- No revisar los servicios mÃ¡s vendidos
-- Olvidar considerar los adelantos en la planificaciÃ³n
+- Ignorar los reportes por períodos largos
+- No revisar los servicios más vendidos
+- Olvidar considerar los adelantos en la planificación
 
 ---
 
 ## Preguntas Frecuentes
 
-**Â¿Los adelantos se incluyen en el total de ingresos?**
-No, los adelantos se muestran por separado. El total de ingresos incluye los turnos completados, y los adelantos ya estÃ¡n contabilizados en esos turnos.
+**¿Los adelantos se incluyen en el total de ingresos?**
+No, los adelantos se muestran por separado. El total de ingresos incluye los turnos completados, y los adelantos ya están contabilizados en esos turnos.
 
-**Â¿Puedo ver datos de perÃ­odos anteriores?**
-SÃ­, usa el selector de "Rango personalizado" para seleccionar cualquier perÃ­odo de fechas.
+**¿Puedo ver datos de períodos anteriores?**
+Sí, usa el selector de "Rango personalizado" para seleccionar cualquier período de fechas.
 
-**Â¿Los turnos cancelados afectan los ingresos?**
-No, los turnos cancelados no se incluyen en el cÃ¡lculo de ingresos. Solo se muestran para estadÃ­sticas.
+**¿Los turnos cancelados afectan los ingresos?**
+No, los turnos cancelados no se incluyen en el cálculo de ingresos. Solo se muestran para estadísticas.
 
-**Â¿CÃ³mo interpreto el grÃ¡fico de servicios mÃ¡s vendidos?**
-El grÃ¡fico muestra quÃ© servicios se vendieron mÃ¡s veces en el perÃ­odo seleccionado. Ãšsalo para identificar tus servicios estrella.
+**¿Cómo interpreto el gráfico de servicios más vendidos?**
+El gráfico muestra qué servicios se vendieron más veces en el período seleccionado. Úsalo para identificar tus servicios estrella.
 
-**Â¿Puedo exportar los datos?**
-Consulta las actualizaciones del sistema para funcionalidades de exportaciÃ³n.
+**¿Puedo exportar los datos?**
+Consulta las actualizaciones del sistema para funcionalidades de exportación.
 
-**Â¿Los descuentos se reflejan en los ingresos?**
-SÃ­, el total de ingresos ya tiene aplicados los descuentos. Es el ingreso neto despuÃ©s de descuentos.
+**¿Los descuentos se reflejan en los ingresos?**
+Sí, el total de ingresos ya tiene aplicados los descuentos. Es el ingreso neto después de descuentos.
 
 ---
 
-## AnÃ¡lisis de Rentabilidad
+## Análisis de Rentabilidad
 
-### Servicios MÃ¡s Rentables
+### Servicios Más Rentables
 
-Usa el grÃ¡fico de servicios mÃ¡s vendidos junto con los precios para identificar:
+Usa el gráfico de servicios más vendidos junto con los precios para identificar:
 - Servicios con mayor volumen de ventas
 - Servicios con mejor margen de ganancia
-- Oportunidades de promociÃ³n
+- Oportunidades de promoción
 
 ### Tendencias Temporales
 
-El grÃ¡fico de evoluciÃ³n te ayuda a identificar:
-- DÃ­as/semanas/meses con mayor facturaciÃ³n
+El gráfico de evolución te ayuda a identificar:
+- Días/semanas/meses con mayor facturación
 - Patrones estacionales
 - Tendencias de crecimiento o decrecimiento
 
 ---
 
-## PlanificaciÃ³n Financiera
+## Planificación Financiera
 
-### Usar Adelantos para PlanificaciÃ³n
+### Usar Adelantos para Planificación
 
 Los adelantos recibidos te ayudan a:
 - Planificar el flujo de caja
 - Identificar ingresos futuros
 - Gestionar mejor las finanzas
 
-### AnÃ¡lisis de Estados de Turnos
+### Análisis de Estados de Turnos
 
 Monitorea los turnos pendientes para:
 - Estimar ingresos futuros
 - Planificar recursos necesarios
-- Identificar oportunidades de optimizaciÃ³n
-
-
+- Identificar oportunidades de optimización

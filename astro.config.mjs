@@ -2,14 +2,14 @@ import { defineConfig } from 'astro/config'
 import starlight from '@astrojs/starlight'
 
 export default defineConfig({
-  site: 'https://soporte.glymm.com.ar',
+  site: 'https://ayuda.glymm.com.ar',
   integrations: [
     starlight({
       title: 'Centro de Ayuda GLYMM',
-      description: 'Sistema de gestion para tu salon de extensiones de cabello',
+      description: 'Sistema de gestión para tu salón de extensiones de cabello',
       defaultLocale: 'root',
       locales: {
-        root: { label: 'Espanol', lang: 'es' },
+        root: { label: 'Español', lang: 'es' },
       },
       logo: {
         src: './src/assets/glymm.svg',
@@ -26,7 +26,7 @@ export default defineConfig({
       sidebar: [
         { label: 'Inicio', link: '/' },
         {
-          label: 'Modulos',
+          label: 'Módulos',
           collapsed: false,
           items: [
             { label: 'Clientes', link: '/clientes/' },
@@ -34,9 +34,9 @@ export default defineConfig({
             { label: 'Servicios', link: '/servicios/' },
             { label: 'Insumos', link: '/insumos/' },
             { label: 'Stock', link: '/stock/' },
-            { label: 'Facturacion', link: '/facturacion/' },
+            { label: 'Facturación', link: '/facturacion/' },
             { label: 'Usuarios', link: '/usuarios/' },
-            { label: 'Configuracion', link: '/configuracion/' },
+            { label: 'Configuración', link: '/configuracion/' },
             { label: 'Permisos', link: '/permisos/' }
           ]
         },
@@ -45,7 +45,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { label: 'Preguntas Frecuentes', link: '/faq/' },
-            { label: 'Solucion de Problemas', link: '/solucion-de-problemas/' }
+            { label: 'Solución de Problemas', link: '/solucion-de-problemas/' }
           ]
         }
       ],

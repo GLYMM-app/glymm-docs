@@ -1,11 +1,11 @@
-﻿---
-title: Registro de Insumos
-description: Registra materiales, codigos, unidades de medida y costos.
+---
+title: "Registro de Insumos"
+description: "Registrá materiales, códigos, unidades de medida y costos."
 ---
 
-## IntroducciÃ³n
+## Introducción
 
-Los insumos son los materiales y productos que utilizas en tu salÃ³n. En esta guÃ­a aprenderÃ¡s cÃ³mo registrar y gestionar insumos para controlar costos y mantener un inventario organizado.
+Los insumos son los materiales y productos que utilizas en tu salón. En esta guía aprenderás cómo registrar y gestionar insumos para controlar costos y mantener un inventario organizado.
 
 ---
 
@@ -13,15 +13,15 @@ Los insumos son los materiales y productos que utilizas en tu salÃ³n. En esta 
 
 ### Pasos para crear un insumo:
 
-1. DirÃ­gete a la secciÃ³n **Insumos** desde el menÃº principal
-2. Haz clic en el botÃ³n **+ Nuevo Insumo**
+1. Dirígete a la sección **Insumos** desde el menú principal
+2. Haz clic en el botón **+ Nuevo Insumo**
 3. Completa los siguientes campos:
 
 #### Campos Opcionales
 
-- **CÃ³digo:** CÃ³digo identificador del insumo (opcional)
+- **Código:** Código identificador del insumo (opcional)
 - **Nombre:** Nombre descriptivo del insumo (opcional)
-- **Unidad de medida:** Unidad en que se mide (ej: kg, lt, un) - mÃ¡ximo 2 caracteres
+- **Unidad de medida:** Unidad en que se mide (ej: kg, lt, un) - máximo 2 caracteres
 
 #### Campos Obligatorios
 
@@ -29,23 +29,21 @@ Los insumos son los materiales y productos que utilizas en tu salÃ³n. En esta 
 
 4. Haz clic en **Guardar**
 
-:::tip[Consejo]
-Usa cÃ³digos consistentes para facilitar la bÃºsqueda y organizaciÃ³n. Las unidades de medida comunes son: kg (kilogramos), lt (litros), un (unidades), m (metros).
+!!! tip "Consejo"
+    Usa códigos consistentes para facilitar la búsqueda y organización. Las unidades de medida comunes son: kg (kilogramos), lt (litros), un (unidades), m (metros).
 
-:::
 ---
 
 ## Editar un Insumo
 
 1. Busca el insumo en la lista
-2. Haz clic en el botÃ³n **âœŽ Editar**
+2. Haz clic en el botón **✎ Editar**
 3. Realiza los cambios necesarios
 4. Haz clic en **Guardar cambios**
 
-:::note[ActualizaciÃ³n de Costos]
-Si cambias el costo unitario, los cÃ¡lculos futuros usarÃ¡n el nuevo precio. Los registros histÃ³ricos mantendrÃ¡n el costo original.
+!!! note "Actualización de Costos"
+    Si cambias el costo unitario, los cálculos futuros usarán el nuevo precio. Los registros históricos mantendrán el costo original.
 
-:::
 ---
 
 ## Eliminar un Insumo
@@ -53,23 +51,22 @@ Si cambias el costo unitario, los cÃ¡lculos futuros usarÃ¡n el nuevo precio.
 Para eliminar un insumo:
 
 1. Busca el insumo en la lista
-2. Haz clic en el botÃ³n **ðŸ—‘ Eliminar**
-3. Confirma la eliminaciÃ³n
+2. Haz clic en el botón **🗑 Eliminar**
+3. Confirma la eliminación
 
-:::caution[AtenciÃ³n]
-La eliminaciÃ³n es permanente. AsegÃºrate de que el insumo no estÃ© siendo usado en otros registros antes de eliminarlo.
+!!! warning "Atención"
+    La eliminación es permanente. Asegúrate de que el insumo no esté siendo usado en otros registros antes de eliminarlo.
 
-:::
 ---
 
 ## Vista de Lista de Insumos
 
 La vista de insumos muestra cada insumo en formato de tarjetas con:
 
-| InformaciÃ³n | DescripciÃ³n |
+| Información | Descripción |
 |-----------|-------------|
-| **Nombre** | Nombre del insumo (o "Sin nombre" si no estÃ¡ registrado) |
-| **CÃ³digo** | CÃ³digo identificador (si estÃ¡ registrado) |
+| **Nombre** | Nombre del insumo (o "Sin nombre" si no está registrado) |
+| **Código** | Código identificador (si está registrado) |
 | **Unidad de medida** | Unidad en que se mide el insumo |
 | **Costo unitario** | Precio por unidad |
 
@@ -77,24 +74,24 @@ La vista de insumos muestra cada insumo en formato de tarjetas con:
 
 ## Campos de Insumos
 
-### CÃ³digo
+### Código
 
-El cÃ³digo es un identificador Ãºnico opcional que puedes usar para:
-- BÃºsqueda rÃ¡pida
+El código es un identificador único opcional que puedes usar para:
+- Búsqueda rápida
 - Referencias internas
-- IntegraciÃ³n con otros sistemas
-- OrganizaciÃ³n por categorÃ­as
+- Integración con otros sistemas
+- Organización por categorías
 
 ### Nombre
 
 El nombre descriptivo del insumo. Ejemplos:
-- "Cabello sintÃ©tico premium"
+- "Cabello sintético premium"
 - "Adhesivo para extensiones"
 - "Shampoo especializado"
 
 ### Unidad de Medida
 
-La unidad en que se mide el insumo. LÃ­mite de 2 caracteres. Ejemplos comunes:
+La unidad en que se mide el insumo. Límite de 2 caracteres. Ejemplos comunes:
 - **kg:** Kilogramos
 - **lt:** Litros
 - **un:** Unidades
@@ -104,84 +101,80 @@ La unidad en que se mide el insumo. LÃ­mite de 2 caracteres. Ejemplos comunes:
 ### Costo Unitario
 
 El precio por unidad del insumo. Este campo es obligatorio y se usa para:
-- CÃ¡lculo de costos de servicios
-- AnÃ¡lisis de rentabilidad
+- Cálculo de costos de servicios
+- Análisis de rentabilidad
 - Control de gastos
 
-:::tip[PrecisiÃ³n]
-Puedes ingresar hasta 4 decimales en el costo unitario para mayor precisiÃ³n en los cÃ¡lculos.
+!!! tip "Precisión"
+    Puedes ingresar hasta 4 decimales en el costo unitario para mayor precisión en los cálculos.
 
-:::
 ---
 
-## Mejores PrÃ¡cticas
+## Mejores Prácticas
 
-### âœ… Recomendaciones
+### ✅ Recomendaciones
 
-- Usa cÃ³digos consistentes y descriptivos
-- Registra nombres claros y especÃ­ficos
-- MantÃ©n actualizados los costos unitarios
-- Usa unidades de medida estÃ¡ndar
-- Organiza los insumos por categorÃ­as usando cÃ³digos
+- Usa códigos consistentes y descriptivos
+- Registra nombres claros y específicos
+- Mantén actualizados los costos unitarios
+- Usa unidades de medida estándar
+- Organiza los insumos por categorías usando códigos
 
-### âŒ Evita
+### ❌ Evita
 
-- CÃ³digos duplicados o inconsistentes
-- Nombres genÃ©ricos o confusos
+- Códigos duplicados o inconsistentes
+- Nombres genéricos o confusos
 - Olvidar actualizar costos cuando cambian
-- Usar unidades de medida no estÃ¡ndar
+- Usar unidades de medida no estándar
 
 ---
 
-## OrganizaciÃ³n de Insumos
+## Organización de Insumos
 
-### Por CÃ³digo
+### Por Código
 
-Puedes usar cÃ³digos para organizar tus insumos:
+Puedes usar códigos para organizar tus insumos:
 - **CAB-001:** Cabello tipo A
 - **ADH-001:** Adhesivo tipo A
 - **SHM-001:** Shampoo tipo A
 
 ### Por Nombre
 
-Organiza por nombre cuando sea mÃ¡s intuitivo:
+Organiza por nombre cuando sea más intuitivo:
 - Usa nombres descriptivos
 - Agrupa por tipo de producto
-- Facilita la bÃºsqueda visual
+- Facilita la búsqueda visual
 
 ---
 
 ## Preguntas Frecuentes
 
-**Â¿Es obligatorio el cÃ³digo?**
-No, el cÃ³digo es opcional. Sin embargo, es recomendable usarlo para mejor organizaciÃ³n.
+**¿Es obligatorio el código?**
+No, el código es opcional. Sin embargo, es recomendable usarlo para mejor organización.
 
-**Â¿Puedo cambiar el costo unitario?**
-SÃ­, puedes editar el insumo y actualizar el costo. Los nuevos cÃ¡lculos usarÃ¡n el precio actualizado.
+**¿Puedo cambiar el costo unitario?**
+Sí, puedes editar el insumo y actualizar el costo. Los nuevos cálculos usarán el precio actualizado.
 
-**Â¿QuÃ© pasa si elimino un insumo?**
-La eliminaciÃ³n es permanente. Los registros histÃ³ricos que usaron ese insumo mantendrÃ¡n la informaciÃ³n, pero no podrÃ¡s crear nuevos registros con ese insumo.
+**¿Qué pasa si elimino un insumo?**
+La eliminación es permanente. Los registros históricos que usaron ese insumo mantendrán la información, pero no podrás crear nuevos registros con ese insumo.
 
-**Â¿Hay lÃ­mite de decimales en el costo?**
-Puedes usar hasta 4 decimales para mayor precisiÃ³n (ej: 125.4567).
+**¿Hay límite de decimales en el costo?**
+Puedes usar hasta 4 decimales para mayor precisión (ej: 125.4567).
 
-**Â¿Puedo usar la misma unidad de medida para todos?**
-SÃ­, pero es recomendable usar la unidad mÃ¡s apropiada para cada tipo de insumo.
+**¿Puedo usar la misma unidad de medida para todos?**
+Sí, pero es recomendable usar la unidad más apropiada para cada tipo de insumo.
 
-**Â¿CÃ³mo busco un insumo?**
+**¿Cómo busco un insumo?**
 Actualmente, puedes buscar visualmente en la lista. Los insumos se muestran en tarjetas organizadas.
 
 ---
 
-## IntegraciÃ³n con Otros MÃ³dulos
+## Integración con Otros Módulos
 
 Los insumos se pueden usar para:
-- **CÃ¡lculo de costos:** Determinar el costo real de los servicios
-- **AnÃ¡lisis de rentabilidad:** Comparar costos vs ingresos
+- **Cálculo de costos:** Determinar el costo real de los servicios
+- **Análisis de rentabilidad:** Comparar costos vs ingresos
 - **Control de inventario:** Registrar materiales utilizados
 
-:::note[Funcionalidad Futura]
-Las funcionalidades de cÃ¡lculo de costos y anÃ¡lisis pueden estar en desarrollo. Consulta las actualizaciones del sistema.
-
-:::
-
+!!! note "Funcionalidad Futura"
+    Las funcionalidades de cálculo de costos y análisis pueden estar en desarrollo. Consulta las actualizaciones del sistema.
