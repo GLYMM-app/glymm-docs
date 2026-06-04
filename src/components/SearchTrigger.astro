@@ -2,8 +2,21 @@
 ---
 <script>
   document.getElementById('hc-search-trigger')?.addEventListener('click', () => {
-    document.dispatchEvent(
-      new KeyboardEvent('keydown', { key: 'k', ctrlKey: true, bubbles: true })
+    // Starlight v1+ escucha Ctrl+K en window (no en document)
+    window.dispatchEvent(
+      new KeyboardEvent('keydown', {
+        key: 'k',
+        ctrlKey: true,
+        metaKey: true,
+        bubbles: true,
+        cancelable: true,
+      })
     )
+    // Fallback: click directo en el botón de búsqueda del header de Starlight
+    const btn =
+      document.querySelector<HTMLButtonElement>('button[data-open-modal]') ??
+      document.querySelector<HTMLButtonElement>('site-search button') ??
+      document.querySelector<HTMLButtonElement>('.search-item button')
+    btn?.click()
   })
 </script>
