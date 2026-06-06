@@ -76,17 +76,26 @@ const year = new Date().getFullYear()
   </div>
 </footer>
 
+<script>
+  function hoistFooter() {
+    const el = document.querySelector('footer.glymm-footer');
+    if (el && el.parentElement !== document.body) {
+      document.body.appendChild(el);
+    }
+  }
+  hoistFooter();
+  document.addEventListener('astro:after-swap', hoistFooter);
+</script>
+
 <style>
   .glymm-footer {
     background: #030213;
     color: #9ca3af;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    margin-top: 2rem;
+    margin-top: 0;
     font-family: var(--sl-font, system-ui, sans-serif);
     font-size: 0.875rem;
-    /* Break out of Starlight's content-panel padding */
-    margin-inline: calc(-1 * var(--sl-content-pad-x, 1.5rem));
-    width: calc(100% + 2 * var(--sl-content-pad-x, 1.5rem));
+    width: 100%;
   }
 
   .glymm-footer__inner {
