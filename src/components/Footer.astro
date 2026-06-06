@@ -78,9 +78,12 @@ const year = new Date().getFullYear()
 
 <script>
   function hoistFooter() {
-    const el = document.querySelector('footer.glymm-footer');
-    if (el && el.parentElement !== document.body) {
-      document.body.appendChild(el);
+    // Busca solo el footer dentro del layout de Starlight (no el ya movido al body)
+    const inlineFooter = document.querySelector('.page footer.glymm-footer');
+    if (inlineFooter) {
+      // Elimina footers previos en body (de navegaciones anteriores)
+      document.querySelectorAll('body > footer.glymm-footer').forEach(f => f.remove());
+      document.body.appendChild(inlineFooter);
     }
   }
   hoistFooter();
