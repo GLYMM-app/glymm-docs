@@ -78,12 +78,13 @@ const year = new Date().getFullYear()
 
 <script>
   function hoistFooter() {
-    // Busca solo el footer dentro del layout de Starlight (no el ya movido al body)
-    const inlineFooter = document.querySelector('.page footer.glymm-footer');
-    if (inlineFooter) {
-      // Elimina footers previos en body (de navegaciones anteriores)
-      document.querySelectorAll('body > footer.glymm-footer').forEach(f => f.remove());
-      document.body.appendChild(inlineFooter);
+    // El footer empieza dentro de .sl-container (constrained). Lo movemos a .main-pane
+    // para que ocupe el ancho completo del área de contenido (sin ser tapado por la sidebar fija).
+    const inlineFooter = document.querySelector('.sl-container > footer.glymm-footer');
+    const mainPane = document.querySelector('.main-pane');
+    if (inlineFooter && mainPane) {
+      mainPane.querySelectorAll(':scope > footer.glymm-footer').forEach(f => f.remove());
+      mainPane.appendChild(inlineFooter);
     }
   }
   hoistFooter();

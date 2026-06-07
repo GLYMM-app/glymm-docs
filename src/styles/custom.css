@@ -266,6 +266,14 @@
   display: none;
 }
 
+/* ── Footer full-width en main-pane ─────────────────────────────────────────── */
+/* El footer se mueve via JS de sl-container a .main-pane para escapar el max-width */
+.main-pane > footer.glymm-footer {
+  width: 100%;
+  max-width: none;
+  flex-shrink: 0;
+}
+
 /* ── Sidebar ────────────────────────────────────────────────────────────────── */
 
 nav.sidebar {
