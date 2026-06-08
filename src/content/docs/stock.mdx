@@ -1,0 +1,132 @@
+---
+title: "Control de Stock"
+description: "Inventario de extensiones, alertas de stock bajo y proveedores."
+---
+
+import { Steps, Card, CardGrid, Badge } from '@astrojs/starlight/components'
+
+El módulo de Stock te permite registrar los productos e insumos de tu salón, saber cuánto tenés disponible y recibir alertas cuando es momento de reponer.
+
+---
+
+## Crear un item de stock
+
+<Steps>
+
+1. Entrá a la sección **Stock** desde el menú principal.
+
+2. Hacé clic en **+ Nuevo Item**.
+
+3. Completá los campos:
+
+   <Badge text="Obligatorio" variant="danger" /> **Tipo de Extensión** — nombre o tipo del producto.
+
+   <Badge text="Obligatorio" variant="danger" /> **Cantidad** — cantidad actual disponible.
+
+   <Badge text="Obligatorio" variant="danger" /> **Punto de Reposición** — cantidad mínima antes de necesitar reabastecer.
+
+   <Badge text="Opcional" variant="note" /> **Proveedor** — nombre del proveedor.
+
+4. Hacé clic en **Guardar**.
+
+</Steps>
+
+:::tip[¿Cómo calculo el punto de reposición?]
+Pensá cuánto consumís por semana y cuánto tarda tu proveedor en entregar. Multiplicá esos dos números y sumale un margen de seguridad. Ejemplo: 10 unidades/semana × 2 semanas = 20 unidades mínimas.
+:::
+
+---
+
+## Editar un item
+
+<Steps>
+
+1. Buscá el item en la lista.
+
+2. Hacé clic en ✎ **Editar**.
+
+3. Actualizá la cantidad, punto de reposición, proveedor o nombre.
+
+4. Hacé clic en **Guardar cambios**.
+
+</Steps>
+
+:::note[Actualizá la cantidad regularmente]
+Cada vez que recibís un pedido o usás materiales, actualizá la cantidad para que el sistema refleje la realidad.
+:::
+
+---
+
+## Eliminar un item
+
+<Steps>
+
+1. Buscá el item en la lista.
+
+2. Hacé clic en 🗑 **Eliminar**.
+
+3. Confirmá la eliminación.
+
+</Steps>
+
+:::danger[Esto no se puede deshacer]
+Asegurate antes de confirmar.
+:::
+
+---
+
+## Buscar items
+
+Escribí cualquier parte del nombre en la barra de búsqueda — la lista se filtra en tiempo real.
+
+---
+
+## Vista de lista
+
+Cada item aparece en una tarjeta con:
+
+<CardGrid>
+  <Card title="Tipo de Extensión" icon="document">
+    Nombre o tipo del producto.
+  </Card>
+  <Card title="Cantidad" icon="star">
+    Stock disponible, destacado en grande.
+  </Card>
+  <Card title="Proveedor" icon="person">
+    Nombre del proveedor, si lo registraste.
+  </Card>
+  <Card title="Punto de Reposición" icon="warning">
+    Cantidad mínima configurada.
+  </Card>
+</CardGrid>
+
+---
+
+## Alertas de stock bajo
+
+Cuando la cantidad es **igual o menor al punto de reposición**, el item se marca visualmente:
+
+- Borde y fondo rojo en la tarjeta.
+- Cantidad destacada en rojo.
+- Ícono **⚠️ Stock bajo** visible.
+
+Ese es el momento de hacer el pedido al proveedor.
+
+---
+
+## Preguntas frecuentes
+
+**¿Cómo sé cuándo hacer un pedido?**
+Cuando aparece la alerta de "Stock bajo". Configurá el punto de reposición para que ese aviso llegue con suficiente anticipación.
+
+**¿La cantidad puede ser negativa?**
+No. Debe ser cero o un número positivo.
+
+**¿El punto de reposición es obligatorio?**
+Sí. Es el campo que activa las alertas, así que no puede quedar vacío.
+
+**¿Puedo tener varios items del mismo tipo?**
+Sí, por ejemplo si tenés el mismo producto de dos proveedores distintos.
+
+**¿Los items con stock bajo se borran solos?**
+No. Solo se marcan. Vos decidís cuándo reabastecer y actualizar la cantidad.

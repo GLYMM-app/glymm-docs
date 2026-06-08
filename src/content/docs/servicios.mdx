@@ -1,0 +1,257 @@
+---
+title: "Administración de Servicios"
+description: "Gestioná tu catálogo de servicios, precios y subservicios."
+---
+
+import { Steps, Tabs, TabItem, Card, CardGrid, Badge } from '@astrojs/starlight/components'
+
+Tus servicios son el catálogo de lo que ofrecés. Acá te explicamos cómo crearlos, editarlos y organizarlos, incluyendo subservicios con descuentos automáticos.
+
+---
+
+## Crear un nuevo servicio
+
+<Steps>
+
+1. Entrá a la sección **Servicios** desde el menú principal.
+
+2. Hacé clic en **+ Nuevo Servicio**.
+
+3. Completá los campos:
+
+   **Obligatorios** <Badge text="Obligatorio" variant="danger" />
+   - **Nombre del servicio:** un nombre descriptivo.
+   - **Precio:** el precio en pesos.
+   - **Duración (minutos):** cuánto tiempo lleva hacerlo.
+
+   **Opcional** <Badge text="Opcional" variant="note" />
+   - **Descripción:** información adicional sobre el servicio.
+
+4. Hacé clic en **Guardar**.
+
+</Steps>
+
+:::tip[Nombres claros, tiempos reales]
+Usá nombres descriptivos para tus servicios y cargá una duración realista: eso te ayuda después a programar bien los turnos.
+:::
+
+---
+
+## Editar un servicio
+
+<Steps>
+
+1. Buscá el servicio en la lista.
+
+2. Hacé clic en ✎ **Editar**.
+
+3. Hacé los cambios que necesites.
+
+4. Hacé clic en **Guardar cambios**.
+
+</Steps>
+
+:::note[Si cambiás el precio]
+Los turnos futuros usarán el precio nuevo. Los turnos ya creados mantienen el precio original.
+:::
+
+---
+
+## Eliminar un servicio
+
+<Steps>
+
+1. Buscá el servicio en la lista.
+
+2. Hacé clic en 🗑 **Eliminar**.
+
+3. Confirmá la eliminación.
+
+</Steps>
+
+:::caution[Revisá antes de borrar]
+Fijate que el servicio no esté en uso en turnos antes de eliminarlo. La eliminación es permanente.
+:::
+
+---
+
+## Buscar servicios
+
+Escribí cualquier parte del nombre en la barra de búsqueda y la lista se filtra en tiempo real, mientras escribís.
+
+---
+
+## Vista de lista de servicios
+
+Cada servicio aparece en una tarjeta con esta información:
+
+<CardGrid>
+  <Card title="Nombre" icon="pencil">
+    Nombre del servicio.
+  </Card>
+  <Card title="Precio" icon="seti:default">
+    Precio en pesos argentinos.
+  </Card>
+  <Card title="Duración" icon="calendar">
+    Tiempo en minutos.
+  </Card>
+  <Card title="Descripción" icon="document">
+    Información adicional, si la cargaste.
+  </Card>
+  <Card title="Subservicios" icon="list-format">
+    Subservicios asociados, si los hay.
+  </Card>
+</CardGrid>
+
+---
+
+## Subservicios
+
+Los subservicios son variantes de un servicio principal que aplican un descuento automático. Te sirven para ofrecer distintas opciones del mismo servicio a precio reducido.
+
+### Activar subservicios
+
+Primero hay que activarlos en la configuración de tu salón:
+
+<Steps>
+
+1. Andá a **Configuración**.
+
+2. Activá la opción "Usa Subservicios".
+
+3. Guardá los cambios.
+
+</Steps>
+
+### Crear un subservicio
+
+<Steps>
+
+1. En la tarjeta del servicio, ubicá la sección **Subservicios**.
+
+2. Hacé clic en **+ Agregar**.
+
+3. Completá los campos:
+
+   - **Nombre:** opcional, pero recomendado.
+   - **Activo:** marcá la casilla para que esté disponible.
+
+   **Descuento (elegí uno):**
+   - **Porcentaje de descuento:** porcentaje a descontar del precio principal.
+   - **Importe de descuento:** monto fijo a descontar del precio principal.
+
+4. Hacé clic en **Guardar**.
+
+</Steps>
+
+:::tip[Porcentaje o importe]
+Podés usar porcentaje o importe fijo, el que prefieras. GLYMM calcula solo el precio final del subservicio.
+:::
+
+### Editar un subservicio
+
+<Steps>
+
+1. En la tarjeta del servicio, ubicá el subservicio.
+
+2. Hacé clic en ✎ **Editar**.
+
+3. Hacé los cambios que necesites.
+
+4. Hacé clic en **Guardar cambios**.
+
+</Steps>
+
+### Eliminar un subservicio
+
+<Steps>
+
+1. En la tarjeta del servicio, ubicá el subservicio.
+
+2. Hacé clic en 🗑 **Eliminar**.
+
+3. Confirmá la eliminación.
+
+</Steps>
+
+### Estados de subservicios
+
+- **Activo:** se puede seleccionar al crear turnos.
+- **Inactivo:** no aparece entre las opciones al crear turnos.
+
+---
+
+## Qué muestra cada servicio
+
+### Precio
+
+Se muestra en pesos argentinos. En las tarjetas, el precio aparece destacado en rosa.
+
+### Duración
+
+Se muestra en minutos. Te sirve para:
+- Calcular la duración total de turnos con servicios extras.
+- Programar turnos consecutivos.
+- Estimar tiempos de trabajo.
+
+### Descripción
+
+Es opcional, pero útil para anotar detalles del servicio, materiales incluidos, técnicas usadas o cualquier dato relevante.
+
+---
+
+## Los servicios en los turnos
+
+Cuando creás un turno:
+
+<Steps>
+
+1. Elegís un **servicio principal**.
+
+2. Si tiene subservicios activos, podés elegir uno (aplica descuento).
+
+3. Podés sumar **servicios extras**.
+
+4. GLYMM calcula solo el precio total (principal + extras − descuentos) y la duración total.
+
+</Steps>
+
+---
+
+## Buenas prácticas
+
+**Recomendado**
+- Usá nombres claros y descriptivos.
+- Mantené precios consistentes.
+- Cargá duraciones realistas.
+- Agregá descripciones cuando sumen.
+- Organizá subservicios para ofrecer opciones a tus clientas.
+
+**Evitá**
+- Nombres genéricos o confusos.
+- Precios distintos para servicios parecidos.
+- Duplicar servicios con variaciones mínimas.
+- Olvidarte de actualizar precios cuando cambian.
+
+---
+
+## Preguntas frecuentes
+
+**¿Puedo cambiar el precio de un servicio?**
+Sí. Editás el servicio y cambiás el precio. Los turnos futuros usan el precio nuevo.
+
+**¿Qué pasa si elimino un servicio que está en turnos?**
+Los turnos existentes mantienen su información, pero no vas a poder crear turnos nuevos con ese servicio.
+
+**¿Cuántos subservicios puedo crear?**
+No hay límite. Creá todos los que necesites.
+
+**¿Puedo usar porcentaje e importe a la vez?**
+No, tenés que elegir uno. GLYMM calcula el precio final según el tipo de descuento que uses.
+
+**¿Los subservicios inactivos se eliminan?**
+No. Se mantienen, pero no aparecen al crear turnos. Los reactivás editándolos.
+
+**¿Cómo se calcula el precio con subservicio?**
+- Con porcentaje: Precio final = Precio principal × (1 − Porcentaje/100)
+- Con importe: Precio final = Precio principal − Importe

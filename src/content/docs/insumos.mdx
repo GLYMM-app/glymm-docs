@@ -1,0 +1,123 @@
+---
+title: "Registro de Insumos"
+description: "Registrá materiales, códigos, unidades de medida y costos."
+---
+
+import { Steps, Card, CardGrid, Badge } from '@astrojs/starlight/components'
+
+Los insumos son los materiales y productos que usás en tu salón. Registrarlos te permite controlar costos y saber cuánto te sale cada servicio.
+
+---
+
+## Crear un insumo
+
+<Steps>
+
+1. Entrá a la sección **Insumos** desde el menú principal.
+
+2. Hacé clic en **+ Nuevo Insumo**.
+
+3. Completá los campos:
+
+   <Badge text="Obligatorio" variant="danger" /> **Costo unitario** — precio por unidad del insumo.
+
+   <Badge text="Opcional" variant="note" /> **Código** — identificador propio para búsqueda y organización.
+
+   <Badge text="Opcional" variant="note" /> **Nombre** — descripción del material (ej: "Shampoo especializado").
+
+   <Badge text="Opcional" variant="note" /> **Unidad de medida** — máximo 2 caracteres (kg, lt, un, m, gr).
+
+4. Hacé clic en **Guardar**.
+
+</Steps>
+
+:::tip[Usá códigos consistentes]
+Los códigos te ayudan a buscar rápido y agrupar por categoría. Por ejemplo: `CAB-001` para cabello, `ADH-001` para adhesivos.
+:::
+
+---
+
+## Editar un insumo
+
+<Steps>
+
+1. Buscá el insumo en la lista.
+
+2. Hacé clic en ✎ **Editar**.
+
+3. Hacé los cambios que necesites.
+
+4. Hacé clic en **Guardar cambios**.
+
+</Steps>
+
+:::note[Actualización de costos]
+Si cambiás el costo unitario, los cálculos futuros van a usar el precio nuevo. Los registros históricos mantienen el costo original.
+:::
+
+---
+
+## Eliminar un insumo
+
+<Steps>
+
+1. Buscá el insumo en la lista.
+
+2. Hacé clic en 🗑 **Eliminar**.
+
+3. Confirmá la eliminación.
+
+</Steps>
+
+:::danger[Esto no se puede deshacer]
+Asegurate de que el insumo no esté en uso antes de eliminarlo.
+:::
+
+---
+
+## Vista de lista
+
+Cada insumo aparece en una tarjeta con:
+
+<CardGrid>
+  <Card title="Nombre" icon="document">
+    Descripción del material, o "Sin nombre" si no lo registraste.
+  </Card>
+  <Card title="Código" icon="magnifier">
+    Identificador para búsqueda rápida.
+  </Card>
+  <Card title="Unidad de medida" icon="information">
+    La unidad en que medís el insumo (kg, lt, un...).
+  </Card>
+  <Card title="Costo unitario" icon="star">
+    Precio por unidad. Acepta hasta 4 decimales.
+  </Card>
+</CardGrid>
+
+---
+
+## Unidades de medida comunes
+
+| Código | Significado |
+|--------|-------------|
+| `kg`   | Kilogramos  |
+| `lt`   | Litros      |
+| `un`   | Unidades    |
+| `m`    | Metros      |
+| `gr`   | Gramos      |
+
+---
+
+## Preguntas frecuentes
+
+**¿Es obligatorio el código?**
+No. Pero usarlo hace mucho más fácil buscar y organizar.
+
+**¿Puedo cambiar el costo unitario?**
+Sí. Editá el insumo cuando quieras. Los cálculos históricos no cambian.
+
+**¿Qué pasa si elimino un insumo?**
+Se borra permanentemente. Los registros históricos mantienen la información, pero no podés crear nuevos registros con ese insumo.
+
+**¿Hay límite de decimales en el costo?**
+Podés usar hasta 4 decimales (ej: `125.4567`).

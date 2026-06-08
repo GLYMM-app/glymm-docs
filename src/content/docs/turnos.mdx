@@ -1,0 +1,373 @@
+---
+title: "Gestión de Turnos"
+description: "Programá turnos con calendario, servicios extras, adelantos y descuentos."
+---
+
+import { Steps, Tabs, TabItem, Card, CardGrid, Badge } from '@astrojs/starlight/components'
+
+Los turnos son la base para organizar el día a día de tu salón. Acá te explicamos cómo crearlos, modificarlos y gestionarlos: calendario, servicios extras, adelantos y descuentos.
+
+---
+
+## Crear un nuevo turno
+
+<Steps>
+
+1. Entrá a la sección **Turnos** desde el menú principal.
+
+2. Hacé clic en **+ Nuevo Turno**.
+
+3. Completá los campos:
+
+   **Obligatorios** <Badge text="Obligatorio" variant="danger" />
+   - **Cliente:** elegí la clienta de la lista.
+   - **Servicio:** elegí el servicio principal.
+   - **Fecha:** la fecha del turno.
+   - **Hora:** la hora de inicio.
+
+   **Opcionales** <Badge text="Opcional" variant="note" />
+   - **Subservicio:** si tu salón usa subservicios, elegí uno (aplica descuento al servicio principal).
+   - **Servicios extras:** sumá servicios adicionales.
+   - **Usuario asignado:** la profesional que atenderá el turno.
+   - **Estado:** Pendiente (por defecto), Realizado o Cancelado.
+   - **Adelanto:** registralo en monto o porcentaje.
+   - **Descuento:** aplicalo en monto o porcentaje.
+   - **Observaciones:** notas adicionales (máximo 200 caracteres).
+
+4. Hacé clic en **Guardar**.
+
+</Steps>
+
+:::note[GLYMM hace las cuentas por vos]
+El sistema calcula solo el precio total y la duración total del turno, sumando servicios extras, subservicios (con sus descuentos) y los descuentos que apliques.
+:::
+
+---
+
+## Vista de calendario
+
+GLYMM te da dos vistas de calendario para organizar tus turnos.
+
+### Vista mensual
+
+Muestra todos los turnos del mes en un calendario clásico:
+
+- **Navegación:** usá "← Anterior" y "Siguiente →" para cambiar de mes.
+- **Hoy:** volvé al mes actual con el botón "Hoy".
+- **Colores por estado:**
+  - 🟡 **Amarillo:** Pendiente
+  - 🟢 **Verde:** Realizado
+  - 🔴 **Rojo:** Cancelado
+
+### Vista semanal
+
+Muestra los turnos de la semana en columnas por día. Cada turno indica hora, nombre de la clienta y servicio, con los mismos colores de estado.
+
+### Cambiar entre vistas
+
+<Steps>
+
+1. Hacé clic en 📅 **Calendario** para activar la vista de calendario.
+
+2. Usá los botones **Mes** y **Semana** para alternar.
+
+3. Hacé clic en 📋 **Lista** para volver a la vista de lista.
+
+</Steps>
+
+### Acciones rápidas en el calendario
+
+- **Clic en el turno:** abre el formulario de edición.
+- **Botón ✓:** marca el turno como "Realizado".
+- **Botón ✗:** marca el turno como "Cancelado".
+
+---
+
+## Vista de lista
+
+La vista de lista muestra todos los turnos con su detalle.
+
+### Filtros disponibles
+
+- **Fecha desde** y **Fecha hasta:** acotá el rango de fechas.
+- **Estado:** Pendiente, Realizado o Cancelado.
+- **Usuario:** filtrá por profesional asignada.
+
+:::tip[Qué ves por defecto]
+La vista de lista muestra los turnos desde hoy hasta 30 días hacia adelante.
+:::
+
+### Qué muestra cada turno
+
+- **Cliente:** nombre de la clienta.
+- **Servicio:** servicio principal y extras (si los hay).
+- **Fecha y hora.**
+- **Duración total:** suma de todas las duraciones.
+- **Precio total:** con extras, descuentos y adelantos ya calculados.
+- **Adelanto** y **Descuento:** si los tiene.
+- **Estado:** con su color.
+- **Observaciones.**
+
+---
+
+## Modificar un turno
+
+<Steps>
+
+1. Buscá el turno (en lista o calendario).
+
+2. Hacé clic en ✎ **Editar**, o directamente sobre el turno en el calendario.
+
+3. Hacé los cambios que necesites.
+
+4. Hacé clic en **Guardar cambios**.
+
+</Steps>
+
+:::note[Turnos ya realizados]
+Podés modificar turnos en cualquier estado, aunque algunos campos pueden estar limitados según el estado del turno.
+:::
+
+---
+
+## Cambio rápido de estado
+
+Para cambiar el estado sin abrir el formulario completo:
+
+<Steps>
+
+1. En el calendario o la lista, ubicá el turno.
+
+2. Hacé clic en **✓** (Realizado) o **✗** (Cancelado).
+
+</Steps>
+
+El cambio se aplica al instante y el turno se actualiza visualmente.
+
+---
+
+## Cancelar un turno
+
+<Steps>
+
+1. Seleccioná el turno a cancelar.
+
+2. Hacé clic en **✗**, o editá el turno y cambiá el estado a "Cancelado".
+
+3. El turno queda marcado como cancelado y aparece en rojo.
+
+</Steps>
+
+:::caution[Pensalo antes]
+Cancelar un turno es una acción importante. Confirmá que realmente lo querés cancelar.
+:::
+
+---
+
+## Adelantos
+
+Podés registrar un adelanto de dos formas, y GLYMM completa la otra sola.
+
+<Steps>
+
+1. Marcá la casilla **Tiene adelanto**.
+
+2. Ingresá el **monto** o el **porcentaje** del adelanto.
+
+3. El sistema calcula automáticamente el valor que falta.
+
+</Steps>
+
+:::tip[Una sola cuenta]
+Cargás monto o porcentaje, lo que te sea más cómodo, y GLYMM calcula el otro sobre el precio del servicio.
+:::
+
+---
+
+## Descuentos
+
+Igual que los adelantos: cargás uno y el sistema calcula el otro.
+
+<Steps>
+
+1. Marcá la casilla **Tiene descuento**.
+
+2. Ingresá el **monto** o el **porcentaje** del descuento.
+
+3. El sistema calcula automáticamente el valor que falta.
+
+</Steps>
+
+:::note[Si cargás los dos]
+Si ingresás monto y porcentaje a la vez, GLYMM prioriza el monto para el precio final.
+:::
+
+---
+
+## Servicios extras
+
+Los servicios extras te dejan sumar servicios adicionales a un turno.
+
+### Agregar servicios extras
+
+<Tabs>
+  <TabItem label="Windows">
+    Al crear o editar el turno, andá a **Servicios extras**, mantené presionada la tecla **Ctrl** y hacé clic en cada servicio que quieras sumar.
+  </TabItem>
+  <TabItem label="Mac">
+    Al crear o editar el turno, andá a **Servicios extras**, mantené presionada la tecla **Cmd** y hacé clic en cada servicio que quieras sumar.
+  </TabItem>
+</Tabs>
+
+A medida que seleccionás, GLYMM actualiza el precio total y la duración total.
+
+### Qué se calcula
+
+- **Precio total:** servicio principal + servicios extras − descuentos.
+- **Duración total:** suma de las duraciones de todos los servicios.
+
+:::tip[El principal no se repite]
+El servicio principal no aparece entre los servicios extras: solo podés sumar otros servicios distintos.
+:::
+
+---
+
+## Subservicios
+
+Si tu salón tiene subservicios configurados, podés aplicarlos al turno.
+
+<Steps>
+
+1. Elegí un servicio principal que tenga subservicios disponibles.
+
+2. Aparece un campo **Subservicio** debajo del servicio principal.
+
+3. Elegí el subservicio.
+
+4. GLYMM aplica solo el descuento del subservicio al precio.
+
+</Steps>
+
+:::note[Configuración previa]
+Los subservicios se crean en la sección **Servicios** y se activan desde la **Configuración** de tu salón.
+:::
+
+---
+
+## Asignar profesional
+
+Podés asignar una profesional a cada turno.
+
+<Steps>
+
+1. En el formulario del turno, ubicá el campo **Usuario asignado**.
+
+2. Elegí la profesional de la lista.
+
+3. Si esa persona tiene Google Calendar vinculado, el turno se sincroniza solo.
+
+</Steps>
+
+:::tip[Sincronización con Google Calendar]
+Si la profesional asignada tiene Google Calendar configurado, el turno se agrega automáticamente a su calendario.
+:::
+
+---
+
+## Observaciones
+
+El campo de observaciones es para notas adicionales del turno:
+
+- **Límite:** 200 caracteres.
+- **Para qué:** preferencias, instrucciones especiales, recordatorios.
+- **Contador:** te muestra cuántos caracteres llevás (por ejemplo, 150/200).
+
+---
+
+## Eliminar un turno
+
+<Steps>
+
+1. Buscá el turno en la lista.
+
+2. Hacé clic en 🗑 **Eliminar**.
+
+3. Confirmá la eliminación.
+
+</Steps>
+
+:::danger[Esto no se puede deshacer]
+Eliminar un turno es permanente. Asegurate de que realmente lo querés borrar.
+:::
+
+---
+
+## Estados de turno
+
+| Estado | Color | Qué significa |
+|--------|-------|---------------|
+| **Pendiente** | 🟡 Amarillo | Turno programado, todavía no realizado |
+| **Realizado** | 🟢 Verde | Turno completado |
+| **Cancelado** | 🔴 Rojo | Turno cancelado |
+
+---
+
+## Cómo se calculan precios y duraciones
+
+GLYMM hace estas cuentas solo:
+
+**Precio total**
+1. Precio del servicio principal
+2. \+ servicios extras
+3. − descuento del subservicio (si aplica)
+4. − descuento del turno (si aplica)
+5. = precio total
+
+**Duración total**
+1. Duración del servicio principal
+2. \+ duraciones de los servicios extras
+3. = duración total
+
+---
+
+## Preguntas frecuentes sobre turnos
+
+**¿Puedo modificar un turno que ya empezó?**
+Sí, en cualquier estado. Algunos campos pueden estar limitados según el estado.
+
+**¿Qué pasa si cancelo un turno?**
+Queda marcado como cancelado y aparece en rojo. La información se conserva.
+
+**¿Puedo crear turnos recurrentes?**
+Por ahora no de forma automática. Podés duplicar un turno manualmente y cambiarle la fecha.
+
+**¿Cómo se calcula el precio con adelantos y descuentos?**
+GLYMM lo hace solo: primero aplica los descuentos y luego resta el adelanto del precio final.
+
+**¿Puedo agregar más de un servicio extra?**
+Sí, todos los que necesites. Mantené Ctrl (Windows) o Cmd (Mac) y seleccioná varios.
+
+**¿Los servicios extras afectan la duración?**
+Sí. La duración total suma el servicio principal más todos los extras.
+
+**¿Qué pasa si no asigno profesional?**
+El turno se crea sin asignar. Podés asignarla después editándolo.
+
+**¿Puedo cambiar el estado de varios turnos a la vez?**
+Por ahora se hace de a uno, con los botones de cambio rápido.
+
+---
+
+## Buenas prácticas
+
+**Recomendado**
+- Creá los turnos con la mayor antelación posible.
+- Asigná siempre una profesional para ordenarte mejor.
+- Usá las observaciones para lo importante.
+- Revisá seguido los turnos pendientes.
+- Marcá como "Realizado" cuando se completen.
+
+**Evitá**
+- Crear turnos duplicados para la misma clienta y hora.
+- Dejar turnos sin profesional si podés evitarlo.
+- Olvidarte de actualizar el estado de los turnos completados.

@@ -1,0 +1,163 @@
+---
+title: "Gestión de Usuarios"
+description: "Personal del salón, roles y administración de accesos."
+---
+
+import { Steps, Card, CardGrid, Badge } from '@astrojs/starlight/components'
+
+Los usuarios son el personal que tiene acceso a GLYMM. Acá podés crear cuentas, asignar roles y controlar qué puede hacer cada uno.
+
+---
+
+## Crear un usuario
+
+<Steps>
+
+1. Entrá a la sección **Usuarios** desde el menú principal.
+
+2. Hacé clic en **+ Nuevo Usuario**.
+
+3. Completá los campos:
+
+   <Badge text="Obligatorio" variant="danger" /> **Nombre** y **Apellido**.
+
+   <Badge text="Obligatorio" variant="danger" /> **Email** — debe ser único en el sistema.
+
+   <Badge text="Obligatorio" variant="danger" /> **Contraseña** — mínimo 8 caracteres, con mayúscula, minúscula, número y un carácter especial (`@$!%*?&`).
+
+   <Badge text="Opcional" variant="note" /> **Es Administrador** — acceso completo sin necesidad de permisos individuales.
+
+   <Badge text="Opcional" variant="note" /> **Permisos** — si el usuario no es administrador, podés asignarle permisos específicos.
+
+4. Hacé clic en **Guardar**.
+
+</Steps>
+
+:::tip[Contraseñas seguras]
+Usá el botón de mostrar/ocultar contraseña para verificar que la ingresaste bien antes de guardar.
+:::
+
+---
+
+## Editar un usuario
+
+<Steps>
+
+1. Buscá el usuario en la lista.
+
+2. Hacé clic en ✎ **Editar**.
+
+3. Hacé los cambios que necesites.
+
+4. Si querés cambiar la contraseña, ingresá una nueva. Si la dejás vacía, no se modifica.
+
+5. Hacé clic en **Guardar cambios**.
+
+</Steps>
+
+---
+
+## Eliminar un usuario
+
+<Steps>
+
+1. Buscá el usuario en la lista.
+
+2. Hacé clic en 🗑 **Eliminar**.
+
+3. Confirmá la eliminación.
+
+</Steps>
+
+:::danger[Esto no se puede deshacer]
+Asegurate de que el usuario no tenga turnos activos o información importante asociada antes de eliminarlo.
+:::
+
+---
+
+## Roles disponibles
+
+<CardGrid>
+  <Card title="Administrador" icon="star">
+    Acceso completo a todas las secciones. Puede gestionar usuarios, permisos y configuración del sistema.
+  </Card>
+  <Card title="Usuario regular" icon="person">
+    Accede solo a las secciones donde tiene permisos asignados. El administrador define qué puede hacer.
+  </Card>
+</CardGrid>
+
+---
+
+## Asignar permisos durante la creación
+
+Si el usuario **no es administrador**, aparece la sección de permisos en el mismo formulario:
+
+<Steps>
+
+1. Asegurate de que **Es Administrador** esté desmarcado.
+
+2. Expandí los módulos haciendo clic en su nombre.
+
+3. Marcá las casillas de los permisos que necesita.
+
+4. Se guardan automáticamente al guardar el usuario.
+
+</Steps>
+
+:::tip[Gestión detallada]
+Para una vista más completa de permisos por usuario, usá la sección **Permisos**. Consultá la [Guía de Permisos](permisos) para más detalles.
+:::
+
+---
+
+## Vista de lista de usuarios
+
+<CardGrid>
+  <Card title="Nombre completo" icon="person">
+    Nombre y apellido del usuario.
+  </Card>
+  <Card title="Email" icon="document">
+    Dirección de correo electrónico asociada.
+  </Card>
+  <Card title="Rol" icon="setting">
+    Administrador o Usuario (con sus permisos específicos).
+  </Card>
+</CardGrid>
+
+---
+
+## Asignar usuarios a turnos
+
+Al crear un turno, podés elegir qué profesional lo atiende:
+
+<Steps>
+
+1. En el formulario de turno, seleccioná **Usuario asignado**.
+
+2. Elegí el profesional de la lista desplegable.
+
+3. El turno queda asociado a ese usuario.
+
+</Steps>
+
+---
+
+## Preguntas frecuentes
+
+**¿Puedo tener varios administradores?**
+Sí. No hay límite de administradores.
+
+**¿Puedo cambiar el email de un usuario?**
+Sí, editándolo. El email debe ser único en el sistema.
+
+**¿Qué pasa si olvido la contraseña de un usuario?**
+Como administrador, podés editarlo y establecer una contraseña nueva.
+
+**¿Los usuarios pueden cambiar su propia contraseña?**
+Sí, desde la opción "¿Olvidaste tu contraseña?" en la pantalla de login.
+
+**¿Puedo desactivar un usuario sin eliminarlo?**
+Por ahora no. Hay que eliminar la cuenta. Consultá las actualizaciones del sistema para esta funcionalidad.
+
+**¿Los usuarios pueden ver sus propios turnos?**
+Sí, si tienen permiso de Turnos asignado.
