@@ -1,0 +1,74 @@
+---
+title: Centro de Ayuda GLYMM
+description: Encontrá respuestas sobre turnos, clientes, servicios y más.
+template: splash
+---
+
+import SearchTrigger from '../../components/SearchTrigger.astro'
+
+<div class="hc-hero">
+  <img src="/favicon.svg" alt="GLYMM" class="hc-hero__logo" />
+  <h1 class="hc-hero__title">¿Cómo podemos ayudarte?</h1>
+  <p class="hc-hero__sub">Encontrá guías sobre clientes, turnos, servicios, stock, facturación y configuración.</p>
+  <button class="hc-search" id="hc-search-trigger" type="button" aria-label="Buscar en el centro de ayuda">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    <span>Buscar en el centro de ayuda...</span>
+    <kbd>Ctrl K</kbd>
+  </button>
+  <div class="hc-tags">
+    <a href="/clientes/" class="hc-tag">Clientes</a>
+    <a href="/turnos/" class="hc-tag">Turnos</a>
+    <a href="/servicios/" class="hc-tag">Servicios</a>
+    <a href="/faq/" class="hc-tag">Preguntas frecuentes</a>
+    <a href="/solucion-de-problemas/" class="hc-tag">Problemas técnicos</a>
+  </div>
+</div>
+
+<div class="hc-sections">
+
+  <div class="hc-section">
+    <div class="hc-section__icon">💇</div>
+    <h2 class="hc-section__title">Gestión del salón</h2>
+    <p class="hc-section__desc">Todo sobre el día a día con tus clientas y servicios.</p>
+    <ul class="hc-section__links">
+      <li><a href="/clientes/">Gestión de Clientes</a></li>
+      <li><a href="/turnos/">Gestión de Turnos</a></li>
+      <li><a href="/servicios/">Administración de Servicios</a></li>
+    </ul>
+  </div>
+
+  <div class="hc-section">
+    <div class="hc-section__icon">📦</div>
+    <h2 class="hc-section__title">Inventario y finanzas</h2>
+    <p class="hc-section__desc">Control de materiales, stock y seguimiento de ingresos.</p>
+    <ul class="hc-section__links">
+      <li><a href="/insumos/">Registro de Insumos</a></li>
+      <li><a href="/stock/">Control de Stock</a></li>
+      <li><a href="/facturacion/">Gestión Financiera</a></li>
+    </ul>
+  </div>
+
+  <div class="hc-section">
+    <div class="hc-section__icon">⚙️</div>
+    <h2 class="hc-section__title">Configuración del sistema</h2>
+    <p class="hc-section__desc">Usuarios, permisos y preferencias de tu cuenta.</p>
+    <ul class="hc-section__links">
+      <li><a href="/usuarios/">Gestión de Usuarios</a></li>
+      <li><a href="/configuracion/">Configuración</a></li>
+      <li><a href="/permisos/">Permisos y Acceso</a></li>
+    </ul>
+  </div>
+
+  <div class="hc-section">
+    <div class="hc-section__icon">❓</div>
+    <h2 class="hc-section__title">Soporte</h2>
+    <p class="hc-section__desc">Respuestas rápidas y soluciones a problemas comunes.</p>
+    <ul class="hc-section__links">
+      <li><a href="/faq/">Preguntas Frecuentes</a></li>
+      <li><a href="/solucion-de-problemas/">Solución de Problemas</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<SearchTrigger />

@@ -1,0 +1,105 @@
+---
+title: "Gestión Financiera"
+description: "Ingresos, estadísticas y reportes financieros de tu negocio."
+---
+
+import { Steps, Card, CardGrid } from '@astrojs/starlight/components'
+
+La sección de Facturación te muestra en qué está parado tu negocio: ingresos, turnos y servicios más vendidos. Necesitás permiso de facturación para acceder (o ser administrador).
+
+---
+
+## Selector de período
+
+Podés analizar los datos en cuatro períodos:
+
+<CardGrid>
+  <Card title="Hoy" icon="sun">
+    Datos del día actual.
+  </Card>
+  <Card title="Esta semana" icon="calendar">
+    Lunes a domingo de la semana en curso.
+  </Card>
+  <Card title="Este mes" icon="document">
+    Todo el mes actual.
+  </Card>
+  <Card title="Rango personalizado" icon="setting">
+    Seleccionás fechas de inicio y fin libremente.
+  </Card>
+</CardGrid>
+
+### Usar rango personalizado
+
+<Steps>
+
+1. Hacé clic en **Rango personalizado**.
+
+2. Seleccioná la fecha de inicio.
+
+3. Seleccioná la fecha de fin.
+
+4. Los datos se actualizan automáticamente.
+
+</Steps>
+
+---
+
+## Tarjetas de resumen
+
+La pantalla principal muestra cinco métricas clave para el período seleccionado:
+
+<CardGrid>
+  <Card title="Total Ingresos 💰" icon="star">
+    Suma de todos los ingresos del período. Incluye extras y descuentos aplicados. No incluye adelantos.
+  </Card>
+  <Card title="Adelantos Recibidos 💵" icon="rocket">
+    Total de adelantos registrados. Se muestra por separado porque ya están contabilizados en los turnos.
+  </Card>
+  <Card title="Turnos Realizados ✅" icon="approve-check">
+    Cantidad de turnos completados en el período.
+  </Card>
+  <Card title="Turnos Pendientes ⏳" icon="right-arrow">
+    Turnos programados que todavía no se realizaron.
+  </Card>
+  <Card title="Turnos Cancelados ❌" icon="close">
+    Turnos que fueron cancelados. No afectan los ingresos.
+  </Card>
+</CardGrid>
+
+---
+
+## Gráficos
+
+### Evolución de ingresos
+
+Muestra cómo variaron tus ingresos a lo largo del período seleccionado. Tiene puntos de datos interactivos y una línea de tendencia.
+
+### Servicios más vendidos
+
+Ranking de los servicios con más turnos en el período. Te sirve para identificar tus servicios estrella y decidir qué promover.
+
+---
+
+## Cómo leer los números
+
+**¿Los adelantos se suman a los ingresos?**
+No. El total de ingresos es el ingreso neto de los turnos completados. Los adelantos se muestran por separado como referencia de flujo de caja.
+
+**¿Los descuentos ya están descontados?**
+Sí. El total de ingresos ya tiene los descuentos aplicados.
+
+**¿Los turnos cancelados bajan los ingresos?**
+No. Solo se muestran como estadística.
+
+---
+
+## Preguntas frecuentes
+
+**¿Puedo ver datos de meses anteriores?**
+Sí. Usá el **Rango personalizado** para seleccionar cualquier período de fechas.
+
+**¿Puedo exportar los datos?**
+Esta funcionalidad está en desarrollo. Consultá las actualizaciones del sistema.
+
+**¿Los turnos pendientes cuentan como ingreso?**
+No. Solo los turnos marcados como "Realizado" se incluyen en el total de ingresos.

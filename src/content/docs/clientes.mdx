@@ -1,0 +1,171 @@
+---
+title: "Gestión de Clientes"
+description: "Creá, editá y buscá clientes en tu salón."
+---
+
+import { Steps, Tabs, TabItem, Card, CardGrid, Badge } from '@astrojs/starlight/components'
+
+Tu base de clientas es el corazón de tu salón. Acá te explicamos cómo crearlas, editarlas, buscarlas y mantenerlas ordenadas en GLYMM.
+
+---
+
+## Crear una nueva clienta
+
+<Steps>
+
+1. Entrá a la sección **Clientes** desde el menú principal.
+
+2. Hacé clic en **+ Nuevo Cliente**.
+
+3. Completá los campos:
+
+   **Obligatorio** <Badge text="Obligatorio" variant="danger" />
+   - **Nombre:** el nombre completo de la clienta.
+
+   **Opcionales** <Badge text="Opcional" variant="note" />
+   - **Teléfono:** número de contacto principal.
+   - **Fecha de última visita:** la cargás vos a mano, o se actualiza sola cuando marcás un turno como "Realizado".
+   - **Observaciones:** notas internas (preferencias, alergias, datos útiles).
+
+4. Hacé clic en **Guardar**.
+
+</Steps>
+
+:::tip[Cargá todo lo que puedas]
+Cuanta más información tengas, mejor. El teléfono te sirve para contactar a tus clientas, y las observaciones para recordar lo importante: preferencias, alergias o cualquier nota especial.
+:::
+
+---
+
+## Editar una clienta
+
+<Steps>
+
+1. Buscá la clienta en la lista.
+
+2. Hacé clic en ✎ **Editar**.
+
+3. Hacé los cambios que necesites.
+
+4. Hacé clic en **Guardar cambios**.
+
+</Steps>
+
+:::note[Tus datos están a salvo]
+GLYMM guarda la información de tus clientas de forma segura y automática.
+:::
+
+---
+
+## Buscar y filtrar
+
+Escribí cualquier parte del nombre de la clienta en la barra de búsqueda y la lista se filtra en tiempo real, mientras escribís.
+
+**Ejemplos:**
+- "María" → muestra todas las clientas con ese nombre.
+- "555" → muestra clientas cuyo teléfono tenga esos dígitos.
+
+---
+
+## Vista de lista de clientes
+
+Cada clienta aparece en una tarjeta con esta información:
+
+<CardGrid>
+  <Card title="Nombre" icon="person">
+    Nombre completo de la clienta.
+  </Card>
+  <Card title="Teléfono" icon="phone">
+    Número de contacto, si lo registraste.
+  </Card>
+  <Card title="Última visita" icon="calendar">
+    Fecha de la última visita registrada.
+  </Card>
+  <Card title="Observaciones" icon="pencil">
+    Notas importantes sobre la clienta.
+  </Card>
+</CardGrid>
+
+### Acciones disponibles
+
+- ✎ **Editar:** modificá la información de la clienta.
+- 🗑 **Eliminar:** borra la clienta de forma permanente (te pide confirmación).
+
+---
+
+## Información de la clienta
+
+### Fecha de última visita
+
+La podés cargar a mano, o se actualiza sola cuando marcás un turno como "Realizado". Te sirve para detectar clientas que hace rato no pasan por el salón.
+
+### Observaciones
+
+Usá este campo para guardar todo lo que te ayude a dar un mejor servicio:
+
+- Preferencias de servicios.
+- Alergias o restricciones.
+- Notas sobre el cabello o tratamientos previos.
+- Cualquier dato relevante.
+
+:::tip[Ejemplos de observaciones útiles]
+"Prefiere horarios de mañana", "Alérgica a tintes con amoníaco", "Le gusta el cabello más largo".
+:::
+
+---
+
+## Eliminar una clienta
+
+<Steps>
+
+1. Buscá la clienta en la lista.
+
+2. Hacé clic en 🗑 **Eliminar**.
+
+3. Confirmá la eliminación en el cartel que aparece.
+
+</Steps>
+
+:::danger[Esto no se puede deshacer]
+Eliminar una clienta es permanente. Asegurate de que realmente la querés borrar antes de confirmar.
+:::
+
+---
+
+## Cómo organizar tus clientes
+
+### Nombres consistentes
+
+- Usá siempre el mismo formato (por ejemplo, "María García" en todas).
+- Cargá el nombre completo cuando puedas.
+- Antes de crear una clienta nueva, fijate que no exista ya, para evitar duplicados.
+
+### Información de contacto
+
+- Cargá el teléfono para poder contactarla.
+- Actualizá los datos si cambian.
+
+### Observaciones útiles
+
+- Anotá preferencias de horarios.
+- Registrá alergias o restricciones importantes.
+- Guardá qué servicios funcionaron bien.
+
+---
+
+## Preguntas frecuentes
+
+**¿Puedo cambiar el nombre de una clienta ya creada?**
+Sí. Editás cualquier dato cuando quieras desde ✎ **Editar**.
+
+**¿Qué pasa si elimino una clienta?**
+La eliminación es permanente. Confirmá bien antes de borrar. Si necesitás recuperar información, contactá a soporte.
+
+**¿Hay un límite de clientas?**
+No. Podés crear todas las que necesites.
+
+**¿Cómo actualizo la fecha de última visita?**
+La editás a mano, o se actualiza sola cuando marcás un turno como "Realizado".
+
+**¿Puedo buscar por teléfono?**
+Sí. La búsqueda filtra por nombre y también por los dígitos del teléfono.
