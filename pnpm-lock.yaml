@@ -10,10 +10,10 @@ importers:
     dependencies:
       '@astrojs/starlight':
         specifier: ^0.39.3
-        version: 0.39.3(astro@6.4.4(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0))(typescript@6.0.3)
+        version: 0.39.3(astro@6.4.8(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0))(typescript@6.0.3)
       astro:
-        specifier: ^6.4.4
-        version: 6.4.4(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0)
+        specifier: ^6.4.8
+        version: 6.4.8(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0)
       sharp:
         specifier: ^0.35.1
         version: 0.35.1
@@ -141,9 +141,6 @@ packages:
 
   '@emmetio/stream-reader@2.2.0':
     resolution: {integrity: sha512-fXVXEyFA5Yv3M3n8sUGT7+fvecGrZP4k6FnWWMSZVQf69kAq0LLpaBQLGcPR30m3zMmKYhECP4k/ZkzvhEW5kw==}
-
-  '@emnapi/runtime@1.10.0':
-    resolution: {integrity: sha512-ewvYlk86xUoGI0zQRNq/mC+16R1QeDlKQy21Ki3oSYXNgLb45GV1P6A0M+/s6nyCuNDqe5VpaY84BzXGwVbwFA==}
 
   '@emnapi/runtime@1.11.0':
     resolution: {integrity: sha512-55coeOFKHv1ywEcUXJtWU5f+Jr/W5tZDvZig8DLKSwUN1JpROQ4rk/SNOQiFWmaR/VKF4zuFyW1B8JduOSv6Pg==}
@@ -975,8 +972,8 @@ packages:
     peerDependencies:
       astro: ^4.0.0-beta || ^5.0.0-beta || ^3.3.0 || ^6.0.0-beta
 
-  astro@6.4.4:
-    resolution: {integrity: sha512-hVe8tq3lqt/Dr0UyB//yUmQSlHMTU8scTiF/vQddQVahLE4TTaSdH5H0nb7OvRcwo0UmlAO8DWYar4jNaS7H+A==}
+  astro@6.4.8:
+    resolution: {integrity: sha512-KK5lX90uU9EeVaTjINyj3sy9/NFXVa59aowaqbWBDDKLXZh4rr7GwIaCFYVetE22MJtsCNFerQXn0vlCLmpP/Q==}
     engines: {node: '>=22.12.0', npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -1840,11 +1837,6 @@ packages:
     resolution: {integrity: sha512-6R3J5M4AcbtLUdZmRv2SygeVaM7IhrLXu9BmnOGmmACak8fiUtOsYNWUS4uK7upbmHIBbLBeFeI//477BKLBzA==}
     engines: {node: '>=11.0.0'}
 
-  semver@7.8.2:
-    resolution: {integrity: sha512-c8jsqUZm3omBOI66G90z1Dyw5z622G8oLG+omfsHBJf3CWQTlOcwOjvOG6wtiNfW6anKm/eA39LMwMtMez2TiQ==}
-    engines: {node: '>=10'}
-    hasBin: true
-
   semver@7.8.4:
     resolution: {integrity: sha512-rUCObTnP32Q08R2uuIrt7r9PlEonuTmtuXYcW6s5kjdlj3xbnwe+21yXptAUYcMAABLkYYTtnmzb3w3EDZfueA==}
     engines: {node: '>=10'}
@@ -2366,12 +2358,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@5.0.6(astro@6.4.4(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0))':
+  '@astrojs/mdx@5.0.6(astro@6.4.8(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0))':
     dependencies:
       '@astrojs/markdown-remark': 7.1.2
       '@mdx-js/mdx': 3.1.1
       acorn: 8.16.0
-      astro: 6.4.4(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0)
+      astro: 6.4.8(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0)
       es-module-lexer: 2.1.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -2395,17 +2387,17 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 4.4.3
 
-  '@astrojs/starlight@0.39.3(astro@6.4.4(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0))(typescript@6.0.3)':
+  '@astrojs/starlight@0.39.3(astro@6.4.8(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0))(typescript@6.0.3)':
     dependencies:
       '@astrojs/markdown-remark': 7.2.0
-      '@astrojs/mdx': 5.0.6(astro@6.4.4(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0))
+      '@astrojs/mdx': 5.0.6(astro@6.4.8(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0))
       '@astrojs/sitemap': 3.7.3
       '@pagefind/default-ui': 1.5.2
       '@types/hast': 3.0.4
       '@types/js-yaml': 4.0.9
       '@types/mdast': 4.0.4
-      astro: 6.4.4(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0)
-      astro-expressive-code: 0.42.0(astro@6.4.4(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0))
+      astro: 6.4.8(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0)
+      astro-expressive-code: 0.42.0(astro@6.4.8(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0))
       bcp-47: 2.1.0
       hast-util-from-html: 2.0.3
       hast-util-select: 6.0.4
@@ -2495,11 +2487,6 @@ snapshots:
   '@emmetio/stream-reader-utils@0.1.0': {}
 
   '@emmetio/stream-reader@2.2.0': {}
-
-  '@emnapi/runtime@1.10.0':
-    dependencies:
-      tslib: 2.8.1
-    optional: true
 
   '@emnapi/runtime@1.11.0':
     dependencies:
@@ -2778,7 +2765,7 @@ snapshots:
 
   '@img/sharp-wasm32@0.34.5':
     dependencies:
-      '@emnapi/runtime': 1.10.0
+      '@emnapi/runtime': 1.11.0
     optional: true
 
   '@img/sharp-wasm32@0.35.1':
@@ -3119,12 +3106,12 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro-expressive-code@0.42.0(astro@6.4.4(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0)):
+  astro-expressive-code@0.42.0(astro@6.4.8(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0)):
     dependencies:
-      astro: 6.4.4(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0)
+      astro: 6.4.8(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0)
       rehype-expressive-code: 0.42.0
 
-  astro@6.4.4(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0):
+  astro@6.4.8(@types/node@24.13.1)(rollup@4.61.1)(yaml@2.9.0):
     dependencies:
       '@astrojs/compiler': 4.0.0
       '@astrojs/internal-helpers': 0.10.0
@@ -3164,7 +3151,7 @@ snapshots:
       piccolore: 0.1.3
       picomatch: 4.0.4
       rehype: 13.0.2
-      semver: 7.8.2
+      semver: 7.8.4
       shiki: 4.2.0
       smol-toml: 1.6.1
       svgo: 4.0.1
@@ -4569,15 +4556,13 @@ snapshots:
 
   sax@1.6.0: {}
 
-  semver@7.8.2: {}
-
   semver@7.8.4: {}
 
   sharp@0.34.5:
     dependencies:
       '@img/colour': 1.1.0
       detect-libc: 2.1.2
-      semver: 7.8.2
+      semver: 7.8.4
     optionalDependencies:
       '@img/sharp-darwin-arm64': 0.34.5
       '@img/sharp-darwin-x64': 0.34.5
