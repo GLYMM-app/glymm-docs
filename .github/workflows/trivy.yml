@@ -2,10 +2,15 @@ name: trivy
 
 on:
   pull_request:
+    branches: [main, develop]
   push:
     branches:
       - main
       - develop
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: read
@@ -13,6 +18,7 @@ permissions:
 
 jobs:
   fs-and-config-scan:
+    if: vars.ENABLE_SECURITY_SCANS == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -48,7 +54,7 @@ jobs:
           severity: HIGH,CRITICAL
 
       - name: Upload config SARIF
-        if: always()
+        if: always() && hashFiles('trivy-config.sarif') != ''
         continue-on-error: true
         uses: github/codeql-action/upload-sarif@9e0d7b8d25671d64c341c19c0152d693099fb5ba
         with:
