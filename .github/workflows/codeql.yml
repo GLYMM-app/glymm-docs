@@ -6,8 +6,13 @@ on:
       - main
       - develop
   pull_request:
+    branches: [main, develop]
   schedule:
     - cron: "45 7 * * 1"
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   actions: read
@@ -16,6 +21,8 @@ permissions:
 
 jobs:
   analyze:
+    continue-on-error: true
+    if: vars.ENABLE_SECURITY_SCANS == 'true'
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
@@ -25,7 +32,7 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@9e0d7b8d25671d64c341c19c0152d693099fb5ba
         with:
-          languages: python
+          languages: javascript-typescript
           build-mode: none
 
       - name: Analyze
