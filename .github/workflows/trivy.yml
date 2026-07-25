@@ -2,11 +2,11 @@ name: trivy
 
 on:
   pull_request:
-    branches: [main, develop]
+    branches: [main, dev]
   push:
     branches:
       - main
-      - develop
+      - dev
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
