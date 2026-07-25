@@ -1,0 +1,376 @@
+---
+title: "Solución de Problemas"
+description: "Diagnóstico y resolución de problemas comunes en GLYMM."
+---
+
+import { Steps, Tabs, TabItem } from '@astrojs/starlight/components'
+
+## Problemas de acceso
+
+### No puedo iniciar sesión
+
+**Síntoma:** te da error al intentar entrar a tu cuenta.
+
+**Probá esto:**
+
+<Steps>
+
+1. Revisá que tu email esté bien escrito.
+
+2. Fijate que no tengas activado Bloq Mayús.
+
+3. Hacé clic en **¿Olvidaste tu contraseña?** para resetearla.
+
+4. Limpiá el caché del navegador:
+
+   <Tabs>
+     <TabItem label="Windows">`Ctrl + Shift + Supr`</TabItem>
+     <TabItem label="Mac">`Cmd + Shift + Delete`</TabItem>
+   </Tabs>
+
+5. Probá en otro navegador.
+
+6. Revisá tu conexión a internet.
+
+</Steps>
+
+:::caution[Si todavía no entra]
+Escribile a soporte técnico con el email de tu cuenta.
+:::
+
+---
+
+### Mi sesión se cierra sola
+
+**Por qué pasa:** por seguridad, GLYMM cierra solo las sesiones que quedan inactivas un rato.
+
+**Probá esto:**
+
+<Steps>
+
+1. Mantené actividad en la plataforma.
+
+2. Si sigue pasando, revisá tu conexión a internet.
+
+3. Volvé a iniciar sesión.
+
+</Steps>
+
+---
+
+## Problemas de rendimiento
+
+### La plataforma está lenta
+
+| Causa | Solución |
+|-------|----------|
+| Conexión lenta | Verificá tu velocidad de internet |
+| Caché lleno | Limpiá el caché del navegador |
+| Muchas pestañas abiertas | Cerrá las que no uses |
+| Navegador desactualizado | Actualizá tu navegador |
+| Mucho contenido en la página | Usá filtros para mostrar menos datos |
+
+### Los reportes cargan lento
+
+<Steps>
+
+1. Achicá el rango de fechas de tu búsqueda.
+
+2. Usá filtros para excluir datos que no necesitás.
+
+3. Probá exportar a Excel en lugar de verlo en pantalla.
+
+4. Si sigue lento, contactá a soporte.
+
+</Steps>
+
+---
+
+## Problemas con turnos
+
+### No puedo crear un turno
+
+**Fijate que:**
+
+- [ ] La clienta exista en tu sistema
+- [ ] Hayas seleccionado un servicio
+- [ ] Hayas puesto una fecha válida
+- [ ] Hayas puesto una hora válida
+- [ ] Estén completos todos los campos obligatorios
+
+**Errores comunes:**
+
+- **"Debes seleccionar un cliente"** → elegí una clienta de la lista.
+- **"Debes seleccionar un servicio"** → elegí un servicio principal.
+- **"Debes seleccionar una fecha"** → poné una fecha válida.
+- **"Debes seleccionar una hora"** → poné una hora válida.
+
+**Probá esto:**
+
+<Steps>
+
+1. Revisá que todos los campos obligatorios estén completos.
+
+2. Refrescá la página (`F5`).
+
+3. Cerrá sesión y volvé a entrar.
+
+4. Probá en otro navegador.
+
+</Steps>
+
+### Un turno no aparece en el calendario
+
+**Causas comunes:**
+
+- Los filtros de fecha lo están ocultando.
+- El turno está fuera del rango de fechas visible.
+- Estás en otra vista (mensual en vez de semanal, o al revés).
+
+**Probá esto:**
+
+<Steps>
+
+1. Revisá los filtros de fecha en la vista de lista.
+
+2. En el calendario, navegá al mes o la semana correcta.
+
+3. Usá el botón "Hoy" para volver a la fecha actual.
+
+4. Verificá que estés en la vista correcta (mensual o semanal).
+
+</Steps>
+
+### No puedo cambiar el estado de un turno
+
+**Posibles razones:**
+
+- El turno ya está en ese estado (por ejemplo, ya está "Realizado").
+- Hay un problema de conexión.
+- El turno se está procesando.
+
+**Probá esto:**
+
+<Steps>
+
+1. Verificá que el turno no esté ya en el estado que querés.
+
+2. Refrescá la página (`F5`).
+
+3. Editá el turno y cambiá el estado a mano.
+
+4. Revisá tu conexión a internet.
+
+</Steps>
+
+---
+
+## Problemas con clientes
+
+### No puedo crear una clienta
+
+**Fijate que:**
+
+- [ ] El nombre esté cargado (es obligatorio)
+- [ ] No haya caracteres especiales problemáticos
+
+**Error común:**
+
+- **"El nombre es obligatorio"** → ingresá al menos el nombre de la clienta.
+
+**Probá esto:**
+
+<Steps>
+
+1. Asegurate de cargar el nombre (es obligatorio).
+
+2. Recordá que los demás campos son opcionales.
+
+3. Refrescá la página si sigue el problema.
+
+</Steps>
+
+### Una clienta no aparece en la lista
+
+<Steps>
+
+1. Usá la barra de búsqueda para encontrarla.
+
+2. Revisá que estés escribiendo bien el nombre.
+
+3. Tené en cuenta que la búsqueda filtra en tiempo real mientras escribís.
+
+</Steps>
+
+### No puedo eliminar una clienta
+
+**Posibles razones:**
+
+- Hay un problema de conexión.
+- La clienta tiene turnos asociados (verificá esto).
+
+**Probá esto:**
+
+<Steps>
+
+1. Revisá tu conexión a internet.
+
+2. Refrescá la página (`F5`).
+
+3. Intentá de nuevo.
+
+</Steps>
+
+---
+
+## Problemas con servicios extras
+
+### No puedo seleccionar varios servicios extras
+
+<Tabs>
+  <TabItem label="Windows">
+    Mantené presionada la tecla **Ctrl** y hacé clic en cada servicio.
+  </TabItem>
+  <TabItem label="Mac">
+    Mantené presionada la tecla **Cmd** y hacé clic en cada servicio.
+  </TabItem>
+</Tabs>
+
+Recordá que el servicio principal no se puede elegir como servicio extra.
+
+### El precio total no se calcula bien
+
+**Fijate que:**
+
+- [ ] Todos los servicios estén bien seleccionados
+- [ ] Los descuentos estén bien aplicados
+
+**Solución:** GLYMM calcula así: Precio principal + Servicios extras − Descuentos. Si algo no cierra, guardá el turno y editalo de nuevo.
+
+---
+
+## Problemas de sincronización
+
+### Mi información no se sincroniza bien
+
+<Steps>
+
+1. Recargá la página.
+
+2. Cerrá sesión y volvé a entrar.
+
+3. Limpiá el caché.
+
+4. Probá en una ventana privada o de incógnito.
+
+</Steps>
+
+Si sigue pasando, contactá al equipo técnico.
+
+---
+
+## Errores comunes
+
+### "Error 500: Internal Server Error"
+
+Es un problema temporal en nuestros servidores.
+
+<Steps>
+
+1. Esperá 5 a 10 minutos.
+
+2. Intentá de nuevo.
+
+3. Si sigue, contactá a soporte.
+
+</Steps>
+
+### "Error de conexión"
+
+Tu navegador no puede conectarse a GLYMM.
+
+<Steps>
+
+1. Revisá tu conexión a internet.
+
+2. Desactivá VPN o proxy por un momento.
+
+3. Limpiá el caché del navegador.
+
+4. Probá en otro navegador o dispositivo.
+
+</Steps>
+
+### "Acceso denegado"
+
+No tenés permisos para acceder a ese recurso.
+
+<Steps>
+
+1. Verificá que estés en la cuenta correcta.
+
+2. Pedile a una administradora que revise tus permisos.
+
+3. Contactá a soporte.
+
+</Steps>
+
+---
+
+## Problemas con el calendario
+
+### El calendario no carga los turnos
+
+<Steps>
+
+1. Verificá que los filtros de fecha incluyan el rango correcto.
+
+2. Refrescá la página (`F5`).
+
+3. Cambiá entre vista mensual y semanal.
+
+4. Revisá tu conexión a internet.
+
+</Steps>
+
+### No puedo cambiar de mes o semana
+
+<Steps>
+
+1. Usá los botones "← Anterior" y "Siguiente →".
+
+2. Hacé clic en "Hoy" para volver a la fecha actual.
+
+3. Verificá que los botones respondan al clic.
+
+</Steps>
+
+---
+
+## Problemas con adelantos y descuentos
+
+### El cálculo de adelanto o descuento no funciona
+
+**Fijate que:**
+
+- [ ] Hayas marcado la casilla "Tiene adelanto" o "Tiene descuento"
+- [ ] Hayas ingresado un valor (monto o porcentaje)
+- [ ] El servicio tenga un precio válido
+
+**Solución:** GLYMM calcula solo. Si cargás el monto, calcula el porcentaje; si cargás el porcentaje, calcula el monto. Refrescá la página si hay algún problema.
+
+---
+
+## Contacto y soporte
+
+Si tu problema no está en esta lista:
+
+- Consultá esta documentación completa.
+- Revisá las [Preguntas Frecuentes](/faq/).
+- Contactá a soporte técnico.
+
+Para que te ayuden más rápido, contales:
+- Navegador y versión.
+- Sistema operativo.
+- Los pasos para reproducir el problema.
+- Capturas de pantalla, si vienen al caso.

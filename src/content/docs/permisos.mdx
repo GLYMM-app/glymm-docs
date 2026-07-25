@@ -1,0 +1,119 @@
+---
+title: "Permisos y Control de Acceso"
+description: "Gestioná qué puede ver y hacer cada usuario."
+---
+
+import { Steps, Card, CardGrid } from '@astrojs/starlight/components'
+
+Los permisos controlan qué secciones y acciones puede usar cada usuario. Solo los administradores pueden gestionar permisos.
+
+---
+
+## Cómo funcionan los permisos
+
+GLYMM tiene dos tipos de usuarios:
+
+<CardGrid>
+  <Card title="Administrador" icon="star">
+    Acceso completo automático. No necesita permisos individuales.
+  </Card>
+  <Card title="Usuario regular" icon="person">
+    Solo accede a las secciones donde tiene permisos asignados explícitamente.
+  </Card>
+</CardGrid>
+
+Los permisos están organizados por módulos (Clientes, Turnos, Servicios, Insumos, Facturación, Usuarios, Configuración, Stock) y por tipo de acción: **Ver**, **Crear**, **Editar**, **Eliminar**.
+
+---
+
+## Asignar un permiso
+
+<Steps>
+
+1. Entrá a la sección **Permisos** desde el menú principal.
+
+2. En la parte superior, seleccioná el usuario de la lista desplegable.
+
+3. Hacé clic en **+ Asignar Permiso**.
+
+4. En el modal, expandí el módulo correspondiente.
+
+5. Seleccioná el permiso que querés asignar.
+
+6. Hacé clic en **Asignar**.
+
+</Steps>
+
+:::note[Los cambios son inmediatos]
+Los permisos se aplican en el momento. El usuario puede necesitar refrescar la página o volver a iniciar sesión para verlo reflejado.
+:::
+
+---
+
+## Quitar un permiso
+
+<Steps>
+
+1. Seleccioná el usuario de la lista desplegable.
+
+2. Expandí el módulo que contiene el permiso.
+
+3. Hacé clic en **Quitar** junto al permiso que querés eliminar.
+
+</Steps>
+
+---
+
+## Gestionar permisos desde Usuarios
+
+También podés asignar permisos directamente al crear o editar un usuario:
+
+<Steps>
+
+1. Entrá a **Usuarios**.
+
+2. Creá o editá un usuario.
+
+3. Si el usuario **no es administrador**, aparece la sección de Permisos.
+
+4. Expandí los módulos y marcá los permisos que necesite.
+
+5. Los permisos se guardan al guardar el usuario.
+
+</Steps>
+
+:::tip[Dos caminos, mismo resultado]
+La sección de Permisos te da una vista más detallada. Desde Usuarios es más práctico cuando estás creando un usuario nuevo.
+:::
+
+---
+
+## Roles comunes
+
+Estos son ejemplos de qué permisos suele necesitar cada rol en un salón:
+
+| Rol | Permisos típicos |
+|-----|-----------------|
+| **Recepcionista** | Ver/Crear/Editar Clientes, Ver/Crear/Editar Turnos, Ver Servicios |
+| **Estilista** | Ver Clientes, Ver/Editar Turnos propios, Ver Servicios |
+| **Gerente** | Todo lo anterior + Facturación + Usuarios + Configuración |
+
+:::tip[Principio de menor privilegio]
+Asigná solo los permisos que el usuario realmente necesita para su trabajo. Los permisos de Facturación, Usuarios y Configuración son sensibles — dáselos solo a quien corresponda.
+:::
+
+---
+
+## Preguntas frecuentes
+
+**¿Puedo asignar permisos a un administrador?**
+No hace falta. Los administradores tienen todo el acceso automáticamente.
+
+**¿Qué pasa si quito todos los permisos de un usuario?**
+No va a poder acceder a ninguna sección del sistema.
+
+**¿Los permisos se aplican inmediatamente?**
+Sí. El usuario puede necesitar refrescar o volver a iniciar sesión.
+
+**¿Puedo asignar permisos a varios usuarios a la vez?**
+Por ahora, se hace usuario por usuario.
