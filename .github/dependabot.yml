@@ -8,6 +8,8 @@ updates:
     groups:
       npm-all:
         patterns: ["*"]
+        # parches y menores en un solo PR; las mayores llegan como PRs individuales
+        update-types: ["minor", "patch"]
     open-pull-requests-limit: 5
 
   - package-ecosystem: "github-actions"
